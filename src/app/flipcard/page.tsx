@@ -52,9 +52,9 @@ export default function FlipcardPage() {
           <Image 
             src="/logo.png" 
             alt="Logo Kamu Pasti Bisa" 
-            width={140} 
-            height={32} 
-            className="h-8 w-auto object-contain"
+            width={280} 
+            height={64} 
+            className="h-16 w-auto object-contain"
           />
         </Link>
       </div>

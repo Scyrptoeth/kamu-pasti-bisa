@@ -11,9 +11,9 @@ export default function Home() {
           <Image 
             src="/logo.png" 
             alt="Logo Kamu Pasti Bisa" 
-            width={160} 
-            height={40} 
-            className="h-8 md:h-10 w-auto object-contain"
+            width={320} 
+            height={80} 
+            className="h-16 md:h-20 w-auto object-contain"
             priority
           />
         </Link>

@@ -90,9 +90,9 @@ export default function TesPage() {
             <Image 
               src="/logo.png" 
               alt="Logo Kamu Pasti Bisa" 
-              width={140} 
-              height={32} 
-              className="h-8 w-auto object-contain"
+              width={280} 
+              height={64} 
+              className="h-16 w-auto object-contain"
             />
           </Link>
         </div>
@@ -145,9 +145,9 @@ export default function TesPage() {
             <Image 
               src="/logo.png" 
               alt="Logo Kamu Pasti Bisa" 
-              width={140} 
-              height={32} 
-              className="h-8 w-auto object-contain"
+              width={280} 
+              height={64} 
+              className="h-16 w-auto object-contain"
             />
           </Link>
         </div>
@@ -232,9 +232,9 @@ export default function TesPage() {
           <Image 
             src="/logo.png" 
             alt="Logo Kamu Pasti Bisa" 
-            width={120} 
-            height={28} 
-            className="h-7 w-auto object-contain"
+            width={240} 
+            height={56} 
+            className="h-14 w-auto object-contain"
           />
         </Link>
       </div>
