@@ -355,18 +355,18 @@ export default function TesPage() {
         </div>
       </div>
 
-      <footer className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 items-center border-t-2 border-gray-100 pt-12 pb-8">
-        <div className="flex justify-start order-2 md:order-1">
+      <footer className="mt-12 grid grid-cols-3 gap-4 items-center border-t-2 border-gray-100 pt-12 pb-8">
+        <div className="flex justify-start">
           <button 
             disabled={currentStep === 0 || isLoading}
             onClick={() => setCurrentStep(currentStep - 1)}
-            className="w-full md:w-auto px-8 py-4 border border-ink bg-white text-ink text-[10px] font-bold font-mono uppercase tracking-[0.3em] hover:bg-gray-50 disabled:opacity-20 transition-all rounded-sm"
+            className="w-full md:w-auto px-4 md:px-10 py-4 border border-ink bg-white text-ink text-[10px] font-bold font-mono uppercase tracking-[0.3em] hover:bg-gray-50 disabled:opacity-20 transition-all rounded-sm whitespace-nowrap"
           >
             ← SEBELUMNYA
           </button>
         </div>
 
-        <div className="flex justify-center order-1 md:order-2">
+        <div className="flex justify-center">
           <button 
             disabled={isLoading}
             onClick={() => {
@@ -380,11 +380,11 @@ export default function TesPage() {
           </button>
         </div>
 
-        <div className="flex justify-end order-3 md:order-3">
+        <div className="flex justify-end">
           <button 
             disabled={currentStep === 34 || isLoading}
             onClick={handleNext}
-            className="w-full md:w-auto px-8 py-4 border border-ink bg-white text-ink text-[10px] font-bold font-mono uppercase tracking-[0.3em] hover:bg-gray-50 disabled:opacity-20 transition-all rounded-sm"
+            className="w-full md:w-auto px-4 md:px-10 py-4 border border-ink bg-white text-ink text-[10px] font-bold font-mono uppercase tracking-[0.3em] hover:bg-gray-50 disabled:opacity-20 transition-all rounded-sm whitespace-nowrap"
           >
             BERIKUTNYA →
           </button>
