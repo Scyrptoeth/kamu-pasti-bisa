@@ -50,10 +50,6 @@ export default function TutorialPage() {
           </Link>
           
           <div className="flex items-center gap-8">
-            <div className="hidden lg:flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] font-mono text-muted">
-              <span>Status: Terverifikasi</span>
-              <span className="w-1 h-1 bg-green-500 rounded-full animate-pulse"></span>
-            </div>
             <button 
               onClick={() => window.print()}
               className="text-[10px] font-bold uppercase tracking-[0.2em] px-8 py-3 bg-ink text-white hover:bg-white hover:text-ink border-2 border-ink transition-all rounded-none font-mono shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]"
@@ -89,12 +85,6 @@ export default function TutorialPage() {
                 ))}
               </nav>
             </div>
-
-            <div className="p-6 bg-gray-50 border border-gray-100 mt-8">
-              <p className="text-[11px] leading-relaxed text-muted font-mono">
-                Butuh bantuan lebih lanjut? Tim support kami tersedia 24/7 melalui jalur feedback anonim.
-              </p>
-            </div>
           </div>
         </aside>
 
@@ -104,7 +94,7 @@ export default function TutorialPage() {
           <header className="mb-40">
             <div className="overflow-hidden mb-8">
               <span className="text-[14px] font-black uppercase tracking-[0.6em] text-muted font-mono inline-block animate-slide-up">
-                Dokumentasi Pengguna v2.0
+                Dokumentasi Pengguna
               </span>
             </div>
             <h1 className="text-6xl md:text-[10rem] font-black tracking-tighter leading-[0.85] uppercase mb-12">
@@ -117,7 +107,7 @@ export default function TutorialPage() {
                 Maksimalkan setiap fitur "Kamu Pasti Bisa" untuk mencapai hasil belajar yang optimal secara efisien dan terukur.
               </p>
               <div className="flex flex-col gap-2 font-mono text-[11px] uppercase tracking-widest text-muted md:text-right">
-                <span>Terakhir Diperbarui: 2026.05.20</span>
+                <span>Terakhir Diperbarui: 2026.06.01</span>
                 <span>Klasifikasi: Publik / Edukasi</span>
               </div>
             </div>
@@ -372,15 +362,8 @@ export default function TutorialPage() {
       {/* Footer Bawah Layar */}
       <footer className="border-t border-gray-100 bg-white py-20 no-print">
         <div className="max-w-[98%] mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-12">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 text-center md:text-left">
             <span className="text-[10px] font-black uppercase tracking-[0.4em] text-ink font-mono">Kamu Pasti Bisa</span>
-            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted font-mono">Platform Belajar Mandiri v2.0</span>
-          </div>
-          
-          <div className="flex gap-12">
-            <Link href="/" className="text-[10px] font-bold uppercase tracking-[0.3em] font-mono hover:text-ink transition-colors text-muted">Beranda</Link>
-            <Link href="/tutorial" className="text-[10px] font-bold uppercase tracking-[0.3em] font-mono text-ink">Dokumentasi</Link>
-            <a href="#" className="text-[10px] font-bold uppercase tracking-[0.3em] font-mono hover:text-ink transition-colors text-muted">GitHub</a>
           </div>
 
           <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-muted font-mono">
