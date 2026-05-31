@@ -1,41 +1,24 @@
+### [2026-05-31] - Optimalisasi Skala Flipcard (Large Workspace)
+- **Latest Update**: 
+  - Memperbesar dimensi Flipcard menjadi minimal 480px (Tinggi) dan 768px (Lebar max).
+  - Meningkatkan padding kartu menjadi `p-12` untuk ruang baca yang lebih lega.
+  - Optimalisasi tipografi soal (2xl-3xl) dan jawaban (xl-2xl) agar nyaman dibaca pada layar besar.
+  - Penyesuaian kontrol navigasi dan grid CBT agar selaras dengan dimensi kartu yang baru.
+  - Verifikasi build sukses dan deployment live ke Vercel.
+- **Lesson Learned**: 
+  - Ukuran kartu yang dominan (Large Workspace) menciptakan hirarki visual yang lebih kuat dan mendukung fokus 'Zen Mode' bagi siswa.
+  - Memberikan whitespace yang cukup (`p-12`) secara drastis menurunkan beban kognitif saat memproses teks soal yang kompleks.
+- **Current Status**: **Production Live (V 1.4.0 - Workspace Edition)**.
+- **Next Actions**: Melanjutkan integrasi penilaian esai otomatis menggunakan AI Deepseek.
+
 ### [2026-05-31] - Transformasi Navigasi Flipcard (Fokus Tunggal & Gaya CBT)
 - **Latest Update**: 
   - Mengubah antarmuka 'Kartu Hafalan' (Flipcard) dari grid menjadi tampilan kartu tunggal per layar.
   - Implementasi navigasi gaya CBT (Computer Based Test) dengan grid nomor 7 kolom.
   - Penambahan indikator visual (subtle marker) untuk kartu yang sudah pernah dibuka/dibalik.
-  - Penambahan tombol navigasi 'Sebelumnya' dan 'Berikutnya' untuk alur belajar yang lebih terarah.
-  - Pembersihan total beban kognitif pada fitur hafalan sesuai prinsip Zen Mode.
-- **Lesson Learned**: 
-  - Tampilan kartu tunggal secara dramatis meningkatkan fokus belajar (Active Recall) dibandingkan tampilan grid yang memusingkan.
-  - Navigasi nomor memberikan rasa kendali (sense of control) dan progres belajar yang lebih nyata bagi siswa.
-- **Current Status**: **Production Live (V 1.3.0 - CBT Edition)**.
-- **Next Actions**: Melanjutkan integrasi penilaian esai otomatis menggunakan AI Deepseek.
+- **Lesson Learned**: Tampilan kartu tunggal secara dramatis meningkatkan fokus belajar dibandingkan tampilan grid.
+- **Current Status**: **Production Live (V 1.3.0)**.
 
 ### [2026-05-31] - Zen Mode & Lokalisasi Total (Pembersihan AI Slop)
-- **Latest Update**: 
-  - Pembersihan total gaya bahasa 'AI Slop' (mengganti istilah robotik seperti 'Arsip', 'Instrumen', 'Volume' dengan 'Kartu Hafalan', 'Soal', 'Paket').
-  - Lokalisasi penuh ke Bahasa Indonesia formal & jelas untuk seluruh antarmuka.
-  - Implementasi desain 'Zen Mode Minimalis' (Monokrom murni, putih/abu-abu terang, teks hitam tajam).
-  - Penghapusan seluruh border kaku dan bayangan tebal untuk memaksimalkan fokus visual.
-  - Deployment live ke Vercel dan push ke GitHub.
-- **Lesson Learned**: 
-  - Copywriting yang natural jauh lebih berpengaruh dalam menghilangkan kesan 'AI Slop' dibandingkan sekadar mengubah warna.
-  - Desain monokromatik dengan tipografi sans-serif yang tajam memberikan kesan 'jujur' dan profesional yang lebih kuat untuk alat bantu belajar.
-- **Current Status**: **Production Live (V 1.2.0 - Zen Edition)**.
-- **Next Actions**: Melanjutkan integrasi API Deepseek untuk penilaian esai yang lebih akurat dan responsif.
-
-### [2026-05-31] - Redesain Premium Editorial & Live Deployment
-- **Latest Update**: 
-  - Overhaul total UI/UX menggunakan estetika "Premium Editorial".
-  - Implementasi palet warna Deep Forest Green (#1A3626) & Cream (#FAF9F6).
-  - Integrasi Google Fonts: Playfair Display (Heading) & Inter (Body).
-  - Layout asimetris pada Beranda dan split-screen pada halaman Tes.
-  - Pembersihan total "AI Slop" (blue-600, rounded-xl, dan generic shadows dihapus).
-  - Push ke GitHub dan Deploy Produksi ke Vercel (https://kamu-pasti-bisa.vercel.app).
-- **Lesson Learned**: 
-  - Desain editorial memberikan kejelasan hierarki informasi yang jauh lebih baik untuk materi akademik dibandingkan layout kartu standar.
-  - Penggunaan warna Cream sebagai latar belakang secara signifikan mengurangi ketegangan mata dibandingkan warna putih murni (#FFFFFF).
-- **Current Status**: Production Live - Version 1.1.0 (Editorial Edition).
-- **Next Actions**: 
-  - Melanjutkan ekstraksi soal untuk volume berikutnya.
-  - Optimalisasi performa pemuatan gambar atau aset statis jika diperlukan.
+- **Latest Update**: Pembersihan total gaya bahasa 'AI Slop' dan lokalisasi penuh ke Bahasa Indonesia formal.
+- **Current Status**: **Production Live (V 1.2.0)**.

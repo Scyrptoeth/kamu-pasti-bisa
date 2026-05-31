@@ -48,27 +48,27 @@ export default function FlipcardPage() {
       {/* Header Minimalis */}
       <header className="flex flex-col md:flex-row justify-between items-baseline mb-12 gap-4">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight text-[#111111]">Kartu Hafalan</h1>
-          <p className="text-[10px] text-gray-400 mt-1 uppercase tracking-[0.2em]">
+          <h1 className="text-3xl font-bold tracking-tight text-ink">Kartu Hafalan</h1>
+          <p className="text-[10px] text-muted font-mono mt-1 uppercase tracking-[0.2em]">
             Paket {paket.id} — {paket.kategori}
           </p>
         </div>
-        <Link href="/" className="text-[10px] font-bold uppercase tracking-widest text-gray-400 hover:text-[#111111] transition-colors border-b border-gray-100 hover:border-[#111111] pb-1">
+        <Link href="/" className="text-[10px] font-bold uppercase tracking-widest text-muted font-mono hover:text-ink transition-colors border-b border-gray-100 hover:border-ink pb-1">
           &larr; Beranda
         </Link>
       </header>
 
       {/* Paket Selector Minimalis */}
       <div className="flex items-center gap-2 mb-12 overflow-x-auto pb-2 scrollbar-hide">
-        <span className="text-[9px] font-bold uppercase tracking-widest text-gray-300 mr-2">Paket:</span>
+        <span className="text-[9px] font-bold uppercase tracking-widest text-muted font-mono mr-2">Paket:</span>
         {soalData.map((p, idx) => (
           <button
             key={p.id}
             onClick={() => handleSelectPaket(idx)}
-            className={`px-3 py-1 rounded-sm text-[10px] font-bold transition-all border ${
+            className={`px-3 py-1 rounded-sm text-[10px] font-bold font-mono transition-all border ${
               selectedPaket === idx 
-                ? "bg-[#111111] text-white border-[#111111]" 
-                : "bg-white text-gray-400 border-gray-100 hover:border-gray-200"
+                ? "bg-ink text-white border-ink" 
+                : "bg-white text-muted border-gray-100 hover:border-gray-200"
             }`}
           >
             {p.id}
@@ -92,17 +92,17 @@ export default function FlipcardPage() {
           <button
             onClick={handlePrev}
             disabled={currentCardIndex === 0}
-            className="flex-1 px-6 py-3 border border-gray-100 text-[11px] font-bold uppercase tracking-widest text-[#111111] hover:bg-gray-50 disabled:opacity-30 disabled:cursor-not-allowed transition-all rounded-sm"
+            className="flex-1 px-6 py-3 border border-gray-100 text-[11px] font-bold font-mono uppercase tracking-widest text-ink hover:bg-gray-50 disabled:opacity-30 disabled:cursor-not-allowed transition-all rounded-sm"
           >
             Sebelumnya
           </button>
-          <div className="px-4 text-[11px] font-bold tabular-nums">
+          <div className="px-4 text-[11px] font-bold font-mono tabular-nums text-ink">
             {currentCardIndex + 1} / {allQuestions.length}
           </div>
           <button
             onClick={handleNext}
             disabled={currentCardIndex === allQuestions.length - 1}
-            className="flex-1 px-6 py-3 bg-[#111111] text-white text-[11px] font-bold uppercase tracking-widest hover:bg-black disabled:opacity-30 disabled:cursor-not-allowed transition-all rounded-sm"
+            className="flex-1 px-6 py-3 bg-ink text-white text-[11px] font-bold font-mono uppercase tracking-widest hover:opacity-90 disabled:opacity-30 disabled:cursor-not-allowed transition-all rounded-sm"
           >
             Berikutnya
           </button>
@@ -115,12 +115,12 @@ export default function FlipcardPage() {
               <button
                 key={idx}
                 onClick={() => setCurrentCardIndex(idx)}
-                className={`aspect-square flex items-center justify-center text-[10px] font-bold border transition-all rounded-sm ${
+                className={`aspect-square flex items-center justify-center text-[10px] font-bold font-mono border transition-all rounded-sm ${
                   currentCardIndex === idx
-                    ? "border-[#111111] bg-[#111111] text-white"
+                    ? "border-ink bg-ink text-white"
                     : openedCards.has(idx)
-                    ? "bg-gray-100 text-gray-400 border-gray-100"
-                    : "bg-white text-gray-300 border-gray-50 hover:border-gray-200"
+                    ? "bg-gray-100 text-muted border-gray-100"
+                    : "bg-white text-muted border-gray-100 hover:border-gray-300"
                 }`}
               >
                 {idx + 1}
@@ -131,7 +131,7 @@ export default function FlipcardPage() {
       </div>
 
       <footer className="mt-24 py-8 text-center">
-        <p className="text-[9px] uppercase tracking-[0.5em] text-gray-200 font-bold">
+        <p className="text-[9px] uppercase tracking-[0.5em] text-muted font-bold font-mono">
           Zen Study Mode
         </p>
       </footer>
