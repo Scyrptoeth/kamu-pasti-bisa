@@ -1,3 +1,15 @@
+### [2026-06-02] - Restrukturisasi Layout Beranda (Full-Width Integrated)
+- **Latest Update**: 
+  - Restrukturisasi layout `src/app/page.tsx`: Memindahkan `FeedbackForm` ke bawah navigasi grid agar tampilan lebih simetris dan mengisi lebar penuh.
+  - Modifikasi `src/components/layout/FeedbackForm.tsx`: Menghapus limitasi `max-w-lg` untuk mendukung layout baris baru yang lebar.
+  - Penambahan margin visual (`mt-24`) pada kontainer feedback untuk pemisahan konten yang lebih bersih.
+  - Verifikasi build sukses dan deployment live ke Vercel.
+- **Lesson Learned**: 
+  - Layout satu kolom (stacked) pada resolusi besar memberikan ruang baca yang lebih lega untuk form input dibandingkan layout sampingan (side-by-side).
+  - Menghapus batasan lebar maksimal pada komponen internal meningkatkan fleksibilitas komponen tersebut saat digunakan di berbagai konteks layout parent.
+- **Current Status**: **Production Live (V 1.15.0 - Layout Refinement Edition)**.
+- **Next Actions**: Evaluasi feedback pengguna terhadap kemudahan pengisian form di layout baru.
+
 ### [2026-05-31] - Implementasi Feedback Redis & Histori Progres (Intelligence v1.2)
 - **Latest Update**: 
   - Integrasi **Upstash Redis** sebagai storage terpusat untuk menampung feedback anonim dari pengguna.
