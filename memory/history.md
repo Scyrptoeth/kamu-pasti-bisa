@@ -1,3 +1,17 @@
+### [2026-05-31] - Pembersihan UI & Modul Review Hasil (Educational Feedback)
+- **Latest Update**: 
+  - Konsolidasi UI: Menghapus redundansi tombol 'Selesai' di header untuk kejernihan navigasi.
+  - Rebranding Sistem: Mengganti istilah 'Ujian Terstandar AI' dengan terminologi 'Sistem Pintar' untuk meningkatkan kredibilitas aplikasi.
+  - Implementasi Modul Review Hasil: Menambahkan daftar tinjauan menyeluruh (35 soal) di halaman hasil ujian.
+  - Fitur Pembahasan Otomatis: Kini pengguna dapat melihat soal, jawaban mereka (dengan penanda Benar/Salah), Kunci Jawaban, dan Pembahasan teknis untuk setiap soal.
+  - Review Esai Mendalam: Menampilkan perbandingan jawaban siswa vs Jawaban Ideal serta catatan evaluasi sistem.
+  - Sinkronisasi GitHub dan Deployment Live ke Vercel.
+- **Lesson Learned**: 
+  - Memberikan akses langsung ke pembahasan setelah ujian secara signifikan meningkatkan nilai edukatif aplikasi bagi siswa.
+  - Antarmuka yang bersih dari elemen redundan memperkuat fokus pengguna pada hasil evaluasi.
+- **Current Status**: **Production Live (V 1.13.0 - Review Edition)**.
+- **Next Actions**: Optimalisasi performa pemuatan data esai skala besar.
+
 ### [2026-05-31] - Peningkatan Skala Visual Logo (2x Size)
 - **Latest Update**: 
   - Melakukan peningkatan skala logo di seluruh bagian website (Beranda, Flipcard, dan Tes) menjadi 2x lipat dari ukuran semula.
