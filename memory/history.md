@@ -1,3 +1,31 @@
+### [2026-05-31] - Peningkatan Navigasi & Kontrol Simulasi Ujian (User Freedom)
+- **Latest Update**: 
+  - Penambahan tombol 'Beranda' dan 'Daftar Paket Tes' pada header simulasi ujian untuk mobilitas pengguna yang lebih baik.
+  - Implementasi Navigasi CBT (Grid Nomor 1-35) pada halaman Tes dengan indikator status jawaban (Belum/Sudah dijawab).
+  - Pembersihan artefak teks '&RARR;' pada antarmuka header.
+  - Penambahan fitur 'Selesai' mandiri dengan dialog konfirmasi (`window.confirm`) untuk mencegah terminasi tes yang tidak disengaja.
+  - Integrasi tipografi IBM Plex Mono pada elemen kontrol untuk kesan akademik yang teknis.
+  - Sinkronisasi GitHub dan Deployment Live ke Vercel.
+- **Lesson Learned**: 
+  - Memberikan jalan keluar (exit paths) yang jelas bagi pengguna selama simulasi ujian secara signifikan menurunkan tingkat kecemasan belajar.
+  - Navigasi nomor non-linear (CBT) memungkinkan siswa mengelola waktu ujian dengan lebih strategis.
+- **Current Status**: **Production Live (V 1.8.0 - Control Edition)**.
+- **Next Actions**: Optimalisasi backend untuk penyimpanan riwayat skor esai yang lebih persisten.
+
+### [2026-05-31] - Redesain Layout Imersif & Fluid (Anti-Space Optimization)
+- **Latest Update**: 
+  - Transformasi total arsitektur layout ke gaya 'Fluid Expansive' dan 'Proportional Scaling'.
+  - Penghapusan deskripsi pada Beranda untuk menonjolkan tipografi judul raksasa (10rem).
+  - Pemanfaatan ruang layar maksimal (90-98% lebar viewport) untuk menghilangkan area kosong yang tidak estetik.
+  - Implementasi layout split-screen (lg:flex-row) pada halaman Tes untuk pengalaman ujian yang lebih dominan dan profesional.
+  - Distribusi Header dan Footer ke titik ekstrem (atas & bawah) untuk menciptakan kesan aplikasi yang 'penuh'.
+  - Sinkronisasi GitHub dan Deployment Live ke Vercel.
+- **Lesson Learned**: 
+  - Skala tipografi yang ekstrem (Giant Type) dapat menggantikan peran deskripsi tekstual dalam membangun otoritas visual dan estetika modern.
+  - Penggunaan layout fluid (edge-to-edge proportions) secara signifikan meningkatkan tingkat imersi pengguna dibandingkan layout centered-static.
+- **Current Status**: **Production Live (V 1.7.0 - Expansive Edition)**.
+- **Next Actions**: Melanjutkan integrasi fitur statistik progres yang lebih visual dan mendalam.
+
 ### [2026-05-31] - Implementasi Penilaian Sistem (Esai AI Deepseek)
 - **Latest Update**: 
   - Mengaktifkan fitur penilaian esai otomatis secara real-time menggunakan API Deepseek.

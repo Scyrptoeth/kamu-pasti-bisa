@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import Flipcard from "@/components/ui/Flipcard";
 import soalData from "@/data/soal-ekonomi.json";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function FlipcardPage() {
   const [selectedPaket, setSelectedPaket] = useState(0);
@@ -45,6 +46,19 @@ export default function FlipcardPage() {
 
   return (
     <main className="max-w-[95%] mx-auto px-6 py-12 min-h-dvh flex flex-col justify-between">
+      {/* Brand Identity */}
+      <div className="mb-12">
+        <Link href="/">
+          <Image 
+            src="/logo.png" 
+            alt="Logo Kamu Pasti Bisa" 
+            width={140} 
+            height={32} 
+            className="h-8 w-auto object-contain"
+          />
+        </Link>
+      </div>
+
       {/* Header Minimalis */}
       <header className="flex flex-col md:flex-row justify-between items-baseline mb-8 gap-4 border-b border-gray-100 pb-8">
         <div>

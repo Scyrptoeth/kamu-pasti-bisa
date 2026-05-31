@@ -1,10 +1,24 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="max-w-[90%] mx-auto px-6 min-h-dvh flex flex-col justify-between py-12 md:py-24">
+      <div className="mb-12">
+        <Link href="/">
+          <Image 
+            src="/logo.png" 
+            alt="Logo Kamu Pasti Bisa" 
+            width={160} 
+            height={40} 
+            className="h-8 md:h-10 w-auto object-contain"
+            priority
+          />
+        </Link>
+      </div>
+
       <header className="mb-12">
         <h1 className="text-6xl md:text-[10rem] font-bold tracking-tighter leading-none text-ink uppercase">
           Kamu Pasti Bisa.

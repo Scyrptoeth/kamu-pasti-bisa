@@ -3,6 +3,7 @@
 import { useState } from "react";
 import soalData from "@/data/soal-ekonomi.json";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function TesPage() {
   const [selectedPaketIdx, setSelectedPaketIdx] = useState<number | null>(null);
@@ -88,6 +89,18 @@ export default function TesPage() {
   if (!isStarted) {
     return (
       <main className="min-h-dvh bg-white flex flex-col justify-between p-6 md:p-12">
+        <div className="mb-12">
+          <Link href="/">
+            <Image 
+              src="/logo.png" 
+              alt="Logo Kamu Pasti Bisa" 
+              width={140} 
+              height={32} 
+              className="h-8 w-auto object-contain"
+            />
+          </Link>
+        </div>
+
         <header className="flex justify-between items-baseline border-b-2 border-ink pb-8">
           <h1 className="text-6xl md:text-[8rem] font-bold tracking-tighter text-ink uppercase leading-none">Simulasi.</h1>
           <Link href="/" className="text-sm font-bold uppercase tracking-widest text-muted hover:text-ink transition-colors border-b-2 border-gray-100 hover:border-ink pb-1 font-mono">
@@ -131,6 +144,18 @@ export default function TesPage() {
   if (isFinished && results) {
     return (
       <main className="min-h-dvh bg-white py-12 px-6 md:px-12 flex flex-col justify-between">
+        <div className="mb-12">
+          <Link href="/">
+            <Image 
+              src="/logo.png" 
+              alt="Logo Kamu Pasti Bisa" 
+              width={140} 
+              height={32} 
+              className="h-8 w-auto object-contain"
+            />
+          </Link>
+        </div>
+
         <header className="flex justify-between items-baseline border-b-2 border-ink pb-8 mb-12">
           <h1 className="text-6xl md:text-[8rem] font-bold tracking-tighter text-ink uppercase leading-none">Hasil.</h1>
           <p className="text-sm font-bold text-muted uppercase tracking-[0.4em] font-mono">Dokumen Resmi</p>
@@ -206,6 +231,18 @@ export default function TesPage() {
   return (
     <main className="max-w-[98%] mx-auto px-6 py-12 min-h-dvh flex flex-col justify-between">
       
+      <div className="mb-12">
+        <Link href="/">
+          <Image 
+            src="/logo.png" 
+            alt="Logo Kamu Pasti Bisa" 
+            width={120} 
+            height={28} 
+            className="h-7 w-auto object-contain"
+          />
+        </Link>
+      </div>
+
       <header className="flex justify-between items-center border-b-2 border-gray-100 pb-8 mb-12">
         <div className="flex items-center gap-8 lg:gap-12">
           <div className="space-y-1">
