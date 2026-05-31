@@ -1,24 +1,34 @@
-### [2026-05-31] - Optimalisasi Skala Flipcard (Large Workspace)
+### [2026-05-31] - Finalisasi Konten Ekonomi (Paket 1-5)
 - **Latest Update**: 
-  - Memperbesar dimensi Flipcard menjadi minimal 480px (Tinggi) dan 768px (Lebar max).
-  - Meningkatkan padding kartu menjadi `p-12` untuk ruang baca yang lebih lega.
-  - Optimalisasi tipografi soal (2xl-3xl) dan jawaban (xl-2xl) agar nyaman dibaca pada layar besar.
-  - Penyesuaian kontrol navigasi dan grid CBT agar selaras dengan dimensi kartu yang baru.
-  - Verifikasi build sukses dan deployment live ke Vercel.
+  - Menyelesaikan ekstraksi Paket 2, 3, 4, dan 5 dari PDF '5-paket-soal.pdf'.
+  - Melengkapi database soal di `src/data/soal-ekonomi.json` dengan total 175 soal (150 Pilihan Ganda & 25 Esai).
+  - Verifikasi integritas data melalui build produksi yang sukses.
+  - Push database konten terbaru ke GitHub dan deploy live ke Vercel.
 - **Lesson Learned**: 
-  - Ukuran kartu yang dominan (Large Workspace) menciptakan hirarki visual yang lebih kuat dan mendukung fokus 'Zen Mode' bagi siswa.
-  - Memberikan whitespace yang cukup (`p-12`) secara drastis menurunkan beban kognitif saat memproses teks soal yang kompleks.
-- **Current Status**: **Production Live (V 1.4.0 - Workspace Edition)**.
-- **Next Actions**: Melanjutkan integrasi penilaian esai otomatis menggunakan AI Deepseek.
+  - Ekstraksi data besar dari PDF sebaiknya dilakukan secara modular per paket untuk menjaga akurasi dan menghindari kegagalan model akibat batas konteks.
+  - Struktur JSON yang redundan dengan 'id' di setiap level sangat membantu dalam proses debugging dan pencarian soal spesifik.
+- **Current Status**: **Content Complete (Ekonomi MVP)**.
+- **Next Actions**: Aktivasi penuh sistem penilaian esai berbasis AI Deepseek untuk interaksi real-time.
 
-### [2026-05-31] - Transformasi Navigasi Flipcard (Fokus Tunggal & Gaya CBT)
+### [2026-05-31] - Peningkatan Tipografi & Kontras Premium (Anti-Slop Final)
 - **Latest Update**: 
-  - Mengubah antarmuka 'Kartu Hafalan' (Flipcard) dari grid menjadi tampilan kartu tunggal per layar.
-  - Implementasi navigasi gaya CBT (Computer Based Test) dengan grid nomor 7 kolom.
-  - Penambahan indikator visual (subtle marker) untuk kartu yang sudah pernah dibuka/dibalik.
-- **Lesson Learned**: Tampilan kartu tunggal secara dramatis meningkatkan fokus belajar dibandingkan tampilan grid.
-- **Current Status**: **Production Live (V 1.3.0)**.
+  - Redesain sistem font menggunakan pairing **Plus Jakarta Sans** (konten utama) dan **IBM Plex Mono** (metadata/label).
+  - Implementasi palet warna high-contrast dengan warna tinta pekat (#151619) untuk memaksimalkan keterbacaan.
+  - Penambahan 'Soft Radial Gradient' pada latar belakang untuk kedalaman visual profesional.
+  - Perbaikan seluruh teks yang sebelumnya memiliki kontras rendah (abu-abu pudar) menjadi tajam dan jernih.
+  - Update menyeluruh pada seluruh komponen UI agar selaras dengan standar 'Premium & High-Contrast'.
+- **Lesson Learned**: 
+  - Penggunaan font pairing (Sans + Mono) memberikan struktur informasi yang jauh lebih matang dan berwibawa.
+  - Gradien latar belakang yang sangat halus secara drastis menghilangkan kesan 'datar' ala template AI tanpa mengganggu konsentrasi belajar.
+- **Current Status**: **Production Live (V 1.5.0 - Premium Edition)**.
+- **Next Actions**: Integrasi penuh penilaian esai otomatis menggunakan AI Deepseek.
 
-### [2026-05-31] - Zen Mode & Lokalisasi Total (Pembersihan AI Slop)
-- **Latest Update**: Pembersihan total gaya bahasa 'AI Slop' dan lokalisasi penuh ke Bahasa Indonesia formal.
-- **Current Status**: **Production Live (V 1.2.0)**.
+### [2025-05-22] - Typography & Color System Update
+- **Latest Update**: 
+  - Updated `src/app/layout.tsx` to use `Plus Jakarta Sans` (Sans) and `IBM Plex Mono` (Mono).
+  - Updated `src/app/globals.css` with new color system (`--ink`, `--muted`, `--canvas`) and radial gradient background.
+  - Audited and updated `Flipcard.tsx`, `page.tsx`, `flipcard/page.tsx`, and `tes/page.tsx` for high contrast and consistent typography.
+  - Successfully ran build, committed, and pushed changes to GitHub.
+- **Lesson Learned**: Adopting a proven design system (from Persiapan U-Kom) significantly improves the professional feel and accessibility of the application.
+- **Current Status**: Alpha (Design Refined)
+- **Next Actions**: Continue with content extraction and AI grading implementation.

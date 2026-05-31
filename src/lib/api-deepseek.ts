@@ -5,15 +5,19 @@ export async function gradeEssay(question: string, idealAnswer: string, studentA
   }
 
   const prompt = `
-    Anda adalah guru Ekonomi berpengalaman. 
-    Nilailah jawaban siswa berikut berdasarkan Pertanyaan dan Jawaban Ideal yang diberikan.
+    Anda adalah Sistem Evaluasi Akademik otomatis untuk mata pelajaran Ekonomi.
+    Tugas Anda adalah memberikan penilaian teknis dan objektif terhadap jawaban esai siswa.
+    
+    Kriteria Penilaian:
+    1. Kesesuaian dengan Jawaban Ideal.
+    2. Ketajaman argumen ekonomi.
+    3. Ketepatan terminologi yang digunakan.
     
     Pertanyaan: ${question}
     Jawaban Ideal: ${idealAnswer}
     Jawaban Siswa: ${studentAnswer}
     
-    Berikan skor bulat antara 0 hingga 10. 
-    Berikan output dalam format JSON: { "score": number, "explanation": string }
+    Output WAJIB JSON: { "score": number (skala 0-10), "explanation": string (Catatan Evaluasi teknis max 3 kalimat) }
   `;
 
   try {
