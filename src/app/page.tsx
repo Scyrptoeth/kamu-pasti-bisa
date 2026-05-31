@@ -4,53 +4,58 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <div className="bg-blue-600 text-white py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl font-extrabold mb-6 tracking-tight">Kamu Pasti Bisa!</h1>
-          <p className="text-xl text-blue-100 mb-10 leading-relaxed">
-            Platform persiapan ujian sekolah terbaik dengan metode Flipcard dan Simulasi Tes berbasis AI.
-            Kuasai materi Ekonomi dengan cara yang lebih efektif dan menyenangkan.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link 
-              href="/flipcard" 
-              className="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-blue-50 transition-all"
-            >
-              🚀 Mulai Belajar (Flipcard)
-            </Link>
-            <Link 
-              href="/tes" 
-              className="bg-blue-700 text-white border-2 border-blue-500 px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-blue-800 transition-all"
-            >
-              📝 Simulasi Tes
-            </Link>
+    <main className="min-h-screen bg-[#FAF9F6]">
+      {/* Editorial Navigation */}
+      <nav className="border-b border-[#1A3626] py-6 px-8 flex justify-between items-end">
+        <span className="font-serif text-2xl font-black uppercase tracking-tighter">KPB.</span>
+        <div className="flex gap-8 text-sm uppercase tracking-widest font-medium">
+          <Link href="/flipcard" className="hover:opacity-60 transition-opacity">Flipcard</Link>
+          <Link href="/tes" className="hover:opacity-60 transition-opacity">Simulation</Link>
+        </div>
+      </nav>
+
+      {/* Asymmetric Hero Section */}
+      <section className="px-8 pt-24 pb-32 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div className="lg:col-span-8">
+          <h1 className="text-[12vw] lg:text-[10vw] font-serif font-black leading-[0.85] tracking-tighter text-[#1A3626] mb-12">
+            KAMU<br />PASTI<br /><span className="italic pl-[5vw]">BISA.</span>
+          </h1>
+          <div className="max-w-xl border-l-4 border-[#1A3626] pl-8">
+            <p className="text-xl lg:text-2xl leading-relaxed text-[#1A3626]/80 font-medium">
+              Sebuah manifestasi digital untuk penguasaan materi Ekonomi. 
+              Melampaui batas belajar konvensional dengan metodologi flipcard 
+              dan evaluasi presisi berbasis kecerdasan buatan.
+            </p>
           </div>
         </div>
-      </div>
+        
+        <div className="lg:col-span-4 lg:pt-24 flex flex-col gap-6">
+          <Link 
+            href="/flipcard" 
+            className="group relative border border-[#1A3626] p-8 hover:bg-[#1A3626] hover:text-[#FAF9F6] transition-all duration-500"
+          >
+            <span className="block text-xs uppercase tracking-[0.3em] mb-4">Phase 01</span>
+            <span className="block text-3xl font-serif italic mb-2">Cognition</span>
+            <p className="text-sm opacity-70 group-hover:opacity-100 transition-opacity">Metode flipcard untuk penguatan memori jangka panjang.</p>
+            <span className="absolute bottom-8 right-8 text-2xl">→</span>
+          </Link>
 
-      {/* Features Section */}
-      <div className="max-w-6xl mx-auto py-24 px-6 grid md:grid-cols-3 gap-12">
-        <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100">
-          <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 text-2xl">🎴</div>
-          <h3 className="text-xl font-bold text-slate-900 mb-3">Metode Flipcard</h3>
-          <p className="text-slate-600">Kenali soal dan jawaban ideal sebelum diuji. Memperkuat daya ingat tanpa tekanan pilihan ganda.</p>
+          <Link 
+            href="/tes" 
+            className="group relative border border-[#1A3626] p-8 hover:bg-[#1A3626] hover:text-[#FAF9F6] transition-all duration-500"
+          >
+            <span className="block text-xs uppercase tracking-[0.3em] mb-4">Phase 02</span>
+            <span className="block text-3xl font-serif italic mb-2">Validation</span>
+            <p className="text-sm opacity-70 group-hover:opacity-100 transition-opacity">Simulasi tes dengan penilaian essay otomatis oleh AI.</p>
+            <span className="absolute bottom-8 right-8 text-2xl">→</span>
+          </Link>
         </div>
-        <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100">
-          <div className="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mb-6 text-2xl">🤖</div>
-          <h3 className="text-xl font-bold text-slate-900 mb-3">Penilaian AI</h3>
-          <p className="text-slate-600">Jawaban essay Anda dinilai secara otomatis oleh AI Deepseek dengan standar guru Ekonomi profesional.</p>
-        </div>
-        <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100">
-          <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-6 text-2xl">📊</div>
-          <h3 className="text-xl font-bold text-slate-900 mb-3">Statistik Progres</h3>
-          <p className="text-slate-600">Pantau perkembangan skor Anda dari percobaan pertama hingga mahir melalui grafik riwayat.</p>
-        </div>
-      </div>
+      </section>
 
-      <footer className="py-12 border-t border-slate-100 text-center text-slate-400 text-sm">
-        <p>© 2026 Kamu Pasti Bisa - Persiapantubel Project</p>
+      {/* Minimal Footer */}
+      <footer className="border-t border-[#1A3626] p-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] uppercase tracking-[0.4em] font-bold opacity-40">
+        <p>© 2026 KAMU PASTI BISA — THE EDITORIAL EDITION</p>
+        <p>PROJECT PERSIA PANTUBEL</p>
       </footer>
     </main>
   );

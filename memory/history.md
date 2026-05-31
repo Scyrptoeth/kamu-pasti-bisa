@@ -1,0 +1,16 @@
+### [2026-05-31] - Inisialisasi & Implementasi MVP
+- **Latest Update**: 
+  - Scaffolding Next.js 14+ dengan Tailwind CSS.
+  - Ekstraksi 1 paket soal Ekonomi dari PDF ke JSON terstruktur.
+  - Implementasi Fitur Flipcard (Fase Belajar).
+  - Implementasi Test Engine (30 PG + 5 Essay) dengan tracking progress.
+  - Integrasi UI/UX Modern dengan Blue-Slate theme.
+  - Deployment ke Vercel (https://kamu-pasti-bisa.vercel.app) dan GitHub (Scyrptoeth/kamu-pasti-bisa).
+- **Lesson Learned**: 
+  - Penggunaan CSS `perspective` dan `preserve-3d` memberikan efek premium pada flipcard tanpa library tambahan.
+  - Struktur JSON yang tepat sejak awal memudahkan transisi dari Flipcard ke Test Engine menggunakan data yang sama.
+- **Current Status**: MVP Ready (Package 1 Ekonomi).
+- **Next Actions**: 
+  - Sempurnakan ekstraksi Paket 2-5.
+  - Hubungkan Test Engine secara penuh ke API Deepseek untuk grading essay nyata.
+  - Implementasi halaman Statistik yang lebih visual menggunakan Chart.js/Recharts.

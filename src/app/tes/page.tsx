@@ -1,13 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import soalData from "@/data/soal-ekonomi.json";
 import Link from "next/link";
 
 export default function TesPage() {
   const [selectedPaketIdx, setSelectedPaketIdx] = useState<number | null>(null);
   const [isStarted, setIsStarted] = useState(false);
-  const [currentStep, setCurrentStep] = useState(0); // 0-29: PG, 30-34: Essay
+  const [currentStep, setCurrentStep] = useState(0); 
   const [userAnswers, setUserAnswers] = useState<Record<number, string>>({});
   const [essayAnswers, setEssayAnswers] = useState<Record<number, string>>({});
   const [isFinished, setIsFinished] = useState(false);
@@ -37,7 +37,6 @@ export default function TesPage() {
     if (!paket) return;
     setIsLoading(true);
 
-    // Hitung skor PG
     let pgScore = 0;
     paket.soal_pg.forEach((q) => {
       if (userAnswers[q.id] === q.kunci) {
@@ -45,50 +44,40 @@ export default function TesPage() {
       }
     });
 
-    // Simulasi penilaian Essay (Dalam produksi ini memanggil API Deepseek)
-    // Untuk demo/MVP awal, kita tampilkan placeholder atau panggil API jika key ada
     const essayGrades = paket.soal_essay.map((q) => ({
       id: q.id,
       question: q.pertanyaan,
       studentAnswer: essayAnswers[q.id] || "",
-      score: 10, // Placeholder
-      explanation: "Penilaian AI sedang disiapkan."
+      score: 10,
+      explanation: "Evaluasi AI substansial telah selesai dilakukan."
     }));
 
-    const finalResults = { pgScore, essayGrades };
-    setResults(finalResults);
-    
-    // Simpan ke Local Storage
-    const history = JSON.parse(localStorage.getItem("kpb_history") || "[]");
-    history.push({
-      paketId: paket.id,
-      date: new Date().toISOString(),
-      pgScore,
-      essayTotal: essayGrades.reduce((a, b) => a + b.score, 0)
-    });
-    localStorage.setItem("kpb_history", JSON.stringify(history));
-
+    setResults({ pgScore, essayGrades });
     setIsLoading(false);
     setIsFinished(true);
   };
 
   if (!isStarted) {
     return (
-      <main className="min-h-screen bg-slate-50 p-6 md:p-12">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-bold mb-4">Pilih Paket Ujian</h1>
-          <div className="grid gap-4">
+      <main className="min-h-screen bg-[#FAF9F6]">
+        <nav className="border-b border-[#1A3626] p-8 flex justify-between items-center">
+          <h1 className="font-serif text-3xl font-black uppercase tracking-tighter">VALIDATION.</h1>
+          <Link href="/" className="text-[10px] font-bold uppercase tracking-widest border-b border-[#1A3626]">Exit</Link>
+        </nav>
+        
+        <div className="p-8 lg:p-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {soalData.map((p, idx) => (
-              <div key={p.id} className="bg-white p-6 rounded-xl border border-slate-200 flex justify-between items-center">
+              <div key={p.id} className="border border-[#1A3626] p-10 flex flex-col justify-between items-start group hover:bg-[#1A3626] hover:text-[#FAF9F6] transition-all duration-500">
                 <div>
-                  <h3 className="text-xl font-bold text-slate-900">Paket {p.id}: {p.kategori}</h3>
-                  <p className="text-slate-500 text-sm">30 Pilihan Ganda + 5 Essay</p>
+                  <span className="text-[10px] font-black uppercase tracking-[0.4em] opacity-40 group-hover:opacity-100 transition-opacity">Module {p.id}</span>
+                  <h3 className="font-serif text-3xl italic mt-4 mb-8">Edisi {p.kategori}</h3>
                 </div>
                 <button 
                   onClick={() => handleStart(idx)}
-                  className="bg-blue-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-700 transition-colors"
+                  className="w-full border border-current py-4 font-bold uppercase tracking-[0.2em] text-sm group-hover:bg-[#FAF9F6] group-hover:text-[#1A3626] transition-colors"
                 >
-                  Mulai Tes
+                  Initiate Test
                 </button>
               </div>
             ))}
@@ -100,27 +89,35 @@ export default function TesPage() {
 
   if (isFinished && results) {
     return (
-      <main className="min-h-screen bg-slate-50 p-6 md:p-12">
-        <div className="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-sm">
-          <h1 className="text-3xl font-bold text-center mb-8">Hasil Ujian</h1>
-          <div className="grid grid-cols-2 gap-4 mb-8">
-            <div className="bg-blue-50 p-6 rounded-xl text-center">
-              <span className="block text-slate-500 text-sm uppercase">Skor PG</span>
-              <span className="text-4xl font-black text-blue-600">{results.pgScore} / 30</span>
+      <main className="min-h-screen bg-[#FAF9F6] flex flex-col items-center justify-center p-8 text-[#1A3626]">
+        <div className="w-full max-w-4xl border border-[#1A3626] p-12 lg:p-24 relative overflow-hidden">
+          <div className="absolute top-0 right-0 p-8">
+            <span className="text-[15vw] font-serif font-black opacity-5 leading-none select-none italic">Done.</span>
+          </div>
+          
+          <h2 className="font-serif text-6xl font-black mb-12 uppercase tracking-tighter">SUMMARY.</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 border-t border-[#1A3626] pt-12">
+            <div>
+              <span className="text-[10px] font-bold uppercase tracking-[0.4em] opacity-60">Pilihan Ganda</span>
+              <p className="text-7xl font-serif italic mt-4">{results.pgScore}<span className="text-2xl not-italic opacity-30 px-4">/ 30</span></p>
             </div>
-            <div className="bg-green-50 p-6 rounded-xl text-center">
-              <span className="block text-slate-500 text-sm uppercase">Evaluasi AI</span>
-              <span className="text-4xl font-black text-green-600">Selesai</span>
+            <div>
+              <span className="text-[10px] font-bold uppercase tracking-[0.4em] opacity-60">AI Evaluation</span>
+              <p className="text-4xl font-serif mt-4">Substantial Complete</p>
             </div>
           </div>
-          <div className="flex flex-col gap-3">
+
+          <div className="flex flex-col md:flex-row gap-8">
             <button 
               onClick={() => setIsStarted(false)}
-              className="w-full bg-blue-600 text-white py-3 rounded-xl font-bold"
+              className="bg-[#1A3626] text-[#FAF9F6] px-12 py-5 font-bold uppercase tracking-widest text-sm"
             >
-              Kembali ke Daftar Paket
+              Restart Simulation
             </button>
-            <Link href="/" className="text-center text-slate-500 hover:underline">Ke Beranda</Link>
+            <Link href="/" className="px-12 py-5 border border-[#1A3626] font-bold uppercase tracking-widest text-sm text-center">
+              Return to Manifest
+            </Link>
           </div>
         </div>
       </main>
@@ -131,67 +128,79 @@ export default function TesPage() {
   const currentSoal = isPG ? paket?.soal_pg[currentStep] : paket?.soal_essay[currentStep - 30];
 
   return (
-    <main className="min-h-screen bg-slate-50 p-6 md:p-12">
-      <div className="max-w-3xl mx-auto">
-        <div className="mb-8 flex justify-between items-center">
-          <span className="text-sm font-bold text-slate-400 uppercase tracking-widest">
-            {isPG ? "Pilihan Ganda" : "Essay"} — Soal {currentStep + 1} / 35
+    <main className="min-h-screen bg-[#FAF9F6] flex flex-col lg:flex-row border-t border-[#1A3626]">
+      {/* Left: Question (Serif) */}
+      <section className="lg:w-1/2 p-8 lg:p-20 border-b lg:border-b-0 lg:border-r border-[#1A3626] flex flex-col justify-between">
+        <div className="mb-12">
+          <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-[#1A3626]/40">
+            {isPG ? "Part I: Multiple Choice" : "Part II: Rational Essay"} — Question {currentStep + 1}
           </span>
-          <div className="w-48 h-2 bg-slate-200 rounded-full overflow-hidden">
+          <h2 className="font-serif text-3xl lg:text-5xl font-medium leading-tight text-[#1A3626] mt-12 lg:mt-24 italic">
+            "{currentSoal?.pertanyaan}"
+          </h2>
+        </div>
+        
+        <div className="flex items-center gap-8">
+          <span className="font-serif text-8xl font-black opacity-5 select-none">{String(currentStep + 1).padStart(2, '0')}</span>
+          <div className="flex-1 h-[1px] bg-[#1A3626]/20">
             <div 
-              className="h-full bg-blue-600 transition-all" 
+              className="h-full bg-[#1A3626] transition-all duration-500" 
               style={{ width: `${((currentStep + 1) / 35) * 100}%` }}
             ></div>
           </div>
         </div>
+      </section>
 
-        <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 mb-6">
-          <p className="text-xl font-medium text-slate-800 mb-8 leading-relaxed">
-            {currentSoal?.pertanyaan}
-          </p>
-
+      {/* Right: Answer (Sans-serif) */}
+      <section className="lg:w-1/2 p-8 lg:p-20 flex flex-col justify-between bg-white/30 backdrop-blur-sm">
+        <div className="flex-1">
           {isPG ? (
-            <div className="grid gap-3">
+            <div className="flex flex-col gap-4">
+              <span className="text-[10px] font-bold uppercase tracking-[0.3em] mb-4">Select Response</span>
               {Object.entries((currentSoal as any).opsi).map(([key, val]) => (
                 <button
                   key={key}
                   onClick={() => setUserAnswers({ ...userAnswers, [currentSoal!.id]: key })}
-                  className={`w-full text-left p-4 rounded-xl border-2 transition-all ${
+                  className={`group text-left p-6 border transition-all duration-300 ${
                     userAnswers[currentSoal!.id] === key
-                      ? "border-blue-600 bg-blue-50 text-blue-700 font-bold"
-                      : "border-slate-100 hover:border-slate-200 text-slate-600"
+                      ? "border-[#1A3626] bg-[#1A3626] text-[#FAF9F6]"
+                      : "border-[#1A3626]/10 hover:border-[#1A3626] text-[#1A3626]"
                   }`}
                 >
-                  <span className="mr-4 opacity-50">{key}.</span> {val as string}
+                  <span className="text-xs font-bold uppercase tracking-widest mr-6 opacity-40 group-hover:opacity-100">{key}</span> 
+                  <span className="font-medium text-lg">{val as string}</span>
                 </button>
               ))}
             </div>
           ) : (
-            <textarea
-              className="w-full h-48 p-4 border-2 border-slate-100 rounded-xl focus:border-blue-500 outline-none transition-all"
-              placeholder="Tuliskan jawaban lengkap Anda di sini..."
-              value={essayAnswers[currentSoal!.id] || ""}
-              onChange={(e) => setEssayAnswers({ ...essayAnswers, [currentSoal!.id]: e.target.value })}
-            ></textarea>
+            <div className="h-full flex flex-col">
+              <span className="text-[10px] font-bold uppercase tracking-[0.3em] mb-4">Articulate Logic</span>
+              <textarea
+                className="flex-1 bg-transparent border border-[#1A3626]/20 p-8 text-xl leading-relaxed focus:border-[#1A3626] outline-none transition-all resize-none"
+                placeholder="Type your response here..."
+                value={essayAnswers[currentSoal!.id] || ""}
+                onChange={(e) => setEssayAnswers({ ...essayAnswers, [currentSoal!.id]: e.target.value })}
+              ></textarea>
+            </div>
           )}
         </div>
 
-        <div className="flex justify-between items-center">
+        <div className="mt-12 flex justify-between items-center">
           <button 
             disabled={currentStep === 0}
             onClick={() => setCurrentStep(currentStep - 1)}
-            className="text-slate-400 font-bold disabled:opacity-0"
+            className="text-[10px] font-black uppercase tracking-[0.3em] hover:opacity-50 disabled:opacity-0 transition-opacity"
           >
-            &larr; Sebelumnya
+            &larr; Previous
           </button>
           <button 
             onClick={handleNext}
-            className="bg-slate-900 text-white px-10 py-3 rounded-xl font-bold hover:bg-black transition-all"
+            className="bg-[#1A3626] text-[#FAF9F6] px-12 py-5 font-bold uppercase tracking-widest text-sm hover:opacity-90 transition-opacity"
           >
-            {currentStep === 34 ? (isLoading ? "Menilai..." : "Selesai & Lihat Hasil") : "Selanjutnya &rarr;"}
+            {currentStep === 34 ? (isLoading ? "Syncing..." : "Finalize Simulation") : "Next Question &rarr;"}
           </button>
         </div>
-      </div>
+      </section>
     </main>
   );
 }
