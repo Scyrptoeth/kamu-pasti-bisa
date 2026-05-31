@@ -26,8 +26,13 @@ export default function TesPage() {
   };
 
   const handleNext = () => {
-    if (currentStep < 34) setCurrentStep(currentStep + 1);
-    else finishTest();
+    if (currentStep < 34) {
+      setCurrentStep(currentStep + 1);
+    } else {
+      if (window.confirm("Apakah Anda yakin ingin mengakhiri tes ini? Hasil akan langsung dikalkulasi.")) {
+        finishTest();
+      }
+    }
   };
 
   const finishTest = async () => {
@@ -202,18 +207,46 @@ export default function TesPage() {
     <main className="max-w-[98%] mx-auto px-6 py-12 min-h-dvh flex flex-col justify-between">
       
       <header className="flex justify-between items-center border-b-2 border-gray-100 pb-8 mb-12">
-        <div className="flex items-center gap-12">
+        <div className="flex items-center gap-8 lg:gap-12">
           <div className="space-y-1">
             <span className="text-[10px] font-bold text-muted uppercase tracking-[0.4em] font-mono">{isPG ? "Bagian I: Pilihan Ganda" : "Bagian II: Esai"}</span>
-            <h2 className="text-4xl font-black text-ink tabular-nums font-mono leading-none">{currentStep + 1} <span className="text-sm text-muted font-bold">/ 35</span></h2>
+            <h2 className="text-4xl font-black text-ink tabular-nums font-mono leading-none">
+              {currentStep + 1} <span className="text-sm text-muted font-bold font-mono">/ 35</span>
+            </h2>
           </div>
           <div className="hidden md:block w-64 h-2 bg-gray-50 rounded-full overflow-hidden border border-gray-100">
             <div className="h-full bg-ink transition-all duration-700 ease-out" style={{ width: `${progressPercent}%` }} />
           </div>
         </div>
-        <div className="flex items-center gap-4">
-          <span className="text-[10px] font-bold text-muted uppercase tracking-widest font-mono">Zen Mode</span>
-          <div className="w-2 h-2 rounded-full bg-mint animate-pulse" />
+
+        <div className="flex items-center gap-4 lg:gap-8">
+          <Link href="/" className="text-[10px] font-bold text-muted hover:text-ink uppercase tracking-widest font-mono border-b border-transparent hover:border-ink pb-1 transition-all">
+            Beranda
+          </Link>
+          <button 
+            onClick={() => {
+              if (window.confirm("Kembali ke pemilihan paket? Progres tes saat ini akan hilang.")) {
+                setIsStarted(false);
+              }
+            }}
+            className="text-[10px] font-bold text-muted hover:text-ink uppercase tracking-widest font-mono border-b border-transparent hover:border-ink pb-1 transition-all"
+          >
+            Daftar Paket Tes
+          </button>
+          <button 
+            onClick={() => {
+              if (window.confirm("Apakah Anda yakin ingin mengakhiri tes ini? Hasil akan langsung dikalkulasi.")) {
+                finishTest();
+              }
+            }}
+            className="bg-ink text-white px-4 py-2 text-[10px] font-bold uppercase tracking-widest font-mono hover:opacity-90 transition-all rounded-sm"
+          >
+            Selesai
+          </button>
+          <div className="hidden sm:flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full bg-mint animate-pulse" />
+            <span className="text-[10px] font-bold text-muted uppercase tracking-widest font-mono">Live</span>
+          </div>
         </div>
       </header>
 
@@ -260,7 +293,36 @@ export default function TesPage() {
         </div>
       </div>
 
-      <footer className="mt-20 flex justify-between items-center border-t-2 border-gray-100 pt-12 pb-4">
+      <div className="mt-16 mb-8 w-full border-t border-gray-50 pt-12">
+        <p className="text-[10px] font-bold text-muted uppercase tracking-[0.3em] font-mono mb-6">Navigasi Kontrol CBT</p>
+        <div className="flex flex-wrap gap-2 lg:gap-3">
+          {Array.from({ length: 35 }).map((_, idx) => {
+            const isCurrent = currentStep === idx;
+            const isPGSoal = idx < 30;
+            const soalId = isPGSoal ? paket?.soal_pg[idx]?.id : paket?.soal_essay[idx - 30]?.id;
+            const hasAnswer = isPGSoal ? !!userAnswers[soalId!] : (essayAnswers[soalId!] && essayAnswers[soalId!].trim().length > 0);
+            
+            let statusStyles = "bg-white border-gray-200 text-muted";
+            if (isCurrent) {
+              statusStyles = "bg-ink border-ink text-white shadow-xl scale-110 z-10";
+            } else if (hasAnswer) {
+              statusStyles = "bg-gray-100 border-gray-100 text-ink";
+            }
+
+            return (
+              <button
+                key={idx}
+                onClick={() => setCurrentStep(idx)}
+                className={`w-10 h-10 md:w-12 md:h-12 flex items-center justify-center text-xs font-bold font-mono border-2 transition-all rounded-sm hover:border-ink ${statusStyles}`}
+              >
+                {String(idx + 1).padStart(2, '0')}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      <footer className="mt-12 flex justify-between items-center border-t-2 border-gray-100 pt-12 pb-4">
         <button 
           disabled={currentStep === 0 || isLoading}
           onClick={() => setCurrentStep(currentStep - 1)}
