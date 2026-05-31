@@ -6,360 +6,210 @@
       {
         "id": 1,
         "pertanyaan": "Seseorang menggunakan uangnya untuk membeli sayuran di pasar. Pernyataan ini menunjukkan kegunaan uang sebagai...",
-        "opsi": {
-          "A": "Alat penimbun kekayaan",
-          "B": "Alat tukar menukar",
-          "C": "Alat pemindah kekayaan",
-          "D": "Alat pembayaran utang"
-        },
+        "opsi": { "A": "Alat penimbun kekayaan", "B": "Alat tukar menukar", "C": "Alat pemindah kekayaan", "D": "Alat pembayaran utang" },
         "kunci": "B",
         "pembahasan": "Fungsi asli uang ada dua, yaitu sebagai alat tukar menukar (mempermudah transaksi barang/jasa) dan sebagai satuan hitung."
       },
       {
         "id": 2,
         "pertanyaan": "Ibu Sari menabung sisa uang belanja setiap bulan di bank untuk keperluan biaya sekolah anaknya 3 tahun mendatang. Dalam hal ini, uang menjalankan fungsi sebagai...",
-        "opsi": {
-          "A": "Satuan hitung",
-          "B": "Alat pembayaran",
-          "C": "Alat penimbun kekayaan (standard of value)",
-          "D": "Alat pemindah kekayaan"
-        },
+        "opsi": { "A": "Satuan hitung", "B": "Alat pembayaran", "C": "Alat penimbun kekayaan (standard of value)", "D": "Alat pemindah kekayaan" },
         "kunci": "C",
         "pembahasan": "Uang dapat digunakan untuk menggeser daya beli dari masa sekarang ke masa depan."
       },
       {
         "id": 3,
         "pertanyaan": "Syarat psikologis agar uang dapat diterima oleh masyarakat adalah...",
-        "opsi": {
-          "A": "Dapat dibagi tanpa mengurangi nilai",
-          "B": "Mempunyai nilai yang stabil",
-          "C": "Terdapat kepercayaan masyarakat (acceptability)",
-          "D": "Tahan lama dan tidak mudah rusak"
-        },
+        "opsi": { "A": "Dapat dibagi tanpa mengurangi nilai", "B": "Mempunyai nilai yang stabil", "C": "Terdapat kepercayaan masyarakat (acceptability)", "D": "Tahan lama dan tidak mudah rusak" },
         "kunci": "C",
         "pembahasan": "Masyarakat harus percaya bahwa uang tersebut memiliki nilai dan dapat digunakan untuk transaksi."
       },
       {
         "id": 4,
         "pertanyaan": "Uang yang nilai intrinsiknya (bahan) sama dengan nilai nominalnya (angka yang tertulis) disebut sebagai...",
-        "opsi": {
-          "A": "Token money",
-          "B": "Full bodied money",
-          "C": "Fiat money",
-          "D": "Credit money"
-        },
+        "opsi": { "A": "Token money", "B": "Full bodied money", "C": "Fiat money", "D": "Credit money" },
         "kunci": "B",
         "pembahasan": "Contoh full bodied money adalah koin emas atau perak di masa lalu."
       },
       {
         "id": 5,
         "pertanyaan": "Berikut ini yang termasuk instrumen pembayaran non-tunai berbasis warkat (kertas) adalah...",
-        "opsi": {
-          "A": "Kartu Kredit",
-          "B": "Cek dan Bilyet Giro",
-          "C": "E-money",
-          "D": "QRIS"
-        },
+        "opsi": { "A": "Kartu Kredit", "B": "Cek dan Bilyet Giro", "C": "E-money", "D": "QRIS" },
         "kunci": "B",
         "pembahasan": "Cek dan bilyet giro adalah perintah bayar tertulis di atas kertas warkat."
       },
       {
         "id": 6,
         "pertanyaan": "Lembaga negara yang memiliki tugas tunggal mencapai dan memelihara kestabilan nilai rupiah adalah...",
-        "opsi": {
-          "A": "Kementerian Keuangan",
-          "B": "Otoritas Jasa Keuangan (OJK)",
-          "C": "Bank Indonesia",
-          "D": "Lembaga Penjamin Simpanan (LPS)"
-        },
+        "opsi": { "A": "Kementerian Keuangan", "B": "Otoritas Jasa Keuangan (OJK)", "C": "Bank Indonesia", "D": "Lembaga Penjamin Simpanan (LPS)" },
         "kunci": "C",
         "pembahasan": "Bank Indonesia adalah bank sentral Republik Indonesia."
       },
       {
         "id": 7,
         "pertanyaan": "Kebijakan Bank Indonesia menaikkan suku bunga untuk meredam inflasi disebut kebijakan...",
-        "opsi": {
-          "A": "Operasi Pasar Terbuka",
-          "B": "Diskonto",
-          "C": "Cadangan Kas",
-          "D": "Kredit Selektif"
-        },
+        "opsi": { "A": "Operasi Pasar Terbuka", "B": "Diskonto", "C": "Cadangan Kas", "D": "Kredit Selektif" },
         "kunci": "B",
         "pembahasan": "Kebijakan diskonto adalah pengaturan jumlah uang beredar melalui tingkat suku bunga bank sentral."
       },
       {
         "id": 8,
         "pertanyaan": "Sistem pembayaran di Indonesia diatur dan diawasi sepenuhnya oleh...",
-        "opsi": {
-          "A": "Presiden",
-          "B": "OJK",
-          "C": "Bank Indonesia",
-          "D": "Bursa Efek Indonesia"
-        },
+        "opsi": { "A": "Presiden", "B": "OJK", "C": "Bank Indonesia", "D": "Bursa Efek Indonesia" },
         "kunci": "C",
         "pembahasan": "Salah satu pilar tugas BI adalah mengatur dan menjaga kelancaran sistem pembayaran."
       },
       {
         "id": 9,
         "pertanyaan": "Prinsip sistem pembayaran 'Efisien' berarti...",
-        "opsi": {
-          "A": "Aman dari risiko penipuan",
-          "B": "Dapat digunakan secara luas (interoperabilitas)",
-          "C": "Biaya murah dan proses cepat",
-          "D": "Perlindungan konsumen terjamin"
-        },
+        "opsi": { "A": "Aman dari risiko penipuan", "B": "Dapat digunakan secara luas (interoperabilitas)", "C": "Biaya murah dan proses cepat", "D": "Perlindungan konsumen terjamin" },
         "kunci": "C",
         "pembahasan": "Efisiensi menekankan pada optimalisasi biaya dan waktu transaksi."
       },
       {
         "id": 10,
         "pertanyaan": "Alat pembayaran elektronik yang saldonya tersimpan pada chip atau server (bukan di rekening bank langsung) adalah...",
-        "opsi": {
-          "A": "Kartu Debit",
-          "B": "Kartu Kredit",
-          "C": "Uang Elektronik (E-Money/Dompet Digital)",
-          "D": "Bilyet Giro"
-        },
+        "opsi": { "A": "Kartu Debit", "B": "Kartu Kredit", "C": "Uang Elektronik (E-Money/Dompet Digital)", "D": "Bilyet Giro" },
         "kunci": "C",
         "pembahasan": "E-money bersifat stored value, berbeda dengan kartu debit yang terhubung langsung ke tabungan."
       },
       {
         "id": 11,
         "pertanyaan": "Lembaga yang berfungsi mengatur dan mengawasi seluruh kegiatan di dalam sektor jasa keuangan adalah...",
-        "opsi": {
-          "A": "Bank Indonesia",
-          "B": "OJK",
-          "C": "LPS",
-          "D": "Bappebti"
-        },
+        "opsi": { "A": "Bank Indonesia", "B": "OJK", "C": "LPS", "D": "Bappebti" },
         "kunci": "B",
         "pembahasan": "OJK mengambil alih fungsi pengawasan mikroprudensial dari BI sejak 2011."
       },
       {
         "id": 12,
         "pertanyaan": "Tugas OJK dalam memberikan izin pendirian bank merupakan fungsi...",
-        "opsi": {
-          "A": "Pengawasan",
-          "B": "Pengaturan",
-          "C": "Pemeriksaan",
-          "D": "Penyidikan"
-        },
+        "opsi": { "A": "Pengawasan", "B": "Pengaturan", "C": "Pemeriksaan", "D": "Penyidikan" },
         "kunci": "B",
         "pembahasan": "Regulasi dan perizinan masuk dalam wewenang pengaturan."
       },
       {
         "id": 13,
         "pertanyaan": "Bank yang melaksanakan kegiatan usaha secara konvensional atau syariah yang dalam kegiatannya tidak memberikan jasa dalam lalu lintas pembayaran disebut...",
-        "opsi": {
-          "A": "Bank Umum",
-          "B": "Bank Sentral",
-          "C": "Bank Perekonomian Rakyat (BPR)",
-          "D": "Bank Pembangunan Daerah"
-        },
+        "opsi": { "A": "Bank Umum", "B": "Bank Sentral", "C": "Bank Perekonomian Rakyat (BPR)", "D": "Bank Pembangunan Daerah" },
         "kunci": "C",
         "pembahasan": "BPR memiliki keterbatasan operasional dibandingkan bank umum."
       },
       {
         "id": 14,
         "pertanyaan": "Kegiatan menghimpun dana dari masyarakat dalam bentuk simpanan disebut...",
-        "opsi": {
-          "A": "Funding",
-          "B": "Lending",
-          "C": "Service",
-          "D": "Transfer"
-        },
+        "opsi": { "A": "Funding", "B": "Lending", "C": "Service", "D": "Transfer" },
         "kunci": "A",
         "pembahasan": "Funding adalah penarikan dana (pasiva), sedangkan lending adalah penyaluran dana (aktiva)."
       },
       {
         "id": 15,
         "pertanyaan": "Simpanan yang penarikannya hanya dapat dilakukan pada waktu tertentu sesuai perjanjian disebut...",
-        "opsi": {
-          "A": "Giro",
-          "B": "Tabungan",
-          "C": "Deposito Berjangka",
-          "D": "Cek"
-        },
+        "opsi": { "A": "Giro", "B": "Tabungan", "C": "Deposito Berjangka", "D": "Cek" },
         "kunci": "C",
         "pembahasan": "Deposito memiliki tenor/jangka waktu tertentu (misal 1, 3, 6 bulan)."
       },
       {
         "id": 16,
         "pertanyaan": "Manfaat asuransi bagi nasabah adalah...",
-        "opsi": {
-          "A": "Mendapatkan bunga tinggi",
-          "B": "Pengalihan risiko (transfer of risk)",
-          "C": "Alat pembayaran utang",
-          "D": "Tempat meminjam modal"
-        },
+        "opsi": { "A": "Mendapatkan bunga tinggi", "B": "Pengalihan risiko (transfer of risk)", "C": "Alat pembayaran utang", "D": "Tempat meminjam modal" },
         "kunci": "B",
         "pembahasan": "Nasabah membayar premi agar risiko kerugian ditanggung perusahaan asuransi."
       },
       {
         "id": 17,
         "pertanyaan": "Lembaga keuangan yang memberikan pinjaman dengan jaminan barang bergerak disebut...",
-        "opsi": {
-          "A": "Koperasi",
-          "B": "Pegadaian",
-          "C": "Leasing",
-          "D": "Pasar Modal"
-        },
+        "opsi": { "A": "Koperasi", "B": "Pegadaian", "C": "Leasing", "D": "Pasar Modal" },
         "kunci": "B",
         "pembahasan": "Semboyan Pegadaian: Mengatasi Masalah Tanpa Masalah."
       },
       {
         "id": 18,
         "pertanyaan": "Pihak yang mengelola dana pensiun bagi karyawan disebut...",
-        "opsi": {
-          "A": "Manajer Investasi",
-          "B": "Dana Pensiun",
-          "C": "Perbankan",
-          "D": "OJK"
-        },
+        "opsi": { "A": "Manajer Investasi", "B": "Dana Pensiun", "C": "Perbankan", "D": "OJK" },
         "kunci": "B",
         "pembahasan": "Dana pensiun menjamin kesejahteraan ekonomi nasabah di masa tua."
       },
       {
         "id": 19,
         "pertanyaan": "Pasar tempat bertemunya pihak yang kelebihan dana dan pihak yang membutuhkan dana jangka panjang melalui instrumen saham/obligasi disebut...",
-        "opsi": {
-          "A": "Pasar Uang",
-          "B": "Pasar Modal",
-          "C": "Pasar Valuta Asing",
-          "D": "Pasar Komoditas"
-        },
+        "opsi": { "A": "Pasar Uang", "B": "Pasar Modal", "C": "Pasar Valuta Asing", "D": "Pasar Komoditas" },
         "kunci": "B",
         "pembahasan": "Pasar modal dikelola oleh Bursa Efek Indonesia (BEI)."
       },
       {
         "id": 20,
         "pertanyaan": "Bukti kepemilikan seseorang atas sebuah perusahaan disebut...",
-        "opsi": {
-          "A": "Obligasi",
-          "B": "Saham",
-          "C": "Reksadana",
-          "D": "Warkat"
-        },
+        "opsi": { "A": "Obligasi", "B": "Saham", "C": "Reksadana", "D": "Warkat" },
         "kunci": "B",
         "pembahasan": "Pemegang saham berhak atas dividen (pembagian laba)."
       },
       {
         "id": 21,
         "pertanyaan": "Pernyataan yang benar mengenai perbedaan bank dan lembaga keuangan bukan bank (LKBB) adalah...",
-        "opsi": {
-          "A": "Bank tidak boleh memberikan kredit, LKBB boleh",
-          "B": "Bank boleh menghimpun dana secara langsung (giro/tabungan), LKBB tidak boleh",
-          "C": "LKBB diawasi BI, Bank diawasi OJK",
-          "D": "Hanya bank yang boleh mencari keuntungan"
-        },
+        "opsi": { "A": "Bank tidak boleh memberikan kredit, LKBB boleh", "B": "Bank boleh menghimpun dana secara langsung (giro/tabungan), LKBB tidak boleh", "C": "LKBB diawasi BI, Bank diawasi OJK", "D": "Hanya bank yang boleh mencari keuntungan" },
         "kunci": "B",
         "pembahasan": "LKBB biasanya menghimpun dana melalui penerbitan surat berharga atau premi asuransi."
       },
       {
         "id": 22,
         "pertanyaan": "Salah satu tujuan utama manajemen keuangan bagi perusahaan adalah...",
-        "opsi": {
-          "A": "Memperkecil jumlah karyawan",
-          "B": "Memaksimalkan nilai perusahaan/keuntungan",
-          "C": "Menghindari pembayaran pajak",
-          "D": "Membayar utang dengan utang baru"
-        },
+        "opsi": { "A": "Memperkecil jumlah karyawan", "B": "Memaksimalkan nilai perusahaan/keuntungan", "C": "Menghindari pembayaran pajak", "D": "Membayar utang dengan utang baru" },
         "kunci": "B",
         "pembahasan": "Manajemen keuangan bertujuan mengelola sumber daya dana secara efisien."
       },
       {
         "id": 23,
         "pertanyaan": "Prinsip ekonomi dalam kegiatan konsumsi adalah...",
-        "opsi": {
-          "A": "Menggunakan modal sedikit untuk untung banyak",
-          "B": "Mencapai kepuasan maksimal dengan pengorbanan tertentu",
-          "C": "Membeli barang mewah agar terlihat kaya",
-          "D": "Membeli semua barang yang sedang diskon"
-        },
+        "opsi": { "A": "Menggunakan modal sedikit untuk untung banyak", "B": "Mencapai kepuasan maksimal dengan pengorbanan tertentu", "C": "Membeli barang mewah agar terlihat kaya", "D": "Membeli semua barang yang sedang diskon" },
         "kunci": "B",
         "pembahasan": "Konsumen bertujuan mengoptimalkan utilitas (kepuasan)."
       },
       {
         "id": 24,
         "pertanyaan": "Berikut yang bukan merupakan ciri-ciri sistem ekonomi pasar (liberal) adalah...",
-        "opsi": {
-          "A": "Hak milik pribadi diakui",
-          "B": "Adanya persaingan bebas",
-          "C": "Harga ditentukan oleh mekanisme pasar",
-          "D": "Pemerintah merencanakan semua kegiatan ekonomi"
-        },
+        "opsi": { "A": "Hak milik pribadi diakui", "B": "Adanya persaingan bebas", "C": "Harga ditentukan oleh mekanisme pasar", "D": "Pemerintah merencanakan semua kegiatan ekonomi" },
         "kunci": "D",
         "pembahasan": "Pemerintah dominan adalah ciri sistem ekonomi komando/pusat."
       },
       {
         "id": 25,
         "pertanyaan": "Dalam sistem ekonomi Indonesia (Pancasila), cabang produksi yang penting bagi negara dan menguasai hajat hidup orang banyak dikuasai oleh...",
-        "opsi": {
-          "A": "Perusahaan asing",
-          "B": "Negara",
-          "C": "Individu kaya",
-          "D": "Organisasi internasional"
-        },
+        "opsi": { "A": "Perusahaan asing", "B": "Negara", "C": "Individu kaya", "D": "Organisasi internasional" },
         "kunci": "B",
         "pembahasan": "Sesuai Pasal 33 UUD 1945."
       },
       {
         "id": 26,
         "pertanyaan": "Inflasi yang terjadi karena kenaikan permintaan masyarakat yang sangat tinggi disebut...",
-        "opsi": {
-          "A": "Cost push inflation",
-          "B": "Demand pull inflation",
-          "C": "Imported inflation",
-          "D": "Hyperinflation"
-        },
+        "opsi": { "A": "Cost push inflation", "B": "Demand pull inflation", "C": "Imported inflation", "D": "Hyperinflation" },
         "kunci": "B",
         "pembahasan": "Tarikan permintaan menyebabkan harga naik."
       },
       {
         "id": 27,
         "pertanyaan": "Salah satu dampak negatif inflasi bagi penabung adalah...",
-        "opsi": {
-          "A": "Nilai riil uang yang disimpan menurun",
-          "B": "Jumlah uang di bank bertambah banyak",
-          "C": "Bunga bank menjadi nol",
-          "D": "Bank akan bangkrut"
-        },
+        "opsi": { "A": "Nilai riil uang yang disimpan menurun", "B": "Jumlah uang di bank bertambah banyak", "C": "Bunga bank menjadi nol", "D": "Bank akan bangkrut" },
         "kunci": "A",
         "pembahasan": "Daya beli uang tabungan berkurang akibat kenaikan harga barang."
       },
       {
         "id": 28,
         "pertanyaan": "Koperasi yang anggotanya terdiri dari orang perorangan disebut...",
-        "opsi": {
-          "A": "Koperasi Primer",
-          "B": "Koperasi Sekunder",
-          "C": "Induk Koperasi",
-          "D": "Gabungan Koperasi"
-        },
+        "opsi": { "A": "Koperasi Primer", "B": "Koperasi Sekunder", "C": "Induk Koperasi", "D": "Gabungan Koperasi" },
         "kunci": "A",
         "pembahasan": "Koperasi primer dibentuk sekurang-kurangnya 20 orang."
       },
       {
         "id": 29,
         "pertanyaan": "Sisa Hasil Usaha (SHU) koperasi dibagikan kepada anggota berdasarkan...",
-        "opsi": {
-          "A": "Besarnya setoran modal saja",
-          "B": "Jabatan dalam pengurus",
-          "C": "Jasa modal dan jasa transaksi anggota",
-          "D": "Kebutuhan masing-masing anggota"
-        },
+        "opsi": { "A": "Besarnya setoran modal saja", "B": "Jabatan dalam pengurus", "C": "Jasa modal dan jasa transaksi anggota", "D": "Kebutuhan masing-masing anggota" },
         "kunci": "C",
         "pembahasan": "Prinsip keadilan dalam koperasi."
       },
       {
         "id": 30,
         "pertanyaan": "Seseorang tidak bisa datang ke BPR dan meminta membuka sebuah rekening yang dananya dapat ditarik menggunakan cek untuk pembayaran dagang seketika. Karena sesuai Undang-Undang, BPR dilarang keras untuk menghimpun simpanan berbentuk...",
-        "opsi": {
-          "A": "Tabungan berjangka",
-          "B": "Deposito",
-          "C": "Valuta Konvensional",
-          "D": "Giro"
-        },
+        "opsi": { "A": "Tabungan berjangka", "B": "Deposito", "C": "Valuta Konvensional", "D": "Giro" },
         "kunci": "D",
         "pembahasan": "Produk BPR sangat dibatasi. BPR hanya boleh menerima tabungan dan deposito. BPR dilarang menerima simpanan berupa Giro dan dilarang terlibat dalam lalu lintas pembayaran langsung menggunakan instrumen seperti cek."
       }
@@ -389,6 +239,978 @@
         "id": 35,
         "pertanyaan": "Kasus penipuan investasi (investasi bodong) sangat marak terjadi di masyarakat. Tindakan langkah evaluasi komprehensif apa yang berhak dilakukan OJK secara preventif dan kuratif dalam menghadapi fenomena ini?",
         "jawaban_ideal": "OJK melakukan langkah perlindungan dari dua sisi: a. Langkah Preventif (Pencegahan): OJK sangat masif memberikan transparansi, informasi, dan edukasi literasi keuangan agar masyarakat paham ciri-ciri entitas ilegal. OJK juga memperketat izin industri keuangan (financial technology) yang sah. b. Langkah Kuratif/Hukum: OJK menyediakan saluran sistem pengaduan yang mudah bagi masyarakat yang dirugikan, memfasilitasi penyelesaian kerugian, dan secara aktif berkoordinasi dengan Satgas Waspada Investasi maupun pihak peradilan guna mengajukan gugatan pencabutan operasional hingga penuntutan balik pemulihan aset kekayaan pihak yang ditipu."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "kategori": "Ekonomi",
+    "soal_pg": [
+      {
+        "id": 1,
+        "pertanyaan": "Saat berada di mal, Rudi melihat sepasang sepatu merek X diberi label harga Rp350.000, sedangkan merek Y diberi label Rp400.000. Dari label tersebut, Rudi bisa mengetahui nilai masing-masing barang. Dalam hal ini, uang menjalankan fungsi aslinya sebagai...",
+        "opsi": { "A": "Alat penyimpan kekayaan", "B": "Alat pembayaran utang", "C": "Alat satuan hitung", "D": "Alat tukar menukar" },
+        "kunci": "C",
+        "pembahasan": "Fungsi asli uang salah satunya adalah sebagai satuan hitung atau penunjuk harga, yang digunakan untuk mengukur dan membandingkan nilai suatu barang atau jasa yang satu dengan yang lainnya."
+      },
+      {
+        "id": 2,
+        "pertanyaan": "Kehadiran Otoritas Jasa Keuangan (OJK) memiliki peran yang sangat strategis bagi masyarakat, terutama konsumen sektor keuangan. Tujuan paling esensial bagi masyarakat dengan dibentuknya OJK adalah...",
+        "opsi": { "A": "Mengatur suku bunga acuan kredit perbankan secara tunggal", "B": "Melindungi kepentingan konsumen dan masyarakat dari kerugian di sektor jasa keuangan", "C": "Mencetak dan mengedarkan uang Rupiah yang baru", "D": "Memberikan kredit tanpa agunan untuk UMKM" },
+        "kunci": "B",
+        "pembahasan": "Otoritas Jasa Keuangan (OJK) dibentuk dengan tujuan agar keseluruhan kegiatan sektor jasa keuangan terselenggara secara adil, serta mampu melindungi kepentingan konsumen dan masyarakat."
+      },
+      {
+        "id": 3,
+        "pertanyaan": "Pak Yoga membeli saham PT ABC sebanyak 2.000 lembar dengan harga Rp1.500 per lembar. Tiga bulan kemudian, kinerja perusahaan sangat baik sehingga harga saham naik, dan Pak Yoga menjual seluruh sahamnya pada harga Rp2.000 per lembar. Berapakah potensi capital gain yang diperoleh Pak Yoga?",
+        "opsi": { "A": "Rp500.000", "B": "Rp1.000.000", "C": "Rp3.000.000", "D": "Rp4.000.000" },
+        "kunci": "B",
+        "pembahasan": "Capital gain adalah selisih antara harga jual dan harga beli dikali jumlah lembar. Selisih harga: Rp2.000 - Rp1.500 = Rp500. Total keuntungan: Rp500 x 2.000 lembar = Rp1.000.000."
+      },
+      {
+        "id": 4,
+        "pertanyaan": "Perusahaan Asuransi dan Bank Umum sama-sama mengelola dana dari masyarakat. Jika dianalisis dari metode penghimpunan dananya, perbedaan utama antara kedua lembaga ini adalah...",
+        "opsi": { "A": "Bank hanya menerima simpanan berbentuk giro, Asuransi menerima tabungan", "B": "Bank menghimpun dana masyarakat secara langsung berupa simpanan, sedangkan Asuransi tidak menghimpun simpanan melainkan menerima premi untuk pengalihan risiko", "C": "Asuransi diizinkan mencetak uang giral, sedangkan Bank Umum dilarang", "D": "Asuransi melayani lalu lintas pembayaran internasional, Bank melayani ranah domestik" },
+        "kunci": "B",
+        "pembahasan": "Bank merupakan badan usaha yang menghimpun dana langsung dari masyarakat dalam bentuk simpanan. Sebaliknya, Asuransi sebagai Industri Keuangan Non-Bank (IKNB) berfungsi mengalihkan risiko dengan mengumpulkan dana berbentuk premi (bukan simpanan tabungan/giro)."
+      },
+      {
+        "id": 5,
+        "pertanyaan": "Dalam suatu waktu, sebuah perusahaan pialang di Bursa Efek ketahuan menjual instrumen bodong yang tidak terdaftar, merugikan ribuan investor. Evaluasi tindakan paling efektif yang menjadi wewenang OJK dalam kasus di pasar modal ini adalah...",
+        "opsi": { "A": "Bank Indonesia mengambil alih operasional bursa", "B": "Mengganti semua saham kerugian menggunakan dana kas negara", "C": "Melakukan investigasi, mengajukan gugatan ganti rugi aset korban, dan mencabut izin perusahaan tersebut", "D": "Menghentikan total perdagangan saham di Indonesia selamanya" },
+        "kunci": "C",
+        "pembahasan": "OJK memiliki wewenang untuk mengajukan gugatan guna memperoleh kembali harta pihak yang dirugikan dan menuntut ganti rugi, serta melakukan penegakan hukum di pasar modal."
+      },
+      {
+        "id": 6,
+        "pertanyaan": "Seorang peternak ayam menukarkan sepuluh ekor ayamnya dengan sejumlah uang kertas untuk kemudian dipakai membeli pakan ternak. Ilustrasi ini sangat jelas menunjukkan bahwa uang berfungsi untuk mengatasi masalah barter, yaitu sebagai...",
+        "opsi": { "A": "Alat tukar menukar", "B": "Alat pembayaran utang", "C": "Standar pencicilan", "D": "Alat penimbun kekayaan" },
+        "kunci": "A",
+        "pembahasan": "Ketika uang digunakan secara langsung sebagai perantara untuk menukarkan suatu barang (ayam) dengan barang lain (pakan), uang sedang bekerja dalam fungsi aslinya sebagai alat tukar menukar."
+      },
+      {
+        "id": 7,
+        "pertanyaan": "Sebelum OJK lahir, pengawasan bank dilakukan oleh BI, sementara pengawasan pasar modal dan IKNB dilakukan oleh kementerian lain. Latar belakang utama pemerintah menyatukan pengawasan ini ke dalam wadah tunggal OJK adalah agar...",
+        "opsi": { "A": "OJK dapat menjadi satu-satunya lembaga pencetak uang", "B": "Sistem pengaturan dan pengawasan sektor jasa keuangan menjadi terintegrasi dan saling terkait", "C": "Mengurangi beban pajak pada nasabah", "D": "Memudahkan masyarakat berutang dengan bunga 0%" },
+        "kunci": "B",
+        "pembahasan": "Latar belakang dan fungsi utama OJK adalah menyelenggarakan sistem pengaturan dan pengawasan yang terintegrasi terhadap keseluruhan aktivitas lintas sektor (Perbankan, IKNB, Pasar Modal)."
+      },
+      {
+        "id": 8,
+        "pertanyaan": "Ratna membeli saham sebuah perusahaan rintisan di harga Rp4.000 per lembar. Namun, krisis global membuat perusahaan tersebut hampir bangkrut sehingga sahamnya anjlok menjadi Rp1.500 per lembar. Jika Ratna panik dan menjualnya saat itu juga, secara analisis investasi Ratna mengalami...",
+        "opsi": { "A": "Dividen Negatif", "B": "Capital Gain", "C": "Capital Loss", "D": "Keseimbangan Harga" },
+        "kunci": "C",
+        "pembahasan": "Penurunan harga jual yang lebih rendah dibandingkan harga beli awal di pasar modal disebut dengan kerugian modal atau Capital Loss."
+      },
+      {
+        "id": 9,
+        "pertanyaan": "Produk Dana Pensiun Lembaga Keuangan (DPLK) sering dibandingkan dengan produk Tabungan Bank biasa. Manfaat utama DPLK yang membedakannya secara tajam dengan tabungan bank adalah...",
+        "opsi": { "A": "DPLK memberikan bunga harian yang bisa ditarik kapan saja", "B": "DPLK berfungsi khusus menyiapkan dana penghasilan hari tua saat tidak lagi produktif, yang umumnya tak bisa ditarik mendadak, berbeda dengan tabungan", "C": "DPLK bisa dipakai untuk lalu lintas pembayaran belanja di pasar", "D": "DPLK tidak memiliki risiko apapun" },
+        "kunci": "B",
+        "pembahasan": "Tabungan bank bebas ditarik sewaktu-waktu. Sedangkan Dana Pensiun spesifik berfungsi untuk menyediakan biaya hidup di hari tua ketika peserta telah mencapai usia pensiun, masa kerja selesai, atau tidak lagi produktif."
+      },
+      {
+        "id": 10,
+        "pertanyaan": "Akibat minimnya literasi, banyak warga tertipu investasi di Fintech Peer-to-Peer Lending ilegal yang mematok bunga tak masuk akal. Sebagai lembaga otoritas, tindakan pengawasan represif (kuratif) yang tepat dari OJK adalah...",
+        "opsi": { "A": "Mencetak uang agar warga yang rugi bisa diganti", "B": "Membekukan dan memblokir entitas fintech ilegal tersebut serta memfasilitasi perlindungan hukum bagi konsumen", "C": "Membiarkan saja agar masyarakat belajar dari kesalahan", "D": "Menurunkan suku bunga acuan bank sentral" },
+        "kunci": "B",
+        "pembahasan": "OJK tidak hanya mengedukasi, namun berwenang memberikan sanksi/penghentian operasional hingga mengajukan gugatan hukum demi melindungi aset kekayaan masyarakat korban entitas tak berizin."
+      },
+      {
+        "id": 11,
+        "pertanyaan": "Setiap hari Pak Mahmud membawa uang tunai untuk berbelanja persediaan sayur di pasar bagi rumah makannya. Tindakan Pak Mahmud merupakan manifestasi dari fungsi uang sebagai...",
+        "opsi": { "A": "Alat penyimpan nilai", "B": "Alat tukar menukar", "C": "Standar pembayaran masa depan", "D": "Alat spekulasi" },
+        "kunci": "B",
+        "pembahasan": "Penggunaan uang tunai untuk memperlancar proses transaksi langsung pembelian persediaan di pasar adalah wujud fungsi asli uang sebagai alat tukar."
+      },
+      {
+        "id": 12,
+        "pertanyaan": "Dalam membuat aturan khusus mengenai pengawasan di sektor perbankan (misalnya syarat permodalan bank), OJK memiliki wewenang tersebut namun dengan kewajiban berkoordinasi dengan lembaga...",
+        "opsi": { "A": "Kementerian Perdagangan", "B": "Bank Indonesia", "C": "Badan Pemeriksa Keuangan", "D": "Lembaga Penjamin Simpanan" },
+        "kunci": "B",
+        "pembahasan": "Berdasarkan Undang-Undang Nomor 21 Tahun 2011, OJK diwajibkan berkoordinasi dengan Bank Indonesia dalam membuat aturan pengawasan di bidang perbankan."
+      },
+      {
+        "id": 13,
+        "pertanyaan": "Seorang kontraktor memerlukan tambahan likuiditas sebesar Rp5 Miliar untuk proyek pembangunan jembatan yang akan diselesaikannya dalam waktu tiga tahun. Kontraktor tersebut membawa sertifikat tanah sebagai agunan. Produk lembaga perbankan yang tepat baginya adalah...",
+        "opsi": { "A": "Deposito berjangka Bank BPR", "B": "Layanan transfer kliring BPR", "C": "Pinjaman/Kredit Bank Umum", "D": "Asuransi Jiwa Bank Umum" },
+        "kunci": "C",
+        "pembahasan": "Kebutuhan modal proyek skala besar dengan jangka menengah-panjang paling tepat dipenuhi melalui penyaluran Kredit dari Bank Umum. BPR umumnya terbatas kapasitas penyalurannya dan deposito merupakan produk simpanan, bukan pinjaman."
+      },
+      {
+        "id": 14,
+        "pertanyaan": "Apabila tingkat suku bunga deposito perbankan ditetapkan sangat tinggi oleh bank sentral, fenomena yang paling logis terjadi di bursa saham (pasar modal) adalah...",
+        "opsi": { "A": "Harga saham melonjak karena banyak investasi masuk", "B": "Pasar modal akan sangat bergairah", "C": "Investor cenderung mengalihkan dananya dari pasar modal ke instrumen bank (deposito) sehingga kinerja pasar saham bisa lesu", "D": "Tidak ada pengaruhnya sama sekali" },
+        "kunci": "C",
+        "pembahasan": "Antara suku bunga di pasar uang dan investasi di pasar modal terdapat korelasi berlawanan. Jika suku bunga deposito sangat tinggi, hal tersebut akan menggiurkan investor untuk memindahkan dananya dari saham ke deposito karena bunganya pasti dan risikonya rendah."
+      },
+      {
+        "id": 15,
+        "pertanyaan": "Dalam rapat dewan gubernur, otoritas moneter menemukan bahwa inflasi sudah di atas ambang wajar akibat daya beli yang terlalu memanas (banyak uang beredar). Langkah strategis moneter yang paling efektif adalah...",
+        "opsi": { "A": "Melonggarkan perizinan pinjaman di Bank Umum", "B": "Menurunkan suku bunga deposito", "C": "Membeli surat-surat berharga dari masyarakat", "D": "Menaikkan tingkat suku bunga acuan untuk menyerap jumlah uang beredar" },
+        "kunci": "D",
+        "pembahasan": "Untuk menekan inflasi (kelebihan peredaran uang), Bank Sentral (Bank Indonesia) mengambil kebijakan mengurangi jumlah uang beredar dengan cara menaikkan suku bunga acuan sehingga masyarakat terdorong untuk menabung ketimbang membelanjakan uangnya."
+      },
+      {
+        "id": 16,
+        "pertanyaan": "Andi menunggak tagihan internet bulan lalu. Bulan ini, ia menggunakan uang sakunya untuk melunasi tagihan tersebut. Fungsi uang dalam aktivitas ini adalah sebagai...",
+        "opsi": { "A": "Alat penunjuk harga", "B": "Alat pemindah kekayaan", "C": "Alat tukar menukar", "D": "Alat pembayaran utang / kewajiban" },
+        "kunci": "D",
+        "pembahasan": "Jika uang dipakai untuk melunasi kewajiban atas transaksi yang terjadi di masa lalu, uang sedang digunakan dalam fungsi turunannya sebagai alat pembayaran utang."
+      },
+      {
+        "id": 17,
+        "pertanyaan": "Masyarakat skala mikro yang membutuhkan dana segar (pinjaman jangka pendek) namun tidak bankable (sulit menembus administrasi bank), dapat memanfaatkan LKBB yang mensyaratkan agunan berupa perhiasan atau laptop. Lembaga ini disebut...",
+        "opsi": { "A": "Dana Pensiun", "B": "Perusahaan Asuransi", "C": "Perusahaan Pegadaian", "D": "Pasar Modal" },
+        "kunci": "C",
+        "pembahasan": "Perusahaan Pegadaian adalah badan usaha LKBB yang secara khusus melayani penyaluran pinjaman jangka pendek dengan syarat jaminan/agunan fisik barang bergerak (perhiasan, elektronik, dll)."
+      },
+      {
+        "id": 18,
+        "pertanyaan": "Sinta membeli sekumpulan saham senilai Rp5.000.000. Sepanjang tahun, ia mendapat pembagian laba tahunan sebesar Rp300.000 dari perusahaan. Di akhir tahun ia menjual saham itu dengan nilai Rp5.500.000. Total return (keuntungan) Sinta dari pasar modal adalah berupa...",
+        "opsi": { "A": "Hanya Capital Gain Rp500.000", "B": "Hanya Dividen Rp300.000", "C": "Dividen Rp300.000 dan Capital Gain Rp500.000", "D": "Bunga Bank Rp800.000" },
+        "kunci": "C",
+        "pembahasan": "Keuntungan (return) investasi di saham terdiri atas dua unsur: Dividen (pembagian laba, dalam kasus ini Rp300.000) dan Capital Gain (selisih nilai jual - beli = Rp5.500.000 - Rp5.000.000 = Rp500.000)."
+      },
+      {
+        "id": 19,
+        "pertanyaan": "Guna menekan tingginya korban penipuan investasi ilegal berskema Ponzi, OJK merilis panduan daftar entitas resmi secara berkala di media massa. Langkah OJK ini diklasifikasikan sebagai wewenang...",
+        "opsi": { "A": "Kuratif berupa gugatan hukum", "B": "Preventif melalui informasi dan edukasi masyarakat", "C": "Moneter dalam menaikkan suku bunga", "D": "Fiskal dalam mengurangi pajak investasi" },
+        "kunci": "B",
+        "pembahasan": "Merilis daftar entitas legal dan mengampanyekan waspada investasi di media adalah bentuk kewenangan OJK dalam tindakan preventif (pencegahan) melalui pemberian informasi dan edukasi perlindungan konsumen."
+      },
+      {
+        "id": 20,
+        "pertanyaan": "Dalam masa resesi ekonomi, Pak Dedi mencari investasi pasar modal yang bunganya dijamin tidak berubah (fixed) dan modal pokoknya memiliki hak prioritas untuk kembali jika emiten bangkrut (pailit). Pilihan instrumen yang paling tepat untuk meminimalkan risiko ini adalah...",
+        "opsi": { "A": "Saham Preferen", "B": "Saham Biasa", "C": "Reksadana Saham", "D": "Obligasi (Surat Utang)" },
+        "kunci": "D",
+        "pembahasan": "Karakteristik utama Obligasi adalah bunganya bersifat tetap dan saat emiten (perusahaan) mengalami kepailitan, pemegang obligasi bertindak sebagai kreditur yang diprioritaskan untuk dilunasi dibandingkan pemegang saham."
+      },
+      {
+        "id": 21,
+        "pertanyaan": "Seseorang menaruh uang tabungannya di bank. Di saat bersamaan, pengusaha meminjam uang dari bank tersebut. Mekanisme ini menunjukkan peran bank dalam perekonomian sebagai lembaga...",
+        "opsi": { "A": "Pengawas Keuangan", "B": "Intermediasi Keuangan (Perantara)", "C": "Pencetak Uang", "D": "Otoritas Moneter" },
+        "kunci": "B",
+        "pembahasan": "Bank berperan sebagai lembaga intermediasi yang menjadi perantara untuk menghimpun dana masyarakat (simpanan) dan menyalurkannya kembali dalam bentuk pinjaman (kredit)."
+      },
+      {
+        "id": 22,
+        "pertanyaan": "Meskipun sama-sama berbentuk bank, Bank Perkreditan Rakyat (BPR) memiliki keterbatasan operasional yang diatur ketat oleh undang-undang. Keterbatasan tersebut adalah BPR...",
+        "opsi": { "A": "Tidak boleh menghimpun tabungan", "B": "Tidak diperbolehkan menyalurkan kredit kepada pedagang kecil", "C": "Tidak boleh menerima simpanan berupa giro dan tidak ikut dalam lalu lintas pembayaran", "D": "Harus sepenuhnya beroperasi secara Syariah tanpa bunga" },
+        "kunci": "C",
+        "pembahasan": "Bank Perkreditan Rakyat (BPR) dilarang memberikan layanan yang bersifat perputaran transaksi dinamis tinggi, yaitu dilarang menerima simpanan giro dan tidak memberikan jasa dalam lalu lintas pembayaran."
+      },
+      {
+        "id": 23,
+        "pertanyaan": "Dalam sebuah negara, Bank Sentral mendeteksi adanya hiperinflasi. Instrumen yang langsung dieksekusi oleh Bank Sentral untuk menekan gejolak inflasi tersebut agar stabil adalah...",
+        "opsi": { "A": "Melarang impor barang mewah", "B": "Mencabut izin perbankan syariah", "C": "Menutup bursa efek nasional", "D": "Merumuskan kebijakan moneter dengan menaikkan suku bunga" },
+        "kunci": "D",
+        "pembahasan": "Bank Sentral adalah lembaga yang merumuskan dan menindaklanjuti gejolak nilai uang. Instrumen utamanya dalam mengatasi inflasi adalah kebijakan moneter, seperti mengubah suku bunga acuan."
+      },
+      {
+        "id": 24,
+        "pertanyaan": "Sebuah perusahaan Asuransi Jiwa dilaporkan gagal bayar klaim kepada ribuan nasabah karena masalah likuiditas (kesalahan manajemen). Berdasarkan wewenangnya, OJK berhak untuk...",
+        "opsi": { "A": "Mencairkan Dana Cadangan Negara untuk membayar semua utang asuransi tersebut", "B": "Melakukan pengaturan, pengawasan terintegrasi, serta memfasilitasi penyelesaian sengketa nasabah secara adil", "C": "Mencabut izin Otoritas Moneter Bank Indonesia", "D": "Menyita langsung uang masyarakat tanpa jalur peradilan" },
+        "kunci": "B",
+        "pembahasan": "Fungsi OJK dalam IKNB (termasuk asuransi) mencakup pengaturan dan pengawasan, serta wewenang melindungi konsumen, menerima pengaduan, dan memfasilitasi sengketa agar hak konsumen tidak diabaikan."
+      },
+      {
+        "id": 25,
+        "pertanyaan": "Dona sedang dirawat di RS dan keluarganya harus segera melunasi biaya pengobatan sore itu juga. Mereka memiliki sebuah BPKB motor. LKBB manakah yang paling ideal memberikan uang pinjaman paling cepat dengan jaminan BPKB tersebut?",
+        "opsi": { "A": "Bursa Efek", "B": "Asuransi Umum", "C": "Perusahaan Pergadaian", "D": "Perusahaan Modal Ventura" },
+        "kunci": "C",
+        "pembahasan": "Perusahaan Pegadaian hadir sebagai lembaga non-bank spesialis untuk memberikan pinjaman (pembiayaan) secara sangat cepat (jangka pendek) dengan agunan benda bergerak yang diserahkan nasabah."
+      },
+      {
+        "id": 26,
+        "pertanyaan": "Lembaga negara independen yang tujuan dan tugas tunggalnya adalah menjaga kestabilan nilai mata uang rupiah, baik terhadap barang/jasa maupun terhadap mata uang asing, adalah...",
+        "opsi": { "A": "Kementerian Keuangan", "B": "Otoritas Jasa Keuangan (OJK)", "C": "Bank Perkreditan Rakyat", "D": "Bank Indonesia (Bank Sentral)" },
+        "kunci": "D",
+        "pembahasan": "Kestabilan nilai rupiah merupakan muara dari tujuan dan tugas utama institusi otoritas moneter tertinggi di tanah air, yaitu Bank Indonesia sebagai Bank Sentral."
+      },
+      {
+        "id": 27,
+        "pertanyaan": "PT Sarana Multigriya Finansial (SMF) dan Lembaga Pembiayaan Ekspor Indonesia (LPEI) merupakan salah satu contoh badan usaha yang dibentuk pemerintah untuk membiayai target yang sifatnya spesifik. Lembaga ini diklasifikasikan sebagai IKNB jenis...",
+        "opsi": { "A": "Dana Pensiun", "B": "Asuransi Syariah", "C": "Lembaga Jasa Keuangan Khusus", "D": "Pegadaian Swasta" },
+        "kunci": "C",
+        "pembahasan": "LPEI, PT SMF, PNM, dan PT Danareksa dimasukkan ke dalam klasifikasi Lembaga Jasa Keuangan Khusus, yang memang dibentuk untuk mengeksekusi program atau sasaran pembiayaan khusus pemerintah."
+      },
+      {
+        "id": 28,
+        "pertanyaan": "Sebelum ada OJK, Bank diatur oleh BI, dan Pasar Modal diatur oleh Bapepam-LK. Kini, Bank dan Pasar Modal semua diatur oleh OJK. Pernyataan di bawah ini yang mencerminkan analisis wewenang pengaturan OJK tersebut adalah...",
+        "opsi": { "A": "OJK menyatukan sistem pengawasan dan pengaturan keseluruhan jasa keuangan menjadi terintegrasi (satu pintu) di luar otoritas moneter", "B": "OJK berfungsi untuk membekukan Bank Sentral sepenuhnya", "C": "OJK hanya boleh mengurusi pasar saham, dan perbankan tetap diurus tunggal oleh BI", "D": "OJK mencabut seluruh regulasi yang diterbitkan oleh Bank Indonesia masa lampau" },
+        "kunci": "A",
+        "pembahasan": "Esensi hadirnya OJK adalah memindahkan pengawasan kelembagaan murni ke dalam payung sistem pengaturan dan pengawasan yang terintegrasi (satu atap) mencakup perbankan, pasar modal, dan IKNB."
+      },
+      {
+        "id": 29,
+        "pertanyaan": "Ketika Tono membeli produk ini di Bursa Efek Indonesia, Tono secara otomatis dinyatakan sebagai bagian dari pemilik modal (pemegang tanda penyertaan) di PT tersebut. Instrumen pasar modal yang beli Tono adalah...",
+        "opsi": { "A": "Reksadana Pasar Uang", "B": "Surat Utang Negara (Obligasi)", "C": "Saham", "D": "Polis Asuransi" },
+        "kunci": "C",
+        "pembahasan": "Di pasar modal, tanda kepemilikan/penyertaan seseorang atau badan terhadap suatu badan usaha korporasi/emiten disebut sebagai Saham."
+      },
+      {
+        "id": 30,
+        "pertanyaan": "Apabila seorang pedagang pasar membutuhkan instrumen penyimpanan dana untuk pembayaran transaksi bisnis harian menggunakan instrumen Cek atau Bilyet Giro, maka bank yang TIDAK BOLEH ia datangi karena secara hukum dilarang melayani jasa tersebut adalah...",
+        "opsi": { "A": "Bank Perkreditan Rakyat (BPR)", "B": "Bank Umum Konvensional", "C": "Bank Pembangunan Daerah (BPD)", "D": "Bank Umum Syariah" },
+        "kunci": "A",
+        "pembahasan": "Bank Perkreditan Rakyat (BPR) diatur sangat terbatas. Ia dilarang menyelenggarakan kegiatan lalu lintas pembayaran, salah satunya dilarang menghimpun simpanan dalam wujud Giro (yang pencairannya menggunakan cek/bilyet giro)."
+      }
+    ],
+    "soal_essay": [
+      {
+        "id": 31,
+        "pertanyaan": "Uang telah menjadi tulang punggung perekonomian sejak manusia meninggalkan era barter. Berikan penjelasan ringkas perbedaan antara uang saat digunakan sebagai 'Fungsi Asli' dengan 'Fungsi Turunan', serta berikan masing-masing satu contoh kegiatannya!",
+        "jawaban_ideal": "Perbedaan antara uang saat digunakan sebagai 'Fungsi Asli' dengan 'Fungsi Turunan' terletak pada peruntukan sejarah terciptanya: a. Fungsi Asli adalah alasan mendasar lahirnya uang untuk mengatasi hambatan barter langsung. Contohnya adalah uang dipakai sebagai alat tukar menukar (contoh: membeli nasi bungkus di kantin sekolah seharga Rp10.000) dan sebagai satuan hitung (menentukan bahwa nilai meja adalah Rp150.000). b. Fungsi Turunan adalah manfaat lanjut dari keberadaan uang di ekonomi peradaban yang sudah maju. Contohnya sebagai alat pembayaran utang (contoh: menyerahkan uang untuk melunasi kredit perabot bulan lalu) dan alat penyimpan kekayaan (contoh: menyimpan sisa pendapatan di celengan/bank untuk digunakan 3 tahun ke depan)."
+      },
+      {
+        "id": 32,
+        "pertanyaan": "Perbankan nasional dimotori oleh Bank Indonesia di level makro dan Bank Umum di level operasional masyarakat. Analisislah 2 perbedaan wewenang dan fungsi yang fundamental antara Bank Indonesia dengan Bank Umum!",
+        "jawaban_ideal": "Dua perbedaan fundamental antara Bank Indonesia (Sentral) dan Bank Umum: a. Sirkulasi Uang: Bank Indonesia memiliki fungsi absolut untuk mencetak, menerbitkan, dan mengedarkan uang Rupiah yang sah (Otoritas Moneter). Bank Umum sama sekali tidak berhak mencetak uang kartal tersebut. b. Orientasi Operasional & Nasabah: Bank Umum berfungsi sebagai lembaga intermediasi mikro yang melayani secara langsung perorangan/masyarakat (menerima tabungan warga dan menyalurkan Kredit Modal Kerja). Sebaliknya, Bank Indonesia tidak melayani tabungan individu dari warga biasa; tugasnya menjaga stabilitas sistem perekonomian, melayani urusan kas pemerintah, serta menjadi bank bagi bank umum yang butuh bantuan likuiditas (lender of the last resort)."
+      },
+      {
+        "id": 33,
+        "pertanyaan": "Dalam produk Bursa Efek (Pasar Modal), Saham dan Obligasi merupakan dua instrumen yang paling diminati. Deskripsikan sifat keuntungan serta profil risiko jika emiten tersebut bangkrut untuk masing-masing instrumen tersebut!",
+        "jawaban_ideal": "Sifat keuntungan serta profil risiko jika emiten tersebut bangkrut untuk masing-masing instrumen tersebut, antara lain: a. Saham: Pemegang saham adalah 'pemilik' porsi perusahaan. Keuntungannya bersifat fluktuatif (bergantung kinerja emiten) berupa Dividen dan Capital Gain. Namun, profil risikonya paling tinggi. Jika emiten pailit/bangkrut, hak klaim pengembalian modal dari sisa aset berada di urutan paling akhir (bukan prioritas). b. Obligasi: Pemegang obligasi adalah 'kreditur' yang memberikan utang. Keuntungannya bersifat tetap (telah dikontrak dari awal) berupa bunga/kupon. Profil risikonya lebih rendah. Saat emiten pailit, pemegang obligasi diprioritaskan hak pembayarannya terlebih dahulu sebelum dibagikan kepada pemegang saham."
+      },
+      {
+        "id": 34,
+        "pertanyaan": "Sebelum terbentuknya Otoritas Jasa Keuangan (OJK), sistem pengawasan industri keuangan berjalan terpencar (BI mengawasi bank, instansi lain mengawasi asuransi/saham). Analisislah mengapa pergeseran menuju OJK (pengawasan terintegrasi satu pintu) dianggap urgent (sangat mendesak) bagi ekosistem keuangan Indonesia!",
+        "jawaban_ideal": "Pergeseran menuju OJK (pengawasan terintegrasi satu pintu) dianggap urgent (sangat mendesak) bagi ekosistem keuangan Indonesia karena urgensi OJK yang terintegrasi (satu pintu) didorong oleh kompleksitas produk keuangan modern. Seringkali, satu grup konglomerasi keuangan memiliki Bank, Perusahaan Asuransi, dan Pialang Saham sekaligus. Jika diawasi secara terpencar-pencar oleh institusi berbeda, sangat rentan terjadi celah pengawasan atau peraturan yang bertabrakan, sehingga risiko krisis lintas-sektor sangat mudah merambat. Dengan terbentuknya OJK secara independen dan terintegrasi, penegakan hukum dan identifikasi kesehatan institusi lintas industri bisa dianalisis dalam satu layar penuh, sehingga sistem perbankan, pasar modal, dan IKNB tumbuh stabil, kuat, sekaligus memberi mekanisme perlindungan konsumen yang solid."
+      },
+      {
+        "id": 35,
+        "pertanyaan": "Pinjaman online ilegal dan entitas penyedia 'Investasi Bodong' merajalela menjerat masyarakat akar rumput. Berdasarkan fungsi resminya, langkah komprehensif apa yang bisa dieksekusi OJK untuk memutus mata rantai kerugian ini?",
+        "jawaban_ideal": "Langkah komprehensif yang bisa dieksekusi OJK untuk memutus mata rantai kerugian ini mencakup elemen pengawasan dari dua arah sekaligus: a. Preventif (Pencegahan): OJK menjalankan fungsi masif berupa sosialisasi Literasi Keuangan agar masyarakat hanya memilih produk fintech/investasi yang memiliki izin (terdaftar resmi). OJK juga merilis daftar entitas investasi bodong secara terbuka dan reguler ke publik. b. Kuratif (Penindakan/Represif): OJK tidak pasif. OJK memiliki saluran pengaduan (layanan konsumen), berwenang bekerja sama dengan aparat (Satgas Waspada Investasi) untuk memblokir, menghentikan operasional pihak ilegal, dan bahkan menempuh jalur mengajukan gugatan di pengadilan untuk mencoba menarik atau memperoleh kembali aset uang milik masyarakat yang dirugikan oleh entitas ilegal tersebut."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "kategori": "Ekonomi",
+    "soal_pg": [
+      {
+        "id": 1,
+        "pertanyaan": "Seorang petani cengkeh menjual hasil panennya. Uang hasil penjualan tersebut tidak langsung dibelanjakan, melainkan disimpan di brankas untuk biaya renovasi rumahnya dua tahun ke depan. Berdasarkan ilustrasi ini, uang menjalankan fungsi turunannya sebagai...",
+        "opsi": { "A": "Alat satuan hitung", "B": "Alat pemindah kekayaan", "C": "Alat penimbun kekayaan", "D": "Alat pembayaran utang" },
+        "kunci": "C",
+        "pembahasan": "Ketika uang disimpan atau disisihkan untuk menunda pengeluaran demi kebutuhan di masa yang akan datang, uang sedang menjalankan fungsi turunan sebagai alat penimbun/penyimpan kekayaan."
+      },
+      {
+        "id": 2,
+        "pertanyaan": "Meningkatnya kompleksitas produk jasa keuangan membuat rentannya batas-batas antar industri (bank, asuransi, dan sekuritas saham). Hal ini mendorong pemerintah membentuk Otoritas Jasa Keuangan (OJK). Tujuan utama dibentuknya OJK dalam merespons fenomena tersebut adalah...",
+        "opsi": { "A": "Mengambil alih pencetakan uang yang sebelumnya dilakukan perbankan", "B": "Mewujudkan terselenggaranya seluruh kegiatan di sektor jasa keuangan secara teratur, adil, transparan, dan akuntabel", "C": "Menghapus seluruh kewenangan moneter Bank Indonesia", "D": "Menyediakan jaminan kerugian 100% bagi seluruh nasabah bank" },
+        "kunci": "B",
+        "pembahasan": "Berdasarkan misinya, OJK dibentuk guna memastikan keseluruhan kegiatan lintas sektor (perbankan, pasar modal, dan IKNB) dapat terselenggara secara adil, transparan, teratur, dan akuntabel di bawah satu payung pengawasan."
+      },
+      {
+        "id": 3,
+        "pertanyaan": "Bapak Haris adalah seorang pemodal. Ia membeli 5.000 lembar saham PT Maju Terus pada harga Rp1.200 per lembar. Tiga bulan kemudian, ia menjual seluruh saham tersebut saat harganya menyentuh Rp1.450 per lembar. Berapakah nilai capital gain yang diterima Bapak Haris?",
+        "opsi": { "A": "Rp1.450.000", "B": "Rp1.250.000", "C": "Rp7.250.000", "D": "Rp250.000" },
+        "kunci": "B",
+        "pembahasan": "Capital gain adalah keuntungan dari selisih harga jual dan harga beli. Selisih = Rp1.450 - Rp1.200 = Rp250 per lembar. Total Keuntungan = Rp250 x 5.000 lembar = Rp1.250.000."
+      },
+      {
+        "id": 4,
+        "pertanyaan": "Analisis perbedaan mencolok antara Bank Umum dan Lembaga Pembiayaan (salah satu LKBB) dari aspek penghimpunan dana masyarakat adalah...",
+        "opsi": { "A": "Lembaga Pembiayaan beroperasi dengan prinsip non deposit taking (tidak menarik tabungan/giro secara langsung), sedangkan Bank Umum secara langsung menarik dana deposito dan tabungan", "B": "Lembaga Pembiayaan melayani cek dan bilyet giro, Bank Umum dilarang", "C": "Lembaga Pembiayaan boleh mencetak uang kertas, Bank Umum mencetak uang giral", "D": "Bank Umum memungut premi risiko, Lembaga Pembiayaan memungut iuran pensiun" },
+        "kunci": "A",
+        "pembahasan": "Ciri khas LKBB khususnya lembaga pembiayaan adalah tidak menarik dana masyarakat secara langsung (non deposit taking), seperti produk tabungan, deposito, atau giro yang secara eksklusif merupakan instrumen penghimpunan dana dari Bank."
+      },
+      {
+        "id": 5,
+        "pertanyaan": "Ditemukan adanya manipulasi laporan keuangan oleh sebuah emiten saham (perusahaan) di bursa efek yang merugikan publik secara sistemik. Sebagai lembaga independen, tindakan evaluasi dan pencegahan lanjutan (preventif) yang paling tepat dilakukan OJK adalah...",
+        "opsi": { "A": "Mengganti dewan direksi Bank Indonesia", "B": "Membekukan perusahaan pialang secara permanen tanpa investigasi", "C": "Memperketat regulasi kewajiban penyampaian keterbukaan informasi (transparansi) secara berkala bagi seluruh emiten", "D": "Menutup perdagangan bursa saham selama setahun penuh" },
+        "kunci": "C",
+        "pembahasan": "Tindakan preventif OJK yang paling proporsional untuk mencegah manipulasi berulang di bursa efek adalah dengan menerapkan regulasi dan kewajiban transparansi (keterbukaan informasi) yang sangat ketat untuk dipatuhi semua emiten."
+      },
+      {
+        "id": 6,
+        "pertanyaan": "Seseorang datang ke pasar dan menukarkan selembar uang Rp50.000 dengan 2 kilogram telur ayam. Proses ini membuktikan uang sangat efektif mengatasi kesulitan sistem barter karena uang menjalankan fungsinya sebagai...",
+        "opsi": { "A": "Alat penunjuk harga", "B": "Alat pembayaran masa depan", "C": "Alat tukar menukar", "D": "Alat spekulasi" },
+        "kunci": "C",
+        "pembahasan": "Penggunaan uang secara langsung sebagai instrumen untuk mendapatkan barang atau jasa yang diinginkan adalah perwujudan dari fungsi asli uang sebagai alat tukar."
+      },
+      {
+        "id": 7,
+        "pertanyaan": "Undang-Undang mengamanatkan bahwa pengawasan terhadap lembaga perbankan, pasar modal, hingga asuransi harus dilakukan secara terintegrasi, bukan terpisah-pisah. Pernyataan tersebut merupakan latar belakang esensial dibentuknya...",
+        "opsi": { "A": "Lembaga Penjamin Simpanan (LPS)", "B": "Otoritas Jasa Keuangan (OJK)", "C": "Bank Perkreditan Rakyat (BPR)", "D": "Perusahaan Modal Ventura" },
+        "kunci": "B",
+        "pembahasan": "Kebutuhan pengawasan yang utuh dan menyeluruh atas seluruh kegiatan lintas sektor jasa keuangan menjadi alasan utama dan latar belakang lahirnya Otoritas Jasa Keuangan (OJK)."
+      },
+      {
+        "id": 8,
+        "pertanyaan": "Pak Toni membeli 10.000 lembar saham dengan harga Rp800 per lembar. Karena kinerja perusahaan memburuk, harganya turun tajam menjadi Rp650 per lembar. Jika ia menjualnya, kerugian modal (capital loss) yang dialami Pak Toni adalah...",
+        "opsi": { "A": "Rp6.500.000", "B": "Rp8.000.000", "C": "Rp1.500.000", "D": "Rp150.000" },
+        "kunci": "C",
+        "pembahasan": "Capital Loss terjadi saat harga jual lebih rendah dari harga beli. Kerugian per lembar = Rp800 - Rp650 = Rp150. Total Kerugian = Rp150 x 10.000 lembar = Rp1.500.000."
+      },
+      {
+        "id": 9,
+        "pertanyaan": "Produk perlindungan jiwa (Asuransi) dan simpanan Deposito (Bank) memiliki kegunaan finansial bagi nasabah. Perbedaan mendasar di antara keduanya dari aspek risiko adalah...",
+        "opsi": { "A": "Asuransi menarik tabungan harian bebas risiko, Deposito berisiko tinggi karena uang bisa hilang", "B": "Asuransi memindahkan risiko kerugian finansial akibat hal yang tak terduga (sakit/meninggal), sedangkan Deposito berfungsi mengamankan uang untuk mendapat bunga tetap yang pasti", "C": "Asuransi adalah investasi pasar saham murni, Deposito adalah instrumen utang", "D": "Keduanya sama-sama tidak memberikan imbal hasil uang kepada nasabah" },
+        "kunci": "B",
+        "pembahasan": "Esensi dari Asuransi adalah perjanjian pengalihan atau pembagian risiko (proteksi) atas kejadian yang tidak pasti. Sementara Deposito adalah tabungan berjangka bank di mana nasabah pasti mendapat imbalan berupa bunga dan pengembalian modal."
+      },
+      {
+        "id": 10,
+        "pertanyaan": "Dalam sebuah insiden, dana nasabah di sebuah platform Financial Technology (fintech) ilegal raib dibawa kabur pemiliknya. OJK memiliki kewenangan di bidang perlindungan konsumen berupa tindakan...",
+        "opsi": { "A": "Mencetak uang pengganti dari kas OJK", "B": "Menghentikan seluruh kegiatan perbankan nasional", "C": "Berkoordinasi dengan lembaga penegak hukum dan memfasilitasi gugatan pengadilan untuk memulihkan aset korban", "D": "Membiarkan mekanisme pasar menghukum pelaku fintech" },
+        "kunci": "C",
+        "pembahasan": "Untuk perlindungan konsumen terhadap kejahatan sektor keuangan, OJK berwenang melakukan pembelaan hukum atau mengajukan gugatan di pengadilan guna memperoleh kembali aset atau uang ganti rugi milik nasabah."
+      },
+      {
+        "id": 11,
+        "pertanyaan": "Seorang pemilik diler menetapkan harga mobil tipe A sebesar Rp250 Juta dan tipe B sebesar Rp300 Juta. Dalam konteks menetapkan rentang nilai barang tersebut, uang berfungsi sebagai...",
+        "opsi": { "A": "Alat tukar menukar", "B": "Satuan hitung (Alat pengukur nilai)", "C": "Alat penimbun kekayaan", "D": "Alat pembayaran cicilan" },
+        "kunci": "B",
+        "pembahasan": "Saat uang digunakan untuk membandingkan, melabeli, atau menunjukkan besaran nilai suatu barang/jasa, uang sedang memanifestasikan fungsinya sebagai alat satuan hitung."
+      },
+      {
+        "id": 12,
+        "pertanyaan": "Dalam mengawasi sektor perbankan, OJK memiliki kewenangan menentukan institusi bank mana yang masuk kategori berdampak sistemik (systemically important bank). Namun dalam mengambil keputusan tersebut, OJK diwajibkan untuk berkoordinasi erat dengan...",
+        "opsi": { "A": "Kementerian Perdagangan", "B": "Pasar Modal Indonesia", "C": "Badan Pemeriksa Keuangan", "D": "Bank Indonesia" },
+        "kunci": "D",
+        "pembahasan": "Sesuai Undang-Undang dan prinsip hubungan kelembagaan, OJK bertugas mengawasi bank, namun aturan terkait pemenuhan modal dan penentuan bank sistemik wajib dikoordinasikan secara terintegrasi dengan otoritas moneter yaitu Bank Indonesia."
+      },
+      {
+        "id": 13,
+        "pertanyaan": "CV Makmur adalah pabrik garmen yang ingin membeli 5 mesin jahit industri otomatis untuk ekspansi usaha 5 tahun ke depan. Pabrik tersebut membutuhkan pinjaman besar ratusan juta rupiah. Produk bank yang paling sesuai menunjang kebutuhan tersebut adalah...",
+        "opsi": { "A": "Membuka layanan Reksa Dana Bank", "B": "Fasilitas Pinjaman/Kredit Modal Investasi dari Bank Umum", "C": "Mengajukan Kliring Giro di Bank Perkreditan Rakyat (BPR)", "D": "Membeli produk Asuransi Jiwa perbankan" },
+        "kunci": "B",
+        "pembahasan": "Kebutuhan modal produksi untuk pembelian barang modal/alat yang besar dan berjangka waktu menengah/panjang sangat ideal menggunakan produk penyaluran dana bank berupa Kredit Investasi dari Bank Umum. BPR tidak cocok karena limitnya lebih kecil dan tidak boleh ikut kliring."
+      },
+      {
+        "id": 14,
+        "pertanyaan": "Apabila otoritas moneter tiba-tiba menurunkan suku bunga perbankan hingga sangat rendah (mendekati 0%), dampak langsung yang umumnya terjadi terhadap perdagangan di bursa efek (pasar saham) adalah...",
+        "opsi": { "A": "Indeks pasar saham cenderung meningkat karena investor memindahkan dananya dari bank ke saham yang menjanjikan return lebih tinggi", "B": "Pasar saham akan hancur dan dilikuidasi total", "C": "Perusahaan emiten di bursa efek akan menaikkan suku bunga obligasinya", "D": "Investor akan berbondong-bondong memborong deposito bank" },
+        "kunci": "A",
+        "pembahasan": "Suku bunga dan pasar saham berbanding terbalik. Jika suku bunga bank turun, imbalan menabung deposito jadi tidak menarik, sehingga modal akan mengalir deras menuju instrumen yang lebih prospektif seperti saham di pasar modal, sehingga kinerjanya naik."
+      },
+      {
+        "id": 15,
+        "pertanyaan": "Dalam rangka meredam laju inflasi parah akibat terlalu banyaknya peredaran jumlah uang kartal di masyarakat, langkah regulasi yang menjadi wewenang Bank Sentral (Bank Indonesia) adalah...",
+        "opsi": { "A": "Menaikkan tingkat suku bunga acuan", "B": "Melonggarkan perizinan pinjaman di Bank Umum", "C": "Menyuntikkan dana langsung ke masyarakat", "D": "Mengurangi beban pajak pertambahan nilai" },
+        "kunci": "A",
+        "pembahasan": "Bank Sentral mengemban tugas menstabilkan nilai tukar uang (mengatasi inflasi) melalui instrumen moneter, yakni dengan cara menaikkan tingkat suku bunga acuan agar masyarakat tertarik menyimpan uangnya di bank ketimbang berbelanja."
+      },
+      {
+        "id": 16,
+        "pertanyaan": "Rina melunasi angsuran sepeda motor yang dibelinya bulan lalu melalui transfer bank (secara nontunai). Meskipun tidak berbentuk uang kertas, mekanisme ini membuktikan wujud uang sebagai...",
+        "opsi": { "A": "Alat tukar menukar langsung", "B": "Alat pembayaran atas kewajiban (utang) masa lampau", "C": "Alat spekulasi valuta asing", "D": "Standar penciptaan kredit" },
+        "kunci": "B",
+        "pembahasan": "Penggunaan uang (baik tunai maupun transfer cashless) untuk melunasi cicilan atau nilai kewajiban transaksi yang telah lewat adalah fungsi turunan uang sebagai alat pembayaran utang."
+      },
+      {
+        "id": 17,
+        "pertanyaan": "Lembaga non-bank ini berfungsi sebagai solusi pendanaan yang cepat bagi masyarakat luas dengan menyerahkan benda bergerak (seperti logam mulia atau barang elektronik) sebagai jaminan. Lembaga yang dimaksud adalah...",
+        "opsi": { "A": "Dana Pensiun Pemberi Kerja", "B": "Perusahaan Sekuritas Saham", "C": "Perusahaan Pegadaian", "D": "Perusahaan Modal Ventura" },
+        "kunci": "C",
+        "pembahasan": "Badan usaha IKNB yang menyalurkan pembiayaan berupa pinjaman jangka pendek dengan mensyaratkan barang bergerak sebagai agunan/jaminan adalah Perusahaan Pergadaian."
+      },
+      {
+        "id": 18,
+        "pertanyaan": "Andi mengoleksi saham Bank ABC sebanyak 1.000 lembar yang ia beli di harga Rp2.000/lembar. Menjelang RUPS, Andi menerima pembagian laba kas sebesar Rp100 untuk setiap lembar saham. Sebulan setelahnya, saham itu ia jual semua di harga Rp2.200/lembar. Keseluruhan total imbal hasil investasi Andi adalah...",
+        "opsi": { "A": "Hanya Capital Gain Rp200.000", "B": "Dividen Rp100.000 dan Capital Gain Rp200.000 (Total Rp300.000)", "C": "Hanya Dividen Rp100.000", "D": "Bunga Rp2.200.000" },
+        "kunci": "B",
+        "pembahasan": "Andi untung dari dua jalur: Capital Gain: (Rp2.200 - Rp2.000) x 1.000 lembar = Rp200.000. Dividen: Rp100 x 1.000 lembar = Rp100.000. Total return = Rp300.000."
+      },
+      {
+        "id": 19,
+        "pertanyaan": "Beroperasinya arisan bodong yang menjanjikan bunga tak rasional sering kali menipu puluhan warga di desa-desa. Salah satu peran terpadu (kuratif) yang dapat dieksekusi OJK untuk memutus mata rantai tersebut adalah...",
+        "opsi": { "A": "OJK menurunkan BI Rate", "B": "OJK membayar utang warga desa dari APBN", "C": "OJK berkoordinasi dengan kepolisian dalam Satgas Waspada Investasi untuk membekukan operasional entitas ilegal tersebut", "D": "OJK membubarkan Bursa Efek Indonesia" },
+        "kunci": "C",
+        "pembahasan": "Penindakan masalah entitas bodong berada di ranah penegakan hukum dan OJK bertindak proaktif melalui koordinasi bersama aparat penegak hukum yang bernaung di bawah Satgas Waspada Investasi untuk membekukan entitas tersebut."
+      },
+      {
+        "id": 20,
+        "pertanyaan": "Dalam menganalisis profil investasi pasar modal pada masa ekonomi krisis, instrumen surat berharga apa yang memberikan proteksi terbaik bagi investor jika ternyata emiten atau perusahaannya bangkrut/pailit?",
+        "opsi": { "A": "Saham Preferen", "B": "Reksadana Saham", "C": "Obligasi (Surat Utang)", "D": "Saham Biasa" },
+        "kunci": "C",
+        "pembahasan": "Obligasi memosisikan pemegangnya sebagai pihak kreditur (pemberi utang). Jika perusahaan dilikuidasi karena pailit, undang-undang menjamin kreditur obligasi untuk dibayar paling utama (diprioritaskan) sebelum aset sisanya dibagikan ke pemilik saham."
+      },
+      {
+        "id": 21,
+        "pertanyaan": "Sistem perbankan menjadi urat nadi perputaran ekonomi dengan menjalankan fungsi intermediasi. Arti nyata dari fungsi intermediasi bank adalah...",
+        "opsi": { "A": "Lembaga tunggal pencetak mata uang kartal", "B": "Penampung dana sisa pajak pemerintah", "C": "Menghimpun dana dari pihak yang kelebihan uang (tabungan) dan menyalurkannya kepada pihak yang membutuhkan (kredit)", "D": "Pengelola dana asuransi kesehatan masyarakat" },
+        "kunci": "C",
+        "pembahasan": "Fungsi Intermediary berarti bank merupakan lembaga perantara di mana bank menarik simpanan dari orang yang surplus dana lalu meminjamkannya (kredit) ke pihak yang defisit dana."
+      },
+      {
+        "id": 22,
+        "pertanyaan": "Selain menyalurkan kredit yang lebih spesifik kepada pedesaan atau UMKM, kegiatan BPR berbeda dengan Bank Umum karena Undang-Undang secara ketat melarang BPR untuk...",
+        "opsi": { "A": "Memberikan kredit tanpa persetujuan Presiden", "B": "Menghimpun tabungan anak sekolah", "C": "Memberikan jasa lalu lintas pembayaran, valuta asing, perasuransian, dan menerbitkan giro", "D": "Menyita aset nasabah yang macet" },
+        "kunci": "C",
+        "pembahasan": "Secara definisi operasional, BPR sangat dibatasi. BPR dilarang melakukan jasa lalu lintas pembayaran, mengeluarkan giro, asuransi, maupun ikut serta dalam aktivitas transaksi valuta asing."
+      },
+      {
+        "id": 23,
+        "pertanyaan": "Dalam situasi memanasnya laju inflasi pascapandemi, Bank Indonesia bertugas mengamankan kestabilan daya beli rupiah melalui otoritas moneternya. Langkah teknis yang langsung bisa digunakan Bank Indonesia adalah...",
+        "opsi": { "A": "Mengubah wewenang LPS", "B": "Menutup layanan Pegadaian", "C": "Merumuskan dan melaksanakan pengaturan suku bunga (BI Rate)", "D": "Mencabut izin investasi asuransi swasta" },
+        "kunci": "C",
+        "pembahasan": "Sebagai pelaksana kebijakan moneter dalam menghadapi inflasi, Bank Indonesia akan mengatur kebijakan tingkat suku bunga acuan (menaikkannya) untuk menyerap perputaran uang di pasar."
+      },
+      {
+        "id": 24,
+        "pertanyaan": "Apabila ditemukan praktik manajemen buruk dari sebuah asuransi sehingga gagal mencairkan polis nasabah bernilai miliaran rupiah, kewenangan perlindungan konsumen OJK dalam sengketa ini adalah...",
+        "opsi": { "A": "Menutup secara sepihak tanpa mekanisme hukum", "B": "Menyediakan ganti rugi 100% menggunakan dana OJK", "C": "Menerima pengaduan nasabah dan memfasilitasi penyelesaian sengketa serta mendesak perbaikan likuiditas perusahaan", "D": "Menghukum nasabah karena salah memilih investasi" },
+        "kunci": "C",
+        "pembahasan": "Dalam mengayomi konsumen IKNB, OJK memiliki fungsi menerima sistem pengaduan dan memfasilitasi sengketa secara adil bagi masyarakat atas kelalaian sebuah institusi penyedia jasa keuangan resmi."
+      },
+      {
+        "id": 25,
+        "pertanyaan": "Joko membutuhkan likuiditas uang tunai yang langsung cair hari ini untuk membiayai pendaftaran sekolah anaknya, namun ia hanya memiliki BPKB mobil. Mengingat ia tak memenuhi syarat administrasi perbankan, LKBB manakah yang menjadi solusi tepat bagi Joko?",
+        "opsi": { "A": "PT Sarana Multigriya Finansial (SMF)", "B": "Bursa Efek Indonesia", "C": "Perusahaan Pegadaian", "D": "Perusahaan Asuransi Kerugian" },
+        "kunci": "C",
+        "pembahasan": "Pegadaian adalah lembaga jasa keuangan (LKBB) yang fokus kegiatannya melayani pembiayaan atau pinjaman kredit jangka pendek yang cepat cair dengan jaminan barang bernilai/bergerak (seperti BPKB kendaraan)."
+      },
+      {
+        "id": 26,
+        "pertanyaan": "Satu-satunya lembaga independen negara yang memegang predikat sebagai lender of the last resort (penyedia pinjaman terakhir bagi bank) sekaligus merumuskan moneter demi menjaga kestabilan nilai rupiah adalah...",
+        "opsi": { "A": "Bank Indonesia (BI)", "B": "Otoritas Jasa Keuangan (OJK)", "C": "Bank Mandiri", "D": "Kementerian Koordinator Perekonomian" },
+        "kunci": "A",
+        "pembahasan": "Tujuan untuk memelihara kestabilan nilai Rupiah dengan mengatur moneter serta menjaga kelancaran sistem pembayaran dan bertindak sebagai lender of the last resort secara mutlak dimiliki oleh Bank Sentral (Bank Indonesia)."
+      },
+      {
+        "id": 27,
+        "pertanyaan": "Indonesia memiliki perusahaan berbentuk Lembaga Jasa Keuangan Khusus yang didirikan khusus untuk menunjang program ekspor nasional melalui pemberian pembiayaan hingga asuransi bagi komoditas lokal yang dikirim ke luar negeri. Lembaga ini adalah...",
+        "opsi": { "A": "PT Danareksa", "B": "PT Permodalan Nasional Madani (PNM)", "C": "Lembaga Pembiayaan Ekspor Indonesia (LPEI)", "D": "Dana Pensiun Lembaga Keuangan (DPLK)" },
+        "kunci": "C",
+        "pembahasan": "Sesuai namanya, LPEI (Lembaga Pembiayaan Ekspor Indonesia) atau Indonesia Eximbank diciptakan untuk menyediakan fasilitas dan mendukung akselerasi ekspor komoditi Indonesia."
+      },
+      {
+        "id": 28,
+        "pertanyaan": "Sebelum ada OJK, regulasi operasional bank ada di bawah BI. Kini, OJK-lah yang mengeluarkan perizinan dan menetapkan parameter tingkat kesehatan suatu bank. Pernyataan wewenang ini mengindikasikan bahwa...",
+        "opsi": { "A": "OJK menyatukan sistem pengawasan dan pengaturan keseluruhan sektor jasa perbankan dan IKNB ke dalam satu pintu yang independen", "B": "Bank Indonesia telah sepenuhnya dihapus fungsinya", "C": "OJK hanya boleh mengatur bank-bank swasta, tidak bank pemerintah", "D": "Bank Umum tidak lagi wajib mematuhi standar modal minimum" },
+        "kunci": "A",
+        "pembahasan": "Kehadiran OJK adalah bentuk reformasi integrasi satu atap, menggeser peran pengawasan mikro (kesehatan bank, modal, rasio kredit) dan menyatukannya bersama pengawasan pasar modal dan asuransi dalam satu pintu independen di luar fungsi moneter BI."
+      },
+      {
+        "id": 29,
+        "pertanyaan": "Di pasar modal, apabila Rina menanamkan uangnya pada produk ini, ia tidak dianggap sebagai pihak yang mengutangi perusahaan, melainkan mutlak dianggap sebagai bagian dari pihak 'pemilik tanda penyertaan modal'. Instrumen ini adalah...",
+        "opsi": { "A": "Saham", "B": "Obligasi Ritel Indonesia", "C": "Surat Utang Negara", "D": "Deposito Syariah" },
+        "kunci": "A",
+        "pembahasan": "Saham secara harfiah didefinisikan sebagai surat berharga tanda kepemilikan modal atau tanda penyertaan dana seseorang dalam struktur modal emiten/perusahaan."
+      },
+      {
+        "id": 30,
+        "pertanyaan": "Sistem perbankan di Indonesia membagi fungsi menjadi Bank Umum dan BPR. Apabila seorang pebisnis mendatangi BPR dengan tujuan ingin membuka tabungan berbentuk Rekening Giro, maka BPR tersebut akan menolak permohonannya. Hal ini terjadi karena...",
+        "opsi": { "A": "BPR hanya boleh mengeluarkan layanan Valuta Asing", "B": "BPR dikhususkan untuk mencetak uang Rupiah kertas", "C": "Undang-Undang melarang keras BPR menerima simpanan uang berbentuk Giro maupun menerbitkan cek", "D": "Pebisnis tersebut bukan warga desa asli" },
+        "kunci": "C",
+        "pembahasan": "BPR memiliki larangan mutlak untuk terlibat dalam layanan instrumen lalu lintas pembayaran dinamis, seperti menerbitkan cek/bilyet dan melarang BPR menerima produk simpanan dalam wujud Giro."
+      }
+    ],
+    "soal_essay": [
+      {
+        "id": 31,
+        "pertanyaan": "Perjalanan uang berevolusi dari sebatas alat pemecah jalan buntu barter (Fungsi Asli) hingga menjadi instrumen transaksi dinamis modern (Fungsi Turunan). Jelaskan alasan mengapa uang disebut memiliki 'Fungsi Turunan', lalu berikan 2 (dua) contoh konkret pengaplikasian fungsi turunan tersebut dengan mengaitkannya pada gaya hidup transaksi masa kini!",
+        "jawaban_ideal": "Alasan mengapa uang disebut memiliki 'Fungsi Turunan' karena manfaat dan kegunaan uang bertambah luas sejalan dengan kompleksitas ekonomi masyarakat yang tidak lagi sebatas menukar barang saat itu juga di pasar. Contoh konkretnya: a. Sebagai Alat Pembayaran Kewajiban Masa Lalu (Utang): Misalnya, Budi membayar tagihan kartu kredit dan cicilan perumahan KPR miliknya di bank menggunakan transfer rekening (cashless payment). b. Sebagai Alat Penimbun/Penyimpan Kekayaan: Misalnya, Ani menyisihkan sebagian sisa gaji elektroniknya setiap bulan dalam bentuk celengan atau rekening tabungan khusus di bank untuk modal usaha lima tahun ke depan."
+      },
+      {
+        "id": 32,
+        "pertanyaan": "Di Indonesia, terdapat dikotomi institusi perbankan yang melayani kebutuhan negara dan kebutuhan warga, yakni Bank Indonesia dan Bank Umum. Analisislah dua (2) perbedaan fundamental antara Bank Indonesia dengan Bank Umum berdasarkan hak penerbitan uang dan target fokus pelayanannya!",
+        "jawaban_ideal": "Analisis dua perbedaan fundamental antara Bank Sentral dan Bank Umum: a. Berdasarkan Hak Penerbitan Uang: Bank Indonesia memiliki kewenangan yang mutlak, eksklusif, dan tunggal dari negara untuk menerbitkan, mengedarkan, serta menarik alat pembayaran sah yang kita kenal (uang kartal Rupiah). Bank Umum beroperasi murni untuk mencari laba komersial dan dilarang keras mencetak uang kartal. b. Berdasarkan Target Pelayanan: Bank Umum berhadapan langsung dengan target masyarakat (individu, pengusaha, korporasi ritel) untuk menyerap tabungan dan melayani kredit lalu lintas pembayaran. Sebaliknya, Bank Indonesia memegang kas milik negara, bukan untuk tabungan individu/warga perorangan, melainkan berfungsi sebagai lender of the last resort (bank-nya bagi bank-bank di Indonesia)."
+      },
+      {
+        "id": 33,
+        "pertanyaan": "Jika seorang pemodal di Bursa Efek dihadapkan pada dua pilihan: membeli Saham atau Obligasi, analisislah instrumen mana yang membawa tingkat bahaya (risiko) kebangkrutan yang paling tinggi, dan kemukakan alasan yuridis atas hierarki pelunasannya saat perusahaan emiten itu pailit!",
+        "jawaban_ideal": "Risiko paling tinggi dan tidak pasti disandang oleh pemegang Saham. Hal ini didasarkan pada alasan yuridis bahwa saham adalah bukti penyertaan hak 'milik'. Apabila perusahaan emiten jatuh pailit (dilikuidasi/bangkrut), hierarki pelunasan pemegang saham berada di posisi prioritas paling akhir (sisa aset). Sebaliknya, Obligasi menempatkan pemegangnya sebagai posisi 'kreditur yang memberi piutang', sehingga mereka terlindungi oleh kontrak utang dan secara hierarki diposisikan pada urutan prioritas teratas untuk dilunasi kerugian asetnya dibandingkan porsi bagi pemegang saham."
+      },
+      {
+        "id": 34,
+        "pertanyaan": "Reformasi kelembagaan di Indonesia melahirkan Otoritas Jasa Keuangan (OJK). Sebelum tahun 2011, pengawasan perbankan secara penuh dikontrol oleh Bank Indonesia dan Pasar Modal dikontrol Bapepam-LK. Mengapa sangat urgent (mendesak) bagi pemerintah Republik Indonesia untuk melebur pengawasan lintas-institusi tersebut menjadi pengawasan yang dikontrol oleh satu wadah tunggal di bawah payung OJK?",
+        "jawaban_ideal": "Urgensi peleburan pengawasan menjadi tunggal oleh OJK didasarkan pada kenyataan bahwa industri keuangan (konglomerasi) menjadi luar biasa kompleks dan saling berkaitan (terintegrasi). Sebuah badan usaha bisa memiliki bank, asuransi, dan sekuritas saham sekaligus secara bersamaan. Apabila diawasi oleh institusi yang berbeda-beda, sangat tinggi risiko munculnya celah hukum, blank spot kelalaian pengawasan, hingga peraturan yang saling tumpang tindih. Dengan dibentuknya sistem pengawasan satu atap yang mandiri melalui OJK, pemantauan kesehatan stabilitas perbankan, asuransi, dan pasar modal dapat dimonitor secara komprehensif tanpa terputus, sehingga mekanisme kepastian konsumen sangat terlindungi dari risiko krisis sistemik."
+      },
+      {
+        "id": 35,
+        "pertanyaan": "Perusahaan Fintech Peer-to-Peer lending (Pinjaman Online ilegal) seringkali memeras nasabahnya dan merugikan publik. Uraikan secara analitis, masing-masing satu (1) contoh dari tindakan penanggulangan secara preventif (pencegahan) dan kuratif (penindakan hukum) yang merupakan manifestasi tanggung jawab wewenang perlindungan OJK!",
+        "jawaban_ideal": "Sebagai pemegang otoritas jasa pengawas keuangan, OJK menginisiasi dua langkah krusial: a. Langkah Preventif (Pencegahan): OJK tidak berhenti memberikan kampanye sistem literasi dan edukasi risiko berinvestasi. OJK mewajibkan publikasi dan aksesibilitas terbuka mengenai daftar lembaga yang legal (terdaftar dan diawasi) serta menyiarkan transparansi daftar entitas investasi dan pinjaman yang diblokir agar publik terhindar dari platform ilegal sebelum telanjur berinvestasi. b. Langkah Kuratif (Penindakan Hukum): OJK menyediakan unit pengaduan konsumen, bertindak selaku penengah yang memfasilitasi sengketa finansial, dan bekerja dalam kemitraan kuat bersama aparat penegak hukum (Satgas Waspada Investasi) guna melakukan blokir sistem, penyidikan terpadu, dan siap mengajukan gugatan secara litigasi di pengadilan demi menuntut pengembalian atau pemulihan kekayaan materiil milik publik yang tertipu."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "kategori": "Ekonomi",
+    "soal_pg": [
+      {
+        "id": 1,
+        "pertanyaan": "Saat berkunjung ke pameran elektronik, Tika melihat laptop merek A dibanderol dengan harga Rp8.000.000 dan merek B seharga Rp10.000.000. Kemampuan uang dalam memberikan informasi perbandingan nilai antara kedua laptop tersebut menunjukkan fungsi uang sebagai...",
+        "opsi": { "A": "Alat penyimpan nilai", "B": "Alat tukar menukar", "C": "Alat satuan hitung", "D": "Alat pembayaran kewajiban" },
+        "kunci": "C",
+        "pembahasan": "Fungsi asli uang adalah sebagai satuan ukur atau alat hitung yang memberikan kejelasan nilai suatu barang agar mudah dibandingkan dengan barang lain dalam sistem perdagangan."
+      },
+      {
+        "id": 2,
+        "pertanyaan": "Terjadinya berbagai krisis dan masalah di sektor keuangan di masa lalu mendorong pemerintah melakukan reformasi lembaga pengawas. Berdasarkan undang-undang, salah satu misi dan tujuan utama pemerintah membentuk Otoritas Jasa Keuangan (OJK) adalah...",
+        "opsi": { "A": "Mengambil alih pencetakan uang kartal dari bank sentral", "B": "Wujudkan sistem keuangan yang tumbuh secara berkelanjutan dan stabil", "C": "Memberikan kredit modal secara langsung kepada masyarakat miskin", "D": "Menghapus seluruh kewenangan Bank Indonesia di bidang moneter" },
+        "kunci": "B",
+        "pembahasan": "OJK dibentuk dengan misi khusus, salah satunya adalah mewujudkan sistem keuangan yang tumbuh secara berkelanjutan dan stabil."
+      },
+      {
+        "id": 3,
+        "pertanyaan": "Ibu Rina mengalokasikan dananya di Bursa Efek Indonesia dengan membeli 1.000 lembar saham PT Sejahtera seharga Rp3.000 per lembar. Enam bulan kemudian, karena perusahaan mencetak laba besar, harga sahamnya naik dan Ibu Rina menjual seluruh sahamnya di harga Rp3.800 per lembar. Keuntungan modal (capital gain) yang didapatkan Ibu Rina adalah...",
+        "opsi": { "A": "Rp800.000", "B": "Rp3.000.000", "C": "Rp3.800.000", "D": "Rp6.800.000" },
+        "kunci": "A",
+        "pembahasan": "Capital gain dihitung dari selisih harga jual dan beli dikali jumlah lembar saham. (Rp3.800 - Rp3.000) x 1.000 lembar = Rp800 x 1.000 = Rp800.000."
+      },
+      {
+        "id": 4,
+        "pertanyaan": "Bank Umum dan Lembaga Pembiayaan sama-sama menyalurkan dana untuk menunjang aktivitas masyarakat. Perbedaan fundamental di antara keduanya dari segi pengumpulan dana (penghimpunan) adalah...",
+        "opsi": { "A": "Bank menarik dana langsung berbentuk giro dan tabungan, sedangkan lembaga pembiayaan memiliki prinsip tidak menarik dana secara langsung (non deposit taking)", "B": "Bank memungut asuransi kesehatan, lembaga pembiayaan menarik dana tabungan pensiun", "C": "Bank diizinkan menerbitkan uang kertas, lembaga pembiayaan menerbitkan logam", "D": "Bank Umum tidak memberikan bunga, LKBB memberikan bunga ganda" },
+        "kunci": "A",
+        "pembahasan": "Berbeda dengan Bank Umum yang boleh mengelola simpanan, Lembaga Keuangan Bukan Bank seperti Lembaga Pembiayaan menerapkan prinsip operasional khusus yaitu tidak menarik dana secara langsung (non deposit taking) seperti tabungan atau giro."
+      },
+      {
+        "id": 5,
+        "pertanyaan": "Dalam rangka mencegah terjadinya manipulasi transaksi efek oleh oknum perusahaan di bursa saham, tindakan wewenang pengaturan (preventif) yang paling tepat dieksekusi oleh OJK adalah...",
+        "opsi": { "A": "Membayarkan ganti rugi 100% menggunakan APBN", "B": "Menghentikan perdagangan bursa modal secara permanen", "C": "Menetapkan peraturan kewajiban transparansi keterbukaan informasi yang ketat serta memperkuat sistem pengawasan terintegrasi", "D": "Membekukan wewenang Bank Indonesia" },
+        "kunci": "C",
+        "pembahasan": "Sebagai lembaga pengatur, wewenang OJK yang efektif untuk mencegah kejahatan pasar modal adalah menetapkan peraturan perundang-undangan terkait pengawasan dan penegakan tata kelola yang terintegrasi di sektor jasa keuangan."
+      },
+      {
+        "id": 6,
+        "pertanyaan": "Setiap pagi, seorang pedagang nasi uduk menerima lembaran uang rupiah dari para pembelinya sebagai ganti atas sarapan yang ia jual. Dalam aktivitas ini, uang menjalankan fungsinya sebagai...",
+        "opsi": { "A": "Alat penunjuk harga", "B": "Alat penimbun kekayaan", "C": "Alat pemindah kekayaan", "D": "Alat tukar menukar" },
+        "kunci": "D",
+        "pembahasan": "Transaksi jual beli di mana uang digunakan secara langsung sebagai medium pertukaran barang adalah bentuk fungsi asli uang sebagai alat tukar."
+      },
+      {
+        "id": 7,
+        "pertanyaan": "Kehadiran kelompok konglomerasi bisnis yang memiliki bank, sekuritas, sekaligus asuransi membuat pengawasan keuangan yang terpisah-pisah menjadi tidak efektif. Oleh karenanya, negara membentuk OJK. Tujuan strategisnya adalah agar pengawasan seluruh sektor tersebut dapat diselenggarakan secara...",
+        "opsi": { "A": "Terpisah di bawah kementerian masing-masing", "B": "Terintegrasi, teratur, adil, transparan, dan akuntabel", "C": "Dikuasai oleh investor dari luar negeri", "D": "Dikelola langsung oleh pimpinan Bank Indonesia" },
+        "kunci": "B",
+        "pembahasan": "Tujuan strategis pendirian OJK adalah menyelenggarakan sistem pengaturan dan pengawasan yang terintegrasi, teratur, adil, transparan, dan akuntabel di seluruh sektor industri keuangan."
+      },
+      {
+        "id": 8,
+        "pertanyaan": "Seorang mahasiswa mencoba berinvestasi dengan membeli saham seharga Rp5.000 per lembar. Saat terjadi kepanikan pasar, harganya anjlok menjadi Rp4.100 per lembar. Apabila mahasiswa tersebut menjualnya saat itu, kerugian (capital loss) per lembar saham yang ia derita adalah sebesar...",
+        "opsi": { "A": "Rp900", "B": "Rp4.100", "C": "Rp5.000", "D": "Rp9.100" },
+        "kunci": "A",
+        "pembahasan": "Risiko kerugian selisih harga jual di bawah harga beli di pasar modal dihitung dengan mengurangkan harga beli dengan harga jual (Rp5.000 - Rp4.100) yang menghasilkan kerugian Rp900 per lembar saham."
+      },
+      {
+        "id": 9,
+        "pertanyaan": "Pak Anton memiliki Tabungan Deposito di bank dan Asuransi Jiwa di sebuah perusahaan asuransi. Dari segi fungsi inti pemanfaatannya, perbedaan kedua produk tersebut adalah...",
+        "opsi": { "A": "Deposito untuk transaksi cek harian, asuransi untuk mencetak uang giral", "B": "Deposito mengalihkan risiko kerugian harta benda, asuransi menabung untuk masa tua", "C": "Deposito berfungsi mengamankan simpanan untuk mendapat bunga, asuransi berfungsi mengalihkan atau membagi risiko ketidakpastian atas hidup/harta", "D": "Keduanya sepenuhnya tidak dijamin oleh hukum positif" },
+        "kunci": "C",
+        "pembahasan": "Tabungan/Deposito bank berfungsi untuk menyimpan uang. Sebaliknya, fungsi utama Asuransi adalah melakukan pengalihan atau pembagian risiko (proteksi) yang kemungkinan terjadi atas ketidakpastian hidup maupun harta benda."
+      },
+      {
+        "id": 10,
+        "pertanyaan": "Ketika terdapat sebuah lembaga jasa keuangan yang terbukti melanggar hukum dan mengakibatkan kerugian finansial yang masif pada nasabah, langkah perlindungan konsumen (kuratif) yang menjadi wewenang OJK adalah...",
+        "opsi": { "A": "Mengajukan gugatan ke pengadilan untuk memperoleh kembali harta pihak yang dirugikan", "B": "Mengambil alih kepemilikan lembaga tersebut menjadi milik negara", "C": "Menghentikan paksa seluruh aktivitas ekspor impor nasional", "D": "Menggunakan anggaran darurat BI untuk mengganti uang nasabah" },
+        "kunci": "A",
+        "pembahasan": "Dalam fungsi pelindungan, OJK berwenang mengajukan gugatan untuk menuntut pengembalian harta kekayaan milik pihak yang dirugikan atau menuntut ganti rugi dari pihak pelanggar."
+      },
+      {
+        "id": 11,
+        "pertanyaan": "Sebuah katalog di toko perabot menuliskan harga sebuah meja adalah Rp500.000. Penggunaan nominal uang untuk mendefinisikan nilai meja ini adalah wujud uang sebagai...",
+        "opsi": { "A": "Standar pencicilan utang", "B": "Alat penimbun kekayaan", "C": "Alat tukar", "D": "Satuan hitung" },
+        "kunci": "D",
+        "pembahasan": "Fungsi uang untuk membanderol atau menentukan kejelasan ukuran harga suatu barang disebut fungsi asli uang sebagai alat satuan ukur/satuan hitung."
+      },
+      {
+        "id": 12,
+        "pertanyaan": "Meskipun OJK adalah lembaga mandiri yang mengatur bank, dalam merumuskan kebijakan penting seperti menetapkan kategori bank berdampak sistemik (systemically important bank), OJK diwajibkan oleh undang-undang untuk berkoordinasi dengan...",
+        "opsi": { "A": "Lembaga Pembiayaan", "B": "Kementerian Perdagangan", "C": "Bursa Efek Indonesia", "D": "Bank Indonesia" },
+        "kunci": "D",
+        "pembahasan": "Sesuai UU No. 21 Tahun 2011 Pasal 39, OJK diwajibkan berkoordinasi dengan Bank Indonesia dalam menyusun peraturan pengawasan dan penentuan institusi bank berdampak sistemik."
+      },
+      {
+        "id": 13,
+        "pertanyaan": "Sebuah perusahaan logistik skala nasional ingin melakukan ekspansi dengan membeli puluhan armada truk baru. Karena membutuhkan nominal pembiayaan yang besar dan panjang, produk perbankan yang paling tepat untuk diakses perusahaan tersebut adalah...",
+        "opsi": { "A": "Simpanan Giro", "B": "Deposito Berjangka", "C": "Kredit Modal/Investasi dari Bank Umum", "D": "Tabungan Pelajar (SimPel)" },
+        "kunci": "C",
+        "pembahasan": "Bank Umum berperan menyalurkan dana. Untuk keperluan ekspansi dan penyediaan barang modal bernilai sangat besar, instrumen yang tepat adalah Kredit atau pembiayaan dari Bank Umum."
+      },
+      {
+        "id": 14,
+        "pertanyaan": "Apabila otoritas moneter menetapkan tingkat suku bunga perbankan melonjak menjadi sangat tinggi, hal yang secara logis akan terjadi pada instrumen pasar modal (saham) adalah...",
+        "opsi": { "A": "Indeks pasar modal menurun karena banyak investor memindahkan dananya ke bank untuk mencari bunga yang pasti", "B": "Pasar modal akan semakin ramai dan nilai saham akan naik tajam", "C": "Investor akan menjual depositonya untuk membeli saham perusahaan ritel", "D": "Tidak akan ada pergerakan apapun di pasar modal" },
+        "kunci": "A",
+        "pembahasan": "Terdapat relasi berlawanan antara suku bunga dan pasar modal. Apabila suku bunga naik sangat tinggi, hal tersebut memicu investor menarik dananya dari instrumen saham (yang berisiko) dan beralih ke deposito bank yang menjanjikan imbal hasil bunga tinggi dan minim risiko."
+      },
+      {
+        "id": 15,
+        "pertanyaan": "Ketika jumlah uang yang beredar di masyarakat terlampau berlebihan dan mengakibatkan harga-harga meroket tak terkendali (inflasi), langkah penyelesaian paling strategis oleh otoritas moneter adalah...",
+        "opsi": { "A": "Menurunkan pajak barang", "B": "Menerapkan pengawasan asuransi yang ketat", "C": "Merumuskan dan mengeksekusi kebijakan moneter (misalnya menaikkan suku bunga) untuk menarik uang beredar", "D": "Melarang adanya kegiatan barter" },
+        "kunci": "C",
+        "pembahasan": "Dalam mengatasi gejolak makro seperti inflasi, Bank Sentral memiliki wewenang untuk merumuskan dan melaksanakan kebijakan moneter (seperti intervensi suku bunga) guna mengerem peredaran uang di masyarakat."
+      },
+      {
+        "id": 16,
+        "pertanyaan": "Santi menggunakan aplikasi perbankan di ponselnya untuk mengirimkan uang guna melunasi tagihan biaya perawatan rumah sakit ibunya minggu lalu. Praktik pemindahan dana elektronik ini difasilitasi karena uang memiliki instrumen pembayaran...",
+        "opsi": { "A": "Nontunai (cashless)", "B": "Standar logam", "C": "Uang kartal kertas", "D": "Barter komoditas" },
+        "kunci": "A",
+        "pembahasan": "Penggunaan medium elektronik dan internet banking untuk membayar kewajiban tanpa menggunakan fisik uang tunai diklasifikasikan sebagai pembayaran nontunai (cashless payment)."
+      },
+      {
+        "id": 17,
+        "pertanyaan": "Masyarakat golongan menengah ke bawah seringkali terbantu oleh lembaga jasa keuangan bukan bank (LKBB) yang prinsip operasinya menyalurkan pinjaman secara cepat dengan syarat menyerahkan jaminan barang (misalnya perhiasan emas atau laptop). Lembaga tersebut adalah...",
+        "opsi": { "A": "Perusahaan Asuransi Kerugian", "B": "Dana Pensiun Pemberi Kerja", "C": "Perusahaan Pegadaian", "D": "Perusahaan Modal Ventura" },
+        "kunci": "C",
+        "pembahasan": "Ciri khas dari kegiatan Pergadaian adalah melayani penyaluran pinjaman jangka pendek dengan mensyaratkan nasabah untuk menitipkan jaminan fisik (agunan barang bergerak)."
+      },
+      {
+        "id": 18,
+        "pertanyaan": "Seseorang berinvestasi dengan membeli saham. Setelah satu tahun, ia mendapatkan keuntungan dari perusahaan karena membagikan sebagian laba operasionalnya secara tunai kepada seluruh pemegang saham. Keuntungan khusus ini disebut...",
+        "opsi": { "A": "Bunga Kupon", "B": "Dividen", "C": "Capital Loss", "D": "Premi Asuransi" },
+        "kunci": "B",
+        "pembahasan": "Imbal hasil tunai yang dibagikan oleh emiten (perusahaan) kepada pemegang sahamnya sebagai proporsi dari laba perusahaan disebut dengan dividen."
+      },
+      {
+        "id": 19,
+        "pertanyaan": "Guna mencegah kerugian yang dialami masyarakat dari praktik arisan berantai ilegal dan entitas fintech tak berizin, tindakan edukasi preventif yang diwajibkan pada Otoritas Jasa Keuangan (OJK) adalah...",
+        "opsi": { "A": "Mencabut kewenangan aparat hukum", "B": "Menyita dan mengambil alih bank pemerintah", "C": "Pelaksanaan sistem edukasi, transparansi daftar legalitas entitas, dan pelindungan masyarakat", "D": "Mencairkan dana perbankan syariah untuk korban" },
+        "kunci": "C",
+        "pembahasan": "OJK memiliki wewenang spesifik dalam fungsi edukasi publik, yaitu melaksanakan pelaksanaan edukasi dan pelindungan konsumen untuk meningkatkan literasi masyarakat terhadap produk sah guna menghindari investasi bodong."
+      },
+      {
+        "id": 20,
+        "pertanyaan": "Dalam menganalisis stabilitas portofolio ketika ekonomi diprediksi memburuk, instrumen pasar modal yang tergolong lebih aman (defensif) dibandingkan kepemilikan saham karena memberikan kepastian imbalan (bunga tetap) kepada investor adalah...",
+        "opsi": { "A": "Reksa Dana Saham", "B": "Surat Utang (Obligasi)", "C": "Mata Uang Digital Kripto", "D": "Polis Asuransi Kesehatan" },
+        "kunci": "B",
+        "pembahasan": "Produk surat utang (obligasi) di pasar modal relatif memiliki profil kepastian yang lebih tinggi karena menjanjikan pembayaran pendapatan bunga secara reguler (tetap) dan prioritas pelunasan utang yang lebih kuat dibandingkan pemegang saham."
+      },
+      {
+        "id": 21,
+        "pertanyaan": "Fungsi esensial yang membuat bank disebut sebagai 'lembaga intermediasi' keuangan adalah kemampuannya untuk...",
+        "opsi": { "A": "Memonopoli percetakan mata uang logam dan kertas", "B": "Menghimpun dana dari pihak masyarakat yang kelebihan dana dan menyalurkannya kepada pihak yang kekurangan dana", "C": "Membekukan entitas asuransi bodong", "D": "Melarang warga berbelanja di pasar daring" },
+        "kunci": "B",
+        "pembahasan": "Peran intermediary (perantara) bermakna bahwa kegiatan utama bank adalah menghimpun dana dari masyarakat (dalam bentuk simpanan) dan menyalurkan dana tersebut kembali kepada masyarakat (dalam bentuk kredit)."
+      },
+      {
+        "id": 22,
+        "pertanyaan": "Meskipun masuk dalam kategori bank yang sah di Indonesia, operasional operasional Bank Perkreditan Rakyat (BPR) jauh lebih dibatasi secara hukum jika dibandingkan dengan Bank Umum. BPR sama sekali dilarang untuk melayani...",
+        "opsi": { "A": "Pemberian kredit untuk nelayan", "B": "Penyediaan buku tabungan anak sekolah", "C": "Kegiatan usaha dalam valuta asing dan perasuransian", "D": "Pembentukan jaringan koperasi" },
+        "kunci": "C",
+        "pembahasan": "Berdasarkan undang-undang, kegiatan BPR lebih sempit. BPR dilarang melakukan kegiatan usaha dalam valuta asing, perasuransian, menerima simpanan berupa giro, dan tidak memberikan jasa dalam lalu lintas pembayaran."
+      },
+      {
+        "id": 23,
+        "pertanyaan": "Dalam upaya memitigasi turunnya nilai mata uang akibat inflasi ekstrem, instrumen utama yang hanya bisa digunakan oleh lembaga otoritas moneter tertinggi (Bank Sentral) adalah...",
+        "opsi": { "A": "Memblokir platform perdagangan online", "B": "Mengubah status Bank Umum menjadi BPR", "C": "Merumuskan serta menetapkan kebijakan moneter untuk menstabilkan rupiah", "D": "Mewajibkan masyarakat berbelanja dengan emas" },
+        "kunci": "C",
+        "pembahasan": "Wewenang tunggal untuk mengendalikan instrumen stabilitas sistem perekonomian melalui rumusan dan pelaksanaan kebijakan moneter (seperti suku bunga) mutlak berada di tangan Bank Sentral (Bank Indonesia)."
+      },
+      {
+        "id": 24,
+        "pertanyaan": "Apabila terjadi kasus sengketa gagal bayar asuransi skala masif yang memakan korban dari kalangan konsumen ritel, kapasitas wewenang OJK yang dapat dimanfaatkan untuk membela masyarakat adalah...",
+        "opsi": { "A": "Memberikan santunan dari kas pribadi pimpinan bank sentral", "B": "Mengajukan gugatan legal di peradilan demi menuntut ganti rugi aset korban dari pihak yang melanggar", "C": "Menutup dan melikuidasi semua instrumen pasar modal", "D": "Membiarkan hukum adat menyelesaikan masalah" },
+        "kunci": "B",
+        "pembahasan": "OJK memegang teguh fungsi perlindungan konsumen melalui kewenangannya untuk membela kepentingan masyarakat yang dirugikan dengan jalan mengajukan gugatan di pengadilan untuk memperoleh ganti rugi."
+      },
+      {
+        "id": 25,
+        "pertanyaan": "Seseorang yang terdesak uang untuk modal panen dapat pergi ke Lembaga Keuangan Bukan Bank (LKBB) tertentu, menyerahkan traktor miliknya, lalu mendapat pembiayaan tanpa bank yang menarik simpanan darinya. Contoh badan usaha IKNB pembiayaan tersebut adalah...",
+        "opsi": { "A": "Bank Perkreditan Rakyat Syariah", "B": "Lembaga Penjamin Simpanan", "C": "Lembaga Pembiayaan / Sewa Guna Usaha", "D": "Satgas Waspada Investasi" },
+        "kunci": "C",
+        "pembahasan": "Sektor yang memfasilitasi kebutuhan dana, seperti pengadaan barang modal atau pendanaan pihak usaha tanpa melalui penarikan dana langsung tabungan, merupakan karakteristik utama dari Lembaga Pembiayaan."
+      },
+      {
+        "id": 26,
+        "pertanyaan": "Satu-satunya entitas di Indonesia yang secara hukum berwenang mencetak dan menerbitkan uang yang sah, mengedarkannya, serta menanggung peran sebagai pemberi pinjaman terakhir bagi perbankan nasional adalah...",
+        "opsi": { "A": "PT Sarana Multigriya Finansial", "B": "Bank Indonesia (Bank Sentral)", "C": "Bank Perkreditan Rakyat (BPR)", "D": "Otoritas Jasa Keuangan (OJK)" },
+        "kunci": "B",
+        "pembahasan": "Wewenang mutlak dan tunggal untuk mengeluarkan alat pembayaran yang sah, menjaga kelancaran sistem pembayaran, serta bertindak sebagai lender of the last resort dipegang oleh Bank Sentral (Bank Indonesia)."
+      },
+      {
+        "id": 27,
+        "pertanyaan": "Jenis IKNB yang didirikan spesifik sebagai badan hukum yang mengumpulkan iuran untuk mengelola program dengan janji berupa pembayaran manfaat atau penghasilan berkala secara pasti pada saat seseorang telah memasuki masa purnatugas (hari tua) adalah...",
+        "opsi": { "A": "Perusahaan Re-asuransi Umum", "B": "Pasar Modal", "C": "Dana Pensiun", "D": "Perusahaan Modal Ventura" },
+        "kunci": "C",
+        "pembahasan": "Dana Pensiun adalah badan hukum yang menyelenggarakan program yang secara terstruktur menjanjikan manfaat pembayaran berkala saat peserta masuk masa pensiun (hari tua)."
+      },
+      {
+        "id": 28,
+        "pertanyaan": "Terdapat transisi yang kuat di mana tugas pengawasan mikro kelembagaan perbankan, asuransi, dan sekuritas ditarik ke dalam OJK. Berikut adalah wewenang langsung OJK terhadap kegiatan jasa keuangan sektor perbankan, yaitu menetapkan kebijakan terkait...",
+        "opsi": { "A": "Nilai mata uang Rupiah harian", "B": "Hak cetak eksklusif terhadap uang koin emas", "C": "Peraturan mengenai pengawasan, perizinan, dan pemenuhan modal minimum kelembagaan perbankan", "D": "Mencairkan tabungan asuransi jiwa" },
+        "kunci": "C",
+        "pembahasan": "Wewenang OJK yang berfokus pada ranah perbankan mencakup tugas operasional seperti mengatur sistem informasi, tingkat kepatuhan bank, dan kewajiban pemenuhan modal minimum dari kelembagaan bank itu sendiri."
+      },
+      {
+        "id": 29,
+        "pertanyaan": "Instrumen di pasar modal yang mendefinisikan si pembelinya memegang status sebagai salah satu elemen kepemilikan perseroan (pemegang tanda modal perusahaan) adalah...",
+        "opsi": { "A": "Deposito Berjangka", "B": "Asuransi Kerugian", "C": "Reksa Dana Pasar Uang", "D": "Saham" },
+        "kunci": "D",
+        "pembahasan": "Produk atau instrumen utama yang ditransaksikan di Bursa Efek Indonesia sebagai bukti porsi penyertaan modal atau tanda kepemilikan modal seseorang pada suatu perusahaan disebut Saham."
+      },
+      {
+        "id": 30,
+        "pertanyaan": "Dalam praktik sistem pelayanan transaksi, BPR menolak permintaan Tuan Anwar yang menginginkan pencairan dananya dapat ditarik dengan menggunakan warkat Cek sewaktu-waktu. Penolakan dari BPR ini sesuai dengan aturan karena BPR...",
+        "opsi": { "A": "Mewajibkan Anwar menabung di luar negeri", "B": "Dilarang keras oleh hukum untuk menghimpun dana berwujud simpanan Giro (yang dicairkan menggunakan Cek)", "C": "Hanya fokus pada pembiayaan asuransi sosial", "D": "Tidak diizinkan melakukan penyaluran pinjaman usaha" },
+        "kunci": "B",
+        "pembahasan": "Aturan hukum secara eksplisit memisahkan batas ruang gerak Bank Umum and BPR. BPR dilarang menghimpun simpanan dalam bentuk giro dan dilarang terlibat sama sekali dalam dinamika lalu lintas pembayaran langsung."
+      }
+    ],
+    "soal_essay": [
+      {
+        "id": 31,
+        "pertanyaan": "Perjalanan sistem ekonomi melahirkan ragam fungsi pada uang. Uraikan secara deskriptif mengenai pemisahan antara peruntukan 'Fungsi Asli' uang dengan 'Fungsi Turunan' uang, dan berikan masing-masing 1 (satu) contoh yang logis dari kegiatan keseharian masyarakat kota masa kini!",
+        "jawaban_ideal": "Pemisahan tersebut didasarkan pada tujuan penggunaannya: a. Fungsi Asli: Merupakan peruntukan inti uang sejak awal diciptakannya untuk menggantikan kesulitan barter, yakni sebagai alat tukar menukar langsung dan satuan pengukur nilai. Contoh riil masa kini: Seseorang melihat label harga laptop di toko tercantum senilai Rp10.000.000 (fungsi satuan hitung), lalu ia menyerahkan uang senilai nominal tersebut secara seketika untuk mendapatkan laptop tersebut (fungsi alat tukar). b. Fungsi Turunan: Merupakan peruntukan turunan dari bertambah majunya ekosistem perekonomian manusia, di mana transaksi tidak harus seketika. Kegunaannya meliputi uang sebagai alat pembayaran masa lampau (utang) dan alat penyimpan kekayaan. Contoh riil masa kini: Seseorang membayar premi asuransi tertunggak bulan kemarin via M-Banking (alat pembayaran utang), atau mendepositokan uang bonus tahunan di rekening untuk persiapan liburan dua tahun mendatang (alat penyimpan kekayaan)."
+      },
+      {
+        "id": 32,
+        "pertanyaan": "Berdasarkan anatomi lembaga keuangan Bank, terdapat perbedaan porsi kekuasaan dan operasional antara Bank Sentral dan Bank Umum. Analisislah dan jabarkan 2 (dua) peranan yang bersifat krusial dan mutlak menjadi domain khusus bagi Bank Indonesia (sebagai bank sentral) sehingga ia memiliki derajat institusi lebih tinggi dibandingkan Bank Umum!",
+        "jawaban_ideal": "Bank Indonesia (Bank Sentral) memegang kedudukan mutlak dan superior berkat dua domain wewenang berikut yang sama sekali dilarang untuk diakses oleh Bank Umum: a. Wewenang Otoritas Moneter dan Penerbit Uang: Hanya Bank Indonesia yang berstatus memonopoli hak penerbitan, pencetakan, serta pengaturan sirkulasi mata uang (uang kartal Rupiah) di tanah air. Bank umum murni sebagai lembaga perantara dana (intermediasi keuangan), tidak boleh menerbitkan uang resmi. b. Pemegang Tanggung Jawab Sistemik (Lender of the Last Resort): Bank Indonesia tidak melayani permohonan tabungan warga sipil (masyarakat ritel). Alih-alih, BI menargetkan makroekonomi dan bertindak sebagai bank kas bagi badan pemerintah serta institusi penopang pinjaman dana terakhir bagi bank-bank umum lain yang mengalami kekeringan modal darurat."
+      },
+      {
+        "id": 33,
+        "pertanyaan": "Saat ini, generasi muda gencar menjajaki literasi berinvestasi pada Pasar Modal dengan dua instrumen favorit: Saham dan Obligasi. Kemukakan sebuah analisis fundamental, mengapa seseorang yang menghindari risiko kehilangan modal (berprofil konservatif) sangat dianjurkan untuk tidak berinvestasi Saham dan lebih baik beralih membeli instrumen Obligasi saja saat menghadapi isu perusahaan yang diprediksi akan pailit/bangkrut!",
+        "jawaban_ideal": "Hal ini berkaitan erat dengan profil risiko kepemilikan dan instrumen kontrak dalam kepailitan: a. Saham: Membeli saham berarti bertindak sebagai 'pemilik' (pemegang ekuitas) perusahaan. Profil risikonya paling esktrem. Manakala perusahaan emiten resmi dinyatakan pailit, undang-undang kepailitan menempatkan hak pembagian ganti rugi aset pemegang saham di tingkatan (hierarki) paling akhir dan bukan prioritas, sehingga modal pemegang saham besar kemungkinan akan lenyap atau hangus tidak berbekas. b. Obligasi (Surat Utang): Membeli obligasi berarti berposisi aman sebagai 'kreditur yang memberi piutang'. Obligasi memberikan kepastian nominal bunga tetap. Saat kepailitan melanda emiten, undang-undang perdata menetapkan bahwa pelunasan hak kreditur obligasi menempatkan urutan prioritas utama secara proteksi hukum dan akan dilunasi asetnya mendahului pemegang ekuitas pemegang saham. Karenanya, obligasi jauh lebih aman untuk tipe konservatif."
+      },
+      {
+        "id": 34,
+        "pertanyaan": "Sebelum era reformasi otoritas, BI mengendalikan tata kelola seluruh Bank Umum secara otonom, sementara sektor IKNB (Asuransi) diawasi birokrasi lain. Analisislah latar belakang mendesaknya rasionalitas pemerintah (urgensi pembentukan) untuk mengintegrasikan pengawasan keseluruhan ekosistem tersebut ke dalam lembaga independen berskala terpadu melalui wewenang OJK!",
+        "jawaban_ideal": "Urgensi yang mendasari terbentuknya OJK adalah dinamika pertumbuhan konglomerasi finansial (cross-sector finance) yang sangat masif di era modern. Saat ini, sistem lembaga jasa keuangan menjadi sangat kompleks; sebuah mega korporasi dengan kepemilikan tunggal sangat mungkin menaungi cabang Bank, Asuransi, serta Perusahaan Modal Ventura secara berantai sekaligus. Apabila fungsi pengaturan dan pengawasan tidak satu atap (terintegrasi), maka risiko celah regulasi, kebijakan standar modal yang bertabrakan, atau keruntuhan pada satu entitas dapat secara sistemik menjalar dan menciptakan domino efek yang meruntuhkan instrumen keuangan lain di bawah grup yang sama. Oleh karena itu, urgent (sangat strategis) bagi OJK untuk hadir sebagai pengawas yang terintegrasi (menyeluruh) agar stabilitas pengawasan perbankan dan non-bank dapat dimonitor secara transparan di dalam satu komando, menghindarkan publik dari krisis skala besar."
+      },
+      {
+        "id": 35,
+        "pertanyaan": "Fenomena investasi bodong atau aplikasi skema tipuan sangat membahayakan ekonomi masyarakat berliterasi rendah. Dalam membela ketahanan ekosistem permodalan, analisis tindakan proteksi dan resolusi apa (baik preventif maupun langkah kuratif) yang wajib dieksekusi oleh Otoritas Jasa Keuangan sesuai mandat kewenangannya?",
+        "jawaban_ideal": "Tindakan langkah pertahanan OJK dijalankan melalui mekanisme dua poros utama: a. Langkah Preventif (Pencegahan Publik): OJK memegang tanggung jawab wewenang pelaksanaan sistem edukasi literasi secara konstan untuk mengayomi keamanan konsumen. OJK diwajibkan menjembatani dan menyiarkan data keterbukaan seluruh daftar entitas legal di portal resmi OJK, agar masyarakat luas dapat melakukan validasi akurasi instrumen sebelum mengalokasikan tabungannya ke pasar. b. Langkah Kuratif (Sanksi & Litigasi Hukum): Dalam penanganan investasi bodong yang memakan korban, OJK akan menggunakan tindakan kuratif dengan menerima saluran sengketa pengaduan, memblokir izin dan aktivitas jaringan tersebut, serta bermitra di dalam institusi khusus penegak hukum (Satgas Waspada Investasi) untuk memidanakan pelaku. OJK berwenang penuh atas nama keadilan mengajukan gugatan di peradilan litigasi demi berupaya merampas kembali aset dan menuntut ganti kerugian harta konsumen yang direnggut oleh perusahaan tersebut."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "kategori": "Ekonomi",
+    "soal_pg": [
+      {
+        "id": 1,
+        "pertanyaan": "Saat berkunjung ke pameran mobil, Tuan Danu membandingkan harga mobil SUV seharga Rp300.000.000 dengan mobil Sedan seharga Rp250.000.000. Melalui nilai yang tertera, Tuan Danu dapat menyimpulkan perbedaan nilai kedua barang tersebut. Penggunaan uang dalam kasus ini mencerminkan fungsi asli uang sebagai...",
+        "opsi": { "A": "Alat penyimpan kekayaan masa depan", "B": "Alat penunjuk harga atau satuan hitung", "C": "Alat tukar menukar antar barang", "D": "Alat pembayaran cicilan utang" },
+        "kunci": "B",
+        "pembahasan": "Fungsi asli uang mencakup kegunaannya sebagai satuan hitung (alat pengukur nilai) yang memungkinkan masyarakat menetapkan atau membandingkan harga suatu barang dan jasa dengan jelas."
+      },
+      {
+        "id": 2,
+        "pertanyaan": "Pemerintah Republik Indonesia membentuk Otoritas Jasa Keuangan (OJK) sebagai lembaga negara yang independen. Berdasarkan undang-undang yang mendasarinya, salah satu tujuan krusial pembentukan OJK bagi ekosistem masyarakat adalah...",
+        "opsi": { "A": "Mengambil alih tugas pencetakan uang kartal dari Bank Sentral", "B": "Melindungi kepentingan konsumen dan masyarakat di sektor jasa keuangan", "C": "Mencairkan dana asuransi secara langsung tanpa proses hukum", "D": "Mengelola simpanan tabungan masyarakat secara komersial" },
+        "kunci": "B",
+        "pembahasan": "OJK dibentuk dengan misi utama mewujudkan sistem keuangan yang teratur, stabil, serta melindungi kepentingan konsumen dan masyarakat luas dari risiko industri keuangan."
+      },
+      {
+        "id": 3,
+        "pertanyaan": "Nyonya Lita merupakan seorang investor yang membeli 8.000 lembar saham PT Gemilang pada harga beli Rp4.500 per lembar. Beberapa bulan kemudian, perusahaan mencatat kinerja positif sehingga harga sahamnya naik menjadi Rp5.200 per lembar, dan Nyonya Lita menjual seluruh sahamnya. Potensi keuntungan modal (capital gain) yang ia peroleh sebesar...",
+        "opsi": { "A": "Rp700.000", "B": "Rp5.600.000", "C": "Rp36.000.000", "D": "Rp41.600.000" },
+        "kunci": "B",
+        "pembahasan": "Capital gain adalah keuntungan dari selisih harga jual dan harga beli. Selisih = Rp5.200 - Rp4.500 = Rp700. Total Capital Gain = Rp700 x 8.000 lembar = Rp5.600.000."
+      },
+      {
+        "id": 4,
+        "pertanyaan": "Bank Umum dan Lembaga Pembiayaan sama-sama menyalurkan dana untuk menunjang perekonomian. Namun, terdapat perbedaan prinsip yang sangat tegas dalam cara mereka mengumpulkan dana tersebut dari masyarakat, yaitu...",
+        "opsi": { "A": "Lembaga Pembiayaan menerapkan prinsip tidak menarik dana secara langsung (non deposit taking), sedangkan Bank Umum secara langsung menghimpun tabungan dan deposito", "B": "Lembaga Pembiayaan memungut premi risiko bulanan, sedangkan Bank Umum tidak", "C": "Bank Umum tidak diperbolehkan memberikan bunga, sedangkan Lembaga Pembiayaan membagikan dividen", "D": "Lembaga Pembiayaan diizinkan menerbitkan bilyet giro, Bank Umum dilarang" },
+        "kunci": "A",
+        "pembahasan": "Ciri mendasar dari Industri Keuangan Non-Bank (seperti lembaga pembiayaan) adalah prinsip non deposit taking, yang berarti tidak mengambil uang masyarakat secara langsung dalam bentuk simpanan (giro, deposito, tabungan) seperti yang dilakukan oleh Bank Umum."
+      },
+      {
+        "id": 5,
+        "pertanyaan": "Jika ditemukan indikasi kuat bahwa direksi sebuah perusahaan secara ilegal memanipulasi informasi laporan keuangannya di Bursa Efek untuk menaikkan harga saham, langkah evaluasi pencegahan (preventif) dan pengawasan paling efektif dari OJK adalah...",
+        "opsi": { "A": "Meminta Bank Sentral untuk membekukan uang perusahaan tersebut", "B": "Mengganti semua kerugian saham menggunakan dana kas negara", "C": "Menetapkan regulasi kewajiban transparansi keterbukaan informasi yang ketat dan melakukan pengawasan terintegrasi", "D": "Menutup bursa saham bagi investor asing" },
+        "kunci": "C",
+        "pembahasan": "OJK memiliki fungsi dan wewenang untuk menyelenggarakan sistem pengaturan (menetapkan peraturan perundang-undangan di sektor jasa keuangan) dan pengawasan yang terintegrasi di pasar modal untuk mencegah manipulasi dan melindungi konsumen."
+      },
+      {
+        "id": 6,
+        "pertanyaan": "Seseorang pergi ke stasiun kereta api dan menyerahkan selembar uang kertas nominal Rp100.000 untuk membeli tiket perjalanan antarkota secara langsung di loket. Ilustrasi ini menunjukkan penggunaan uang dalam fungsinya sebagai...",
+        "opsi": { "A": "Alat penimbun kekayaan", "B": "Alat pembayaran masa depan", "C": "Alat tukar menukar", "D": "Satuan hitung" },
+        "kunci": "C",
+        "pembahasan": "Saat uang digunakan secara langsung sebagai medium pertukaran untuk mendapatkan suatu barang atau jasa pada saat itu juga (mengatasi masalah barter), uang menjalankan fungsi aslinya sebagai alat tukar."
+      },
+      {
+        "id": 7,
+        "pertanyaan": "Semakin berkembangnya inovasi produk keuangan membuat batas antara industri bank, asuransi, dan sekuritas saham makin bias (konglomerasi). Hal ini melatarbelakangi lahirnya OJK agar keseluruhan kegiatan di sektor jasa keuangan dapat diawasi secara...",
+        "opsi": { "A": "Terpecah belah oleh kementerian terkait", "B": "Terintegrasi, teratur, adil, transparan, dan akuntabel", "C": "Khusus oleh pimpinan Bank Indonesia", "D": "Mandiri oleh perusahaan asing" },
+        "kunci": "B",
+        "pembahasan": "Tujuan strategis di balik mandat undang-undang pembentukan OJK adalah untuk mewujudkan terselenggaranya seluruh kegiatan lintas sektor jasa keuangan secara teratur, adil, transparan, akuntabel, dan terintegrasi."
+      },
+      {
+        "id": 8,
+        "pertanyaan": "Pak Ridwan membeli 3.000 lembar saham dengan harga Rp2.500 per lembar. Akibat resesi global, harga saham tersebut jatuh ke angka Rp1.800 per lembar. Jika Pak Ridwan panik dan memutuskan untuk menjual semua sahamnya saat itu juga, ia akan mengalami kerugian modal (capital loss) sebesar...",
+        "opsi": { "A": "Rp700.000", "B": "Rp2.100.000", "C": "Rp5.400.000", "D": "Rp7.500.000" },
+        "kunci": "B",
+        "pembahasan": "Capital loss dihitung dari penurunan nilai saham. (Rp2.500 - Rp1.800) x 3.000 lembar = Rp700 x 3.000 = Rp2.100.000 kerugian."
+      },
+      {
+        "id": 9,
+        "pertanyaan": "Produk Asuransi Pendidikan dan Tabungan Pendidikan di bank sama-sama dipersiapkan untuk biaya sekolah anak. Jika dievaluasi dari profil risikonya, karakteristik khusus asuransi dibandingkan tabungan bank adalah...",
+        "opsi": { "A": "Asuransi berfungsi memproteksi/mengalihkan risiko finansial jika terjadi ketidakpastian (misalnya orang tua meninggal), sedangkan tabungan berfungsi murni mengamankan simpanan", "B": "Asuransi membebankan biaya administrasi harian, tabungan bank bebas biaya", "C": "Asuransi adalah instrumen utang negara, tabungan adalah instrumen pasar modal", "D": "Tabungan bank memiliki risiko kebangkrutan yang paling tinggi di atas saham" },
+        "kunci": "A",
+        "pembahasan": "Asuransi merupakan industri keuangan non-bank yang berfokus pada upaya menanggulangi atau mengalihkan risiko ketidakpastian hidup/harta, yang membedakannya dengan fungsi simpanan langsung perbankan."
+      },
+      {
+        "id": 10,
+        "pertanyaan": "Dalam mengevaluasi peran lembaga pengawas ketika terjadi skandal penggelapan dana nasabah oleh sebuah perusahaan pialang sekuritas resmi, penilaian kritis terhadap kewenangan kuratif Otoritas Jasa Keuangan (OJK) yang dapat dilakukan adalah...",
+        "opsi": { "A": "OJK bertindak mencetak uang baru agar nasabah tidak rugi", "B": "OJK hanya bisa memberikan peringatan tertulis tanpa tindak lanjut", "C": "OJK berwenang mengajukan gugatan ke pengadilan untuk memperoleh ganti rugi aset korban dari pihak yang melanggar", "D": "OJK membubarkan Bursa Efek Indonesia sepenuhnya" },
+        "kunci": "C",
+        "pembahasan": "Dalam fungsi pelayanan konsumen dan perlindungan, OJK berwenang mengambil tindakan kuratif berupa pengajuan gugatan hukum demi menuntut pemulihan harta kekayaan atau ganti rugi bagi masyarakat yang dirugikan."
+      },
+      {
+        "id": 11,
+        "pertanyaan": "Sebelum ada uang, masyarakat harus mencari orang yang memiliki kebutuhan timbal-balik yang sama (double coincidence of wants) dalam sistem barter. Ketika uang kertas diserahkan langsung oleh Tono untuk membeli beras tanpa perlu menukar barang miliknya, uang menunjukkan fungsinya sebagai...",
+        "opsi": { "A": "Standar utang", "B": "Alat penimbun nilai", "C": "Satuan pengukur", "D": "Alat tukar" },
+        "kunci": "D",
+        "pembahasan": "Kesulitan mencari orang yang saling membutuhkan barang secara bersamaan dalam sistem barter berhasil dipecahkan oleh fungsi asli uang sebagai alat tukar."
+      },
+      {
+        "id": 12,
+        "pertanyaan": "Meskipun pengawasan perbankan telah dialihkan kepada OJK secara independen, OJK tetap tidak boleh bertindak tanpa koordinasi. Dalam merumuskan kebijakan terkait pemenuhan kewajiban modal minimum bank, OJK wajib berkoordinasi secara ketat dengan...",
+        "opsi": { "A": "Bank Indonesia", "B": "Bursa Efek Indonesia", "C": "Kementerian Keuangan", "D": "Lembaga Pembiayaan Ekspor" },
+        "kunci": "A",
+        "pembahasan": "Sesuai dengan UU Nomor 21 Tahun 2011 Pasal 39, dalam melaksanakan pengaturan dan pengawasan bidang perbankan (termasuk modal minimum dan penentuan bank sistemik), OJK diwajibkan untuk berkoordinasi dengan Bank Indonesia."
+      },
+      {
+        "id": 13,
+        "pertanyaan": "Sebuah rumah sakit swasta berencana membeli alat-alat medis berteknologi mutakhir seharga Rp10 Miliar. Mereka merencanakan skema pelunasan jangka panjang selama 7 tahun. Produk pendanaan perbankan yang paling tepat untuk memfasilitasi kebutuhan permodalan tersebut adalah...",
+        "opsi": { "A": "Pembukaan simpanan Rekening Giro", "B": "Layanan Transfer Bank", "C": "Kredit Investasi/Modal Kerja dari Bank Umum", "D": "Tabungan Deposito Berjangka" },
+        "kunci": "C",
+        "pembahasan": "Untuk pembiayaan proyek atau pembelian barang modal berskala besar dengan jangka waktu pelunasan panjang, fasilitas yang ditawarkan oleh kelembagaan Bank Umum adalah penyaluran dana dalam wujud kredit."
+      },
+      {
+        "id": 14,
+        "pertanyaan": "Apabila otoritas perbankan tiba-tiba mengerek naik tingkat suku bunga simpanan deposito menjadi sangat atraktif, analisis dampak yang paling relevan terhadap gairah investasi di pasar modal (saham) adalah...",
+        "opsi": { "A": "Pasar saham akan mengalami lonjakan transaksi karena investor lebih berani mengambil risiko", "B": "Indeks pasar modal cenderung menurun sebab investor akan memindahkan asetnya ke deposito bank yang lebih pasti untungnya", "C": "Emiten akan mencetak saham baru secara gratis", "D": "Tidak terdapat hubungan rasional antara suku bunga dengan instrumen pasar modal" },
+        "kunci": "B",
+        "pembahasan": "Terdapat korelasi perbandingan terbalik; jika tingkat suku bunga perbankan tinggi, hal tersebut akan menarik dana para investor di pasar modal untuk berpindah ke produk tabungan bank/deposito karena dianggap minim risiko."
+      },
+      {
+        "id": 15,
+        "pertanyaan": "Tingginya daya beli konsumtif menyebabkan jumlah uang beredar terlalu banyak sehingga memicu ancaman inflasi tajam. Tindakan strategis dari otoritas moneter tertinggi (Bank Indonesia) untuk menyerap kembali peredaran uang tersebut adalah dengan...",
+        "opsi": { "A": "Memblokir penyaluran layanan pinjaman secara daring", "B": "Menurunkan nilai pajak pertambahan nilai", "C": "Merumuskan dan mengeksekusi kebijakan moneter berupa kenaikan suku bunga acuan", "D": "Membagikan dana kompensasi tunai ke masyarakat" },
+        "kunci": "C",
+        "pembahasan": "Bank Sentral (Bank Indonesia) memegang mandat stabilitas uang (meredam inflasi) yang dilakukan menggunakan instrumen kebijakan moneter, salah satunya merumuskan perubahan tingkat suku bunga acuan (BI Rate)."
+      },
+      {
+        "id": 16,
+        "pertanyaan": "Setiap pertengahan bulan, Pak Arman selalu menggunakan aplikasi mobile banking miliknya untuk melunasi tagihan kartu kredit atas pembelanjaannya bulan lalu. Penggunaan uang oleh Pak Arman di sini mengindikasikan perannya sebagai...",
+        "opsi": { "A": "Alat tukar menukar komoditas", "B": "Alat pemindah kekayaan", "C": "Alat pembayaran kewajiban masa lalu (utang)", "D": "Satuan hitung" },
+        "kunci": "C",
+        "pembahasan": "Saat uang dipakai secara spesifik guna menyelesakan tanggungan atau kewajiban dari suatu transaksi yang telah usai di waktu lampau, uang menjalankan fungsi turunannya sebagai alat pembayaran utang."
+      },
+      {
+        "id": 17,
+        "pertanyaan": "Masyarakat berpenghasilan rendah sering kesulitan meminjam uang ke bank. Solusi pembiayaan yang cepat sering didapatkan dari lembaga non-bank yang beroperasi dengan mekanisme menitipkan barang berharga sebagai agunan tebusan. Identifikasi badan usaha yang dimaksud adalah...",
+        "opsi": { "A": "Dana Pensiun Lembaga Keuangan", "B": "Perusahaan Pegadaian", "C": "Bursa Efek Indonesia", "D": "Asuransi Kerugian" },
+        "kunci": "B",
+        "pembahasan": "Perusahaan pegadaian merupakan Lembaga Jasa Keuangan Khusus non-bank yang ciri khasnya memfasilitasi pinjaman jangka pendek berbasis jaminan benda berharga milik nasabah."
+      },
+      {
+        "id": 18,
+        "pertanyaan": "Andika membeli portofolio saham sebanyak 2.000 lembar pada harga Rp1.000 per lembarnya. Selama masa kepemilikan, perusahaan membukukan untung besar dan Andika menerima laba tunai (dividen) Rp150 per lembar saham. Andika lantas menjual seluruh saham tersebut pada harga Rp1.500 per lembar. Total nilai imbal hasil (kombinasi return) yang dinikmati Andika adalah...",
+        "opsi": { "A": "Rp300.000", "B": "Rp1.000.000", "C": "Rp1.300.000", "D": "Rp2.000.000" },
+        "kunci": "C",
+        "pembahasan": "Keuntungan investasi saham dihitung dari Dividen + Capital Gain. Dividen = Rp150 x 2.000 = Rp300.000. Capital Gain = (Rp1.500 - Rp1.000) x 2.000 = Rp1.000.000. Total Return = Rp1.300.000."
+      },
+      {
+        "id": 19,
+        "pertanyaan": "Menjamurnya kasus penipuan skema Ponzi dan investasi ilegal melalui sosial media sangat meresahkan warga. Analisis terhadap fungsi pelaksanaan edukasi dan pelindungan OJK yang bersifat preventif (pencegahan awal) dalam masalah ini ditunjukkan melalui...",
+        "opsi": { "A": "OJK menyita dana masyarakat melalui kepolisian", "B": "OJK membayar kompensasi utang warga dari APBN", "C": "OJK membekukan rekening Bank Sentral", "D": "OJK secara proaktif merilis dan mengedukasi transparansi daftar entitas resmi agar masyarakat terhindar dari platform ilegal" },
+        "kunci": "D",
+        "pembahasan": "Wewenang OJK yang bertitik berat pada langkah preventif (pencegahan) adalah pelaksanaan sistem edukasi dan pelindungan masyarakat (konsumen) dari ketidakjelasan risiko praktik keuangan di industri."
+      },
+      {
+        "id": 20,
+        "pertanyaan": "Dalam iklim ekonomi yang rentan gejolak (fluktuatif), seorang investor mencari instrumen efek yang mampu memberikan perlindungan hak pelunasan paling utama (prioritas) seandainya perusahaan penerbit tersebut bangkrut. Evaluasi pilihan instrumen investasi yang paling memenuhi syarat mitigasi tersebut adalah...",
+        "opsi": { "A": "Surat Utang (Obligasi)", "B": "Saham Biasa", "C": "Reksadana Saham", "D": "Valuta Asing" },
+        "kunci": "A",
+        "pembahasan": "Pemegang instrumen obligasi secara hukum berstatus sebagai pemberi piutang (kreditur), yang menjamin mereka berada di tingkat prioritas tertinggi untuk mendapatkan pelunasan sisa aset jika perusahaan emiten mengalami pailit."
+      },
+      {
+        "id": 21,
+        "pertanyaan": "Kemampuan dasar yang menjadi jantung dari eksistensi sistem perbankan komersial dalam pembangunan perekonomian nasional adalah perannya sebagai lembaga intermediasi. Secara teknis, intermediasi ini diartikan sebagai...",
+        "opsi": { "A": "Monopoli pencetakan seluruh alat pembayaran tunai", "B": "Upaya menghimpun dana masyarakat melalui simpanan, lalu menyalurkannya kembali menjadi instrumen kredit", "C": "Penanggung jawab kestabilan nilai mata uang di ranah global", "D": "Penjamin pelunasan seluruh dana gagal asuransi" },
+        "kunci": "B",
+        "pembahasan": "Peran esensial bank dititikberatkan pada statusnya sebagai lembaga perantara keuangan (financial intermediary) yang menghimpun dana yang tidak terpakai dari masyarakat dan meminjamkannya (kredit) kepada pihak yang defisit dana."
+      },
+      {
+        "id": 22,
+        "pertanyaan": "Baik Bank Umum maupun Bank Perkreditan Rakyat (BPR) beroperasi di wilayah administratif Indonesia. Akan tetapi, Undang-Undang membatasi akses masyarakat di BPR. Seseorang tidak bisa datang ke BPR untuk bertransaksi jika tujuannya adalah untuk layanan instrumen...",
+        "opsi": { "A": "Rekening Tabungan Berjangka", "B": "Pengajuan Kredit Usaha Mikro", "C": "Valuta Asing, Perasuransian, dan Simpanan Giro", "D": "Penyimpanan Deposito" },
+        "kunci": "C",
+        "pembahasan": "Tidak seperti Bank Umum, ruang gerak BPR dibatasi undang-undang sehingga dilarang melayani kegiatan lalu lintas pembayaran, melarang pembukaan rekening giro, serta dilarang berbisnis dalam valuta asing."
+      },
+      {
+        "id": 23,
+        "pertanyaan": "Dalam sistem moneter nasional, laju kenaikan harga barang pokok secara tidak terkendali memicu turunnya nilai mata uang. Lembaga yang secara hukum memiliki alat (instrumen) untuk mengeksekusi penarikan uang beredar dari pasar adalah...",
+        "opsi": { "A": "Bursa Efek Indonesia melalui penerbitan obligasi", "B": "Otoritas Jasa Keuangan melalui pencabutan asuransi", "C": "Bank Indonesia (Bank Sentral) melalui instrumen pengaturan kebijakan moneter", "D": "Kementerian Perdagangan melalui pembatasan ekspor" },
+        "kunci": "C",
+        "pembahasan": "Merumuskan serta menindaklanjuti kestabilan gejolak nilai uang menggunakan instrumen moneter (seperti penyesuaian suku bunga atau kebijakan cadangan bank) secara mutlak merupakan tugas dari otoritas moneter yaitu Bank Sentral (BI)."
+      },
+      {
+        "id": 24,
+        "pertanyaan": "Sebuah entitas penyedia jasa keuangan besar kolaps dan gagal memproses pencairan dana pensiun jutaan pegawainya. Dalam kapasitas perlindungan sistemiknya, langkah peradilan (kuratif) yang dapat digunakan oleh OJK untuk merepresentasikan negara adalah...",
+        "opsi": { "A": "Mengubah bank tersebut menjadi Lembaga Pembiayaan", "B": "Menggunakan anggaran bank sentral untuk talangan 100%", "C": "Mengajukan upaya litigasi (gugatan di pengadilan) demi memperoleh ganti rugi aset dari entitas yang membuat kelalaian tersebut", "D": "Membiarkan hukum perdata menyelesaikan secara mandiri" },
+        "kunci": "C",
+        "pembahasan": "OJK memegang kewenangan hukum dan pengawasan dalam memfasilitasi sengketa hingga tingkatan mengajukan gugatan peradilan untuk membela kepastian dan pemulihan harta kekayaan masyarakat dari kerugian investasi lembaga jasa keuangan."
+      },
+      {
+        "id": 25,
+        "pertanyaan": "Nyonya Siska, seorang pedagang keliling, memerlukan suntikan likuiditas modal sebesar Rp5 juta sore ini juga. Ia membawa BPKB sepeda motor sebagai agunan pinjamannya dan enggan berurusan dengan administrasi perbankan. Badan usaha IKNB (non-bank) manakah yang secara fungsi tepat menyelesaikan kebutuhan cepat Nyonya Siska?",
+        "opsi": { "A": "PT Danareksa", "B": "Perusahaan Sewa Guna Usaha", "C": "Dana Pensiun Pemberi Kerja", "D": "Perusahaan Pegadaian" },
+        "kunci": "D",
+        "pembahasan": "Pegadaian adalah LKBB spesialis yang fungsinya menyalurkan pembiayaan atau pinjaman skala mikro yang sifatnya cepat, fleksibel (jangka pendek), menggunakan syarat agunan fisik berupa barang atau surat berharga (barang bergerak)."
+      },
+      {
+        "id": 26,
+        "pertanyaan": "Pondasi sistem perekonomian Indonesia sangat ditentukan oleh institusi independen yang diberi kewenangan mutlak mencetak alat tukar yang sah dan mengambil kebijakan selaku lender of the last resort demi mempertahankan harga Rupiah. Institusi yang dimaksud adalah...",
+        "opsi": { "A": "Bank Pembangunan Daerah", "B": "Otoritas Jasa Keuangan", "C": "Bank Indonesia sebagai Otoritas Moneter", "D": "Kementerian Keuangan" },
+        "kunci": "C",
+        "pembahasan": "Mewujudkan dan menjaga kestabilan nilai rupiah, menjadi bank sirkulasi tunggal (penerbit uang), serta menjaga iklim sistem moneter secara makro adalah tanggung jawab fungsional dari Bank Sentral (Bank Indonesia)."
+      },
+      {
+        "id": 27,
+        "pertanyaan": "Beberapa kelompok pekerja kantoran setiap bulannya menyetorkan iuran yang akan dikelola sebuah badan hukum investasi non-bank. Setoran ini diikat dalam suatu program yang kelak pembayarannya baru akan dinikmati saat mereka menginjak masa purnatugas usia tua. Lembaga pengelolanya disebut...",
+        "opsi": { "A": "Lembaga Pembiayaan Konsumen", "B": "Dana Pensiun", "C": "Reksadana Konvensional", "D": "Pasar Modal" },
+        "kunci": "B",
+        "pembahasan": "Lembaga yang khusus menghimpun iuran dengan kontrak menjanjikan manfaat kesejahteraan berupa pembayaran kompensasi berkesinambungan saat peserta sudah tidak lagi pada umur produktif bekerja adalah Dana Pensiun."
+      },
+      {
+        "id": 28,
+        "pertanyaan": "Reformasi otoritas menugaskan OJK untuk menaungi regulasi operasional perbankan yang sangat krusial. Identifikasi dari salah satu wewenang OJK yang beririsan dengan kelembagaan tata kelola bank-bank secara administratif adalah kemampuannya dalam...",
+        "opsi": { "A": "Mencetak sendiri instrumen logam uang untuk Bank Umum", "B": "Menentukan bank mana yang masuk kategori berdampak sistemik serta kewajiban pemenuhan batas modal minimumnya", "C": "Membekukan wewenang kebijakan suku bunga BI", "D": "Meminjamkan kas negara tanpa batas bunga" },
+        "kunci": "B",
+        "pembahasan": "Wewenang pengaturan dan pengawasan sektor perbankan oleh OJK meliputi analisis terhadap tata kelola, pemenuhan standar modal minimum perbankan, dan menentukan institusi bank berdampak sistemik."
+      },
+      {
+        "id": 29,
+        "pertanyaan": "Di pasar perdana bursa efek, jika Tuan Yudi membeli instrumen berharga ini, secara hukum ia telah diakui sebagai salah satu penguasa atas ekuitas perusahaan, sekalipun persentase kepemilikannya kecil. Tuan Yudi membeli instrumen berupa...",
+        "opsi": { "A": "Deposito Ritel", "B": "Saham Biasa", "C": "Polis Asuransi", "D": "Obligasi" },
+        "kunci": "B",
+        "pembahasan": "Saham adalah instrumen bukti kepemilikan (equity) atau tanda penyertaan modal dari seseorang atau pihak korporasi di dalam suatu entitas perseroan/emiten."
+      },
+      {
+        "id": 30,
+        "pertanyaan": "Dalam dinamika sistem transaksi pengusaha modern, penggunaan Bilyet Giro sangat lazim digunakan untuk pencairan dana berskala raksasa secara non-tunai di perbankan. Namun, warkat giro ini tidak bisa ditarik pencairannya melalui Bank Perkreditan Rakyat (BPR) dikarenakan...",
+        "opsi": { "A": "BPR dilarang oleh Undang-Undang untuk memiliki produk simpanan bentuk Giro dan dilarang memfasilitasi transaksi lalu lintas pembayaran", "B": "BPR hanya mencetak instrumen khusus logam mulia", "C": "Nominal nasabah pengusaha terlalu kecil untuk standar BPR", "D": "Seluruh BPR di Indonesia memprioritaskan pembiayaan impor" },
+        "kunci": "A",
+        "pembahasan": "Ruang operasional BPR diatur sangat ketat, di mana BPR memiliki batasan tidak diperbolehkan sama sekali berpartisipasi dalam lalu lintas pembayaran, dan tidak boleh menghimpun dana berwujud rekening Giro."
+      }
+    ],
+    "soal_essay": [
+      {
+        "id": 31,
+        "pertanyaan": "Perjalanan sistem ekonomi melahirkan ragam fungsi pada uang. Uraikan secara deskriptif mengenai pemisahan antara peruntukan 'Fungsi Asli' uang dengan 'Fungsi Turunan' uang, dan berikan masing-masing 1 (satu) contoh yang logis dari kegiatan keseharian masyarakat kota masa kini!",
+        "jawaban_ideal": "Pemisahan tersebut didasarkan pada tujuan penggunaannya: a. Fungsi Asli: Merupakan peruntukan inti uang sejak awal diciptakannya untuk menggantikan kesulitan barter, yakni sebagai alat tukar menukar langsung dan satuan pengukur nilai. Contoh riil masa kini: Seseorang melihat label harga laptop di toko tercantum senilai Rp10.000.000 (fungsi satuan hitung), lalu ia menyerahkan uang senilai nominal tersebut secara seketika untuk mendapatkan laptop tersebut (fungsi alat tukar). b. Fungsi Turunan: Merupakan peruntukan turunan dari bertambah majunya ekosistem perekonomian manusia, di mana transaksi tidak harus seketika. Kegunaannya meliputi uang sebagai alat pembayaran masa lampau (utang) dan alat penyimpan kekayaan. Contoh riil masa kini: Seseorang membayar premi asuransi tertunggak bulan kemarin via M-Banking (alat pembayaran utang), atau mendepositokan uang bonus tahunan di rekening untuk persiapan liburan dua tahun mendatang (alat penyimpan kekayaan)."
+      },
+      {
+        "id": 32,
+        "pertanyaan": "Berdasarkan anatomi lembaga keuangan Bank, terdapat perbedaan porsi kekuasaan dan operasional antara Bank Sentral dan Bank Umum. Analisislah dan jabarkan 2 (dua) peranan yang bersifat krusial dan mutlak menjadi domain khusus bagi Bank Indonesia (sebagai bank sentral) sehingga ia memiliki derajat institusi lebih tinggi dibandingkan Bank Umum!",
+        "jawaban_ideal": "Bank Indonesia (Bank Sentral) memegang kedudukan mutlak dan superior berkat dua domain wewenang berikut yang sama sekali dilarang untuk diakses oleh Bank Umum: a. Wewenang Otoritas Moneter dan Penerbit Uang: Hanya Bank Indonesia yang berstatus memonopoli hak penerbitan, pencetakan, serta pengaturan sirkulasi mata uang (uang kartal Rupiah) di tanah air. Bank umum murni sebagai lembaga perantara dana (intermediasi keuangan), tidak boleh menerbitkan uang resmi. b. Pemegang Tanggung Jawab Sistemik (Lender of the Last Resort): Bank Indonesia tidak melayani permohonan tabungan warga sipil (masyarakat ritel). Alih-alih, BI menargetkan makroekonomi dan bertindak sebagai bank kas bagi badan pemerintah serta institusi penopang pinjaman dana terakhir bagi bank-bank umum lain yang mengalami kekeringan modal darurat."
+      },
+      {
+        "id": 33,
+        "pertanyaan": "Saat ini, generasi muda gencar menjajaki literasi berinvestasi pada Pasar Modal dengan dua instrumen favorit: Saham dan Obligasi. Kemukakan sebuah analisis fundamental, mengapa seseorang yang menghindari risiko kehilangan modal (berprofil konservatif) sangat dianjurkan untuk tidak berinvestasi Saham dan lebih baik beralih membeli instrumen Obligasi saja saat menghadapi isu perusahaan yang diprediksi akan pailit/bangkrut!",
+        "jawaban_ideal": "Hal ini berkaitan erat dengan profil risiko kepemilikan dan instrumen kontrak dalam kepailitan: a. Saham: Membeli saham berarti bertindak sebagai 'pemilik' (pemegang ekuitas) perusahaan. Profil risikonya paling esktrem. Manakala perusahaan emiten resmi dinyatakan pailit, undang-undang kepailitan menempatkan hak pembagian ganti rugi aset pemegang saham di tingkatan (hierarki) paling akhir dan bukan prioritas, sehingga modal pemegang saham besar kemungkinan akan lenyap atau hangus tidak berbekas. b. Obligasi (Surat Utang): Membeli obligasi berarti berposisi aman sebagai 'kreditur yang memberi piutang'. Obligasi memberikan kepastian nominal bunga tetap. Saat kepailitan melanda emiten, undang-undang perdata menetapkan bahwa pelunasan hak kreditur obligasi menempatkan urutan prioritas utama secara proteksi hukum dan akan dilunasi asetnya mendahului pemegang ekuitas pemegang saham. Karenanya, obligasi jauh lebih aman untuk tipe konservatif."
+      },
+      {
+        "id": 34,
+        "pertanyaan": "Sebelum era reformasi otoritas, BI mengendalikan tata kelola seluruh Bank Umum secara otonom, sementara sektor IKNB (Asuransi) diawasi birokrasi lain. Analisislah latar belakang mendesaknya rasionalitas pemerintah (urgensi pembentukan) untuk mengintegrasikan pengawasan keseluruhan ekosistem tersebut ke dalam lembaga independen berskala terpadu melalui wewenang OJK!",
+        "jawaban_ideal": "Urgensi yang mendasari terbentuknya OJK adalah dinamika pertumbuhan konglomerasi finansial (cross-sector finance) yang sangat masif di era modern. Saat ini, sistem lembaga jasa keuangan menjadi sangat kompleks; sebuah mega korporasi dengan kepemilikan tunggal sangat mungkin menaungi cabang Bank, Asuransi, serta Perusahaan Modal Ventura secara berantai sekaligus. Apabila fungsi pengaturan dan pengawasan tidak satu atap (terintegrasi), maka risiko celah regulasi, kebijakan standar modal yang bertabrakan, atau keruntuhan pada satu entitas dapat secara sistemik menjalar dan menciptakan domino efek yang meruntuhkan instrumen keuangan lain di bawah grup yang sama. Oleh karena itu, urgent (sangat strategis) bagi OJK untuk hadir sebagai pengawas yang terintegrasi (menyeluruh) agar stabilitas pengawasan perbankan dan non-bank dapat dimonitor secara transparan di dalam satu komando, menghindarkan publik dari krisis skala besar."
+      },
+      {
+        "id": 35,
+        "pertanyaan": "Fenomena investasi bodong atau aplikasi skema tipuan sangat membahayakan ekonomi masyarakat berliterasi rendah. Dalam membela ketahanan ekosistem permodalan, analisis tindakan proteksi dan resolusi apa (baik preventif maupun langkah kuratif) yang wajib dieksekusi oleh Otoritas Jasa Keuangan sesuai mandat kewenangannya?",
+        "jawaban_ideal": "Tindakan langkah pertahanan OJK dijalankan melalui mekanisme dua poros utama: a. Langkah Preventif (Pencegahan Publik): OJK memegang tanggung jawab wewenang pelaksanaan sistem edukasi literasi secara konstan untuk mengayomi keamanan konsumen. OJK diwajibkan menjembatani dan menyiarkan data keterbukaan seluruh daftar entitas legal di portal resmi OJK, agar masyarakat luas dapat melakukan validasi akurasi instrumen sebelum mengalokasikan tabungannya ke pasar. b. Langkah Kuratif (Sanksi & Litigasi Hukum): Dalam penanganan investasi bodong yang memakan korban, OJK akan menggunakan tindakan kuratif dengan menerima saluran sengketa pengaduan, memblokir izin dan aktivitas jaringan tersebut, serta bermitra di dalam institusi khusus penegak hukum (Satgas Waspada Investasi) untuk memidanakan pelaku. OJK berwenang penuh atas nama keadilan mengajukan gugatan di peradilan litigasi demi berupaya merampas kembali aset dan menuntut ganti kerugian harta konsumen yang direnggut oleh perusahaan tersebut."
       }
     ]
   }
