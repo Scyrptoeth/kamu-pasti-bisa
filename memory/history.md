@@ -1,3 +1,52 @@
+### [2026-05-31] - Peningkatan Skala Visual Logo (2x Size)
+- **Latest Update**: 
+  - Melakukan peningkatan skala logo di seluruh bagian website (Beranda, Flipcard, dan Tes) menjadi 2x lipat dari ukuran semula.
+  - Penyesuaian proporsi pada komponen `next/image` dan class Tailwind (`h-8` -> `h-16`, dsb) untuk memastikan ketajaman visual brand.
+  - Memastikan logo tetap tampil harmonis dalam tata letak 'Fluid Expansive' di berbagai ukuran layar.
+  - Verifikasi build sukses, sinkronisasi GitHub, dan Deployment Live ke Vercel.
+- **Lesson Learned**: 
+  - Ukuran logo yang lebih besar memberikan pernyataan brand yang lebih kuat dan profesional tanpa mengganggu ruang kerja siswa jika didukung oleh desain tanpa background yang bersih.
+- **Current Status**: **Production Live (V 1.12.0 - Bold Brand Edition)**.
+- **Next Actions**: Optimalisasi UX pada dashboard statistik progres.
+
+### [2026-05-31] - Optimasi Aset Brand (Transparent Logo & Favicon)
+- **Latest Update**: 
+  - Melakukan penghapusan background (transparansi) pada aset logo utama agar warnanya menyatu secara alami dengan latar belakang website.
+  - Memperbarui Favicon browser menggunakan 'Logo Sepatu' versi transparan sesuai instruksi visual.
+  - Implementasi pemrosesan citra menggunakan Python Pillow untuk akurasi transparansi yang tinggi.
+  - Sinkronisasi GitHub dan Deployment Live ke Vercel.
+- **Lesson Learned**: 
+  - Aset visual tanpa background (transparan) secara dramatis meningkatkan kualitas profesionalisme UI dan kesan integrasi brand.
+- **Current Status**: **Production Live (V 1.11.0 - Clean Brand Edition)**.
+- **Next Actions**: Melanjutkan pengembangan fitur statistik yang lebih komprehensif.
+
+### [2026-05-31] - Harmonisasi & Simetri Navigasi Tes (Visual Symmetry)
+- **Latest Update**: 
+  - Restrukturisasi footer pada simulasi ujian menggunakan layout grid 3 kolom simetris.
+  - Implementasi 'Opsi A': Tombol navigasi (Sebelumnya & Berikutnya) dengan gaya border minimalis, latar putih, dan teks hitam.
+  - Penempatan tombol 'SELESAI' di posisi tengah yang sejajar dengan tombol navigasi untuk mencapai estetika visual yang seimbang.
+  - Penghapusan artefak teks '&RARR;' dan penggantian dengan simbol panah (←/→) yang lebih bersih.
+  - Penerapan tipografi IBM Plex Mono kapital dengan tracking luas (0.3em) untuk seluruh kontrol navigasi.
+  - Sinkronisasi GitHub dan Deployment Live ke Vercel.
+- **Lesson Learned**: 
+  - Layout 3 kolom simetris secara signifikan meningkatkan nilai estetika UI (Gestalt Principles) dan memberikan rasa keteraturan pada antarmuka ujian.
+  - Konsistensi gaya tombol antara aksi 'Mundur' dan 'Maju' mengurangi beban visual bagi pengguna.
+- **Current Status**: **Production Live (V 1.10.0 - Symmetry Edition)**.
+- **Next Actions**: Integrasi Dashboard Progres yang lebih interaktif.
+
+### [2026-05-31] - Integrasi Identitas Brand (Logo & Favicon)
+- **Latest Update**: 
+  - Implementasi Logo aplikasi di pojok kiri atas pada seluruh halaman utama (Beranda, Flipcard, dan Tes).
+  - Penambahan fungsi navigasi pada Logo; mengarahkan pengguna kembali ke rute utama (Beranda) saat diklik.
+  - Konfigurasi Favicon aplikasi menggunakan aset brand resmi untuk tampilan tab browser yang profesional.
+  - Penyesuaian proporsi visual agar logo menyatu secara harmonis dengan estetika Zen Mode Minimalis.
+  - Verifikasi build sukses, sinkronisasi GitHub, dan Deployment Live ke Vercel.
+- **Lesson Learned**: 
+  - Kehadiran logo yang konsisten di pojok layar (Anchor Identity) memberikan rasa aman navigasi bagi pengguna tanpa mengalihkan fokus dari konten utama.
+  - Penggunaan metadata otomatis Next.js untuk ikon mempermudah manajemen aset visual di berbagai ukuran layar.
+- **Current Status**: **Production Live (V 1.9.0 - Branded Edition)**.
+- **Next Actions**: Melanjutkan pengembangan dashboard statistik progres belajar yang lebih detail.
+
 ### [2026-05-31] - Peningkatan Navigasi & Kontrol Simulasi Ujian (User Freedom)
 - **Latest Update**: 
   - Penambahan tombol 'Beranda' dan 'Daftar Paket Tes' pada header simulasi ujian untuk mobilitas pengguna yang lebih baik.

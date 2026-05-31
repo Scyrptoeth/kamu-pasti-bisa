@@ -107,7 +107,7 @@ export default function TesPage() {
         <div className="flex-1 flex flex-col lg:flex-row items-center justify-center gap-12 py-12">
           <div className="lg:w-1/3">
             <h2 className="text-4xl font-bold text-ink mb-4">Pilih Paket Ujian</h2>
-            <p className="text-muted text-lg max-w-sm">Setiap paket terdiri dari 30 Soal Pilihan Ganda dan 5 Soal Esai dengan evaluasi AI instan.</p>
+            <p className="text-muted text-lg max-w-sm">Setiap paket terdiri dari 30 Soal Pilihan Ganda dan 5 Soal Esai dengan evaluasi oleh Sistem Pintar yang telah ditanamkan di website.</p>
           </div>
           
           <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6 w-full text-left">
@@ -131,7 +131,7 @@ export default function TesPage() {
 
         <footer className="pt-8 border-t border-gray-100 flex justify-between text-[12px] uppercase tracking-[0.3em] text-muted font-mono font-medium">
           <p>© 2026 Kamu Pasti Bisa</p>
-          <p>Ujian Terstandar AI</p>
+          <p></p>
         </footer>
       </main>
     );
@@ -212,7 +212,101 @@ export default function TesPage() {
           </div>
         </div>
 
-        <footer className="pt-8 border-t border-gray-100 flex justify-between text-[12px] uppercase tracking-[0.3em] text-muted font-mono font-medium">
+        {/* Section: Tinjauan Ulang Hasil Ujian */}
+        <div className="mt-24 border-t-4 border-ink pt-16 max-w-[98%] mx-auto w-full">
+          <h2 className="text-5xl font-black text-ink uppercase tracking-tighter mb-12">Tinjauan Ulang Hasil Ujian</h2>
+          <div className="space-y-16">
+            {/* PG Review */}
+            <div className="space-y-8">
+              <h3 className="text-xl font-bold uppercase tracking-widest text-muted border-b border-gray-100 pb-4 mb-8 font-mono">Bagian I: Pilihan Ganda</h3>
+              <div className="grid grid-cols-1 gap-8">
+                {paket?.soal_pg.map((q, idx) => {
+                  const userAnswer = userAnswers[q.id];
+                  const isCorrect = userAnswer === q.kunci;
+                  return (
+                    <div key={q.id} className="p-8 border-2 border-gray-100 hover:border-ink transition-all bg-white shadow-sm">
+                      <div className="flex justify-between items-start mb-6">
+                        <span className="text-xs font-bold font-mono uppercase tracking-[0.3em] text-muted">Soal {idx + 1}</span>
+                        <span className={`px-4 py-1 text-[10px] font-bold font-mono uppercase ${isCorrect ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
+                          {isCorrect ? 'Benar' : 'Salah'}
+                        </span>
+                      </div>
+                      <h4 className="text-2xl font-bold text-ink mb-8 leading-relaxed">{q.pertanyaan}</h4>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        {Object.entries(q.opsi).map(([key, val]) => {
+                          const isUserChoice = userAnswer === key;
+                          const isKunci = q.kunci === key;
+                          let borderColor = "border-gray-100";
+                          let bgColor = "bg-white";
+
+                          if (isUserChoice) {
+                            borderColor = isCorrect ? "border-green-500" : "border-red-500";
+                            bgColor = isCorrect ? "bg-green-50" : "bg-red-50";
+                          } else if (isKunci) {
+                            borderColor = "border-green-500";
+                            bgColor = "bg-green-50";
+                          }
+
+                          return (
+                            <div key={key} className={`p-6 border-2 rounded-sm flex gap-4 ${borderColor} ${bgColor}`}>
+                              <span className={`font-mono font-black text-xl ${isUserChoice || isKunci ? 'opacity-100' : 'opacity-20'}`}>{key}</span>
+                              <span className="text-lg font-medium">{val as string}</span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                      <div className="bg-gray-50 p-8 border-l-4 border-ink">
+                        <p className="text-xs font-bold uppercase tracking-widest text-ink mb-4 font-mono">Pembahasan:</p>
+                        <p className="text-lg text-muted leading-relaxed">{q.pembahasan}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Essay Review */}
+            <div className="space-y-8">
+              <h3 className="text-xl font-bold uppercase tracking-widest text-muted border-b border-gray-100 pb-4 mb-8 font-mono">Bagian II: Esai</h3>
+              <div className="grid grid-cols-1 gap-8">
+                {paket?.soal_essay.map((q, idx) => {
+                  const grade = results.essayGrades.find((g: any) => g.id === q.id);
+                  return (
+                    <div key={q.id} className="p-8 border-2 border-gray-100 hover:border-ink transition-all bg-white shadow-sm">
+                      <div className="flex justify-between items-start mb-6">
+                        <span className="text-xs font-bold font-mono uppercase tracking-[0.3em] text-muted">Soal {idx + 31}</span>
+                        <span className="px-4 py-1 bg-ink text-white text-[10px] font-bold font-mono uppercase">Skor: {grade?.score || 0}/10</span>
+                      </div>
+                      <h4 className="text-2xl font-bold text-ink mb-8 leading-relaxed">{q.pertanyaan}</h4>
+                      
+                      <div className="space-y-8">
+                        <div className="space-y-4">
+                          <p className="text-xs font-bold uppercase tracking-widest text-muted font-mono">Jawaban Anda:</p>
+                          <p className="text-xl text-ink font-medium leading-relaxed italic bg-gray-50 p-8 border border-gray-100">
+                            "{essayAnswers[q.id] || "(Kosong)"}"
+                          </p>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                          <div className="p-8 border-2 border-gray-100 bg-white">
+                            <p className="text-xs font-bold uppercase tracking-widest text-ink mb-4 font-mono">Evaluasi Sistem:</p>
+                            <p className="text-base text-muted leading-relaxed">{grade?.explanation || "Tidak ada evaluasi."}</p>
+                          </div>
+                          <div className="p-8 border-2 border-gray-100 bg-white">
+                            <p className="text-xs font-bold uppercase tracking-widest text-ink mb-4 font-mono">Jawaban Ideal:</p>
+                            <p className="text-base text-muted leading-relaxed">{q.jawaban_ideal}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer className="pt-16 pb-8 border-t border-gray-100 flex justify-between text-[12px] uppercase tracking-[0.3em] text-muted font-mono font-medium">
           <p>© 2026 Kamu Pasti Bisa</p>
           <p>Generated by DeepSeek AI</p>
         </footer>
@@ -265,16 +359,6 @@ export default function TesPage() {
             className="text-[10px] font-bold text-muted hover:text-ink uppercase tracking-widest font-mono border-b border-transparent hover:border-ink pb-1 transition-all"
           >
             Daftar Paket Tes
-          </button>
-          <button 
-            onClick={() => {
-              if (window.confirm("Apakah Anda yakin ingin mengakhiri tes ini? Hasil akan langsung dikalkulasi.")) {
-                finishTest();
-              }
-            }}
-            className="bg-ink text-white px-4 py-2 text-[10px] font-bold uppercase tracking-widest font-mono hover:opacity-90 transition-all rounded-sm"
-          >
-            Selesai
           </button>
           <div className="hidden sm:flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-mint animate-pulse" />
