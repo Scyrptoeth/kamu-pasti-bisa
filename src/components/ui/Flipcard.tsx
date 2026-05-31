@@ -5,15 +5,21 @@ import { useState } from "react";
 interface FlipcardProps {
   question: string;
   answer: string;
+  onFlip?: () => void;
 }
 
-export default function Flipcard({ question, answer }: FlipcardProps) {
+export default function Flipcard({ question, answer, onFlip }: FlipcardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleFlip = () => {
+    setIsFlipped(!isFlipped);
+    if (onFlip) onFlip();
+  };
 
   return (
     <div 
       className="group perspective w-full h-64 cursor-pointer"
-      onClick={() => setIsFlipped(!isFlipped)}
+      onClick={handleFlip}
     >
       <div className={`relative preserve-3d duration-500 w-full h-full ${isFlipped ? 'rotate-y-180' : ''}`}>
         {/* Sisi Depan: Pertanyaan */}
