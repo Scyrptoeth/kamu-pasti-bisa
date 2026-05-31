@@ -1,0 +1,395 @@
+[
+  {
+    "id": 1,
+    "kategori": "Ekonomi",
+    "soal_pg": [
+      {
+        "id": 1,
+        "pertanyaan": "Seseorang menggunakan uangnya untuk membeli sayuran di pasar. Pernyataan ini menunjukkan kegunaan uang sebagai...",
+        "opsi": {
+          "A": "Alat penimbun kekayaan",
+          "B": "Alat tukar menukar",
+          "C": "Alat pemindah kekayaan",
+          "D": "Alat pembayaran utang"
+        },
+        "kunci": "B",
+        "pembahasan": "Fungsi asli uang ada dua, yaitu sebagai alat tukar menukar (mempermudah transaksi barang/jasa) dan sebagai satuan hitung."
+      },
+      {
+        "id": 2,
+        "pertanyaan": "Ibu Sari menabung sisa uang belanja setiap bulan di bank untuk keperluan biaya sekolah anaknya 3 tahun mendatang. Dalam hal ini, uang menjalankan fungsi sebagai...",
+        "opsi": {
+          "A": "Satuan hitung",
+          "B": "Alat pembayaran",
+          "C": "Alat penimbun kekayaan (standard of value)",
+          "D": "Alat pemindah kekayaan"
+        },
+        "kunci": "C",
+        "pembahasan": "Uang dapat digunakan untuk menggeser daya beli dari masa sekarang ke masa depan."
+      },
+      {
+        "id": 3,
+        "pertanyaan": "Syarat psikologis agar uang dapat diterima oleh masyarakat adalah...",
+        "opsi": {
+          "A": "Dapat dibagi tanpa mengurangi nilai",
+          "B": "Mempunyai nilai yang stabil",
+          "C": "Terdapat kepercayaan masyarakat (acceptability)",
+          "D": "Tahan lama dan tidak mudah rusak"
+        },
+        "kunci": "C",
+        "pembahasan": "Masyarakat harus percaya bahwa uang tersebut memiliki nilai dan dapat digunakan untuk transaksi."
+      },
+      {
+        "id": 4,
+        "pertanyaan": "Uang yang nilai intrinsiknya (bahan) sama dengan nilai nominalnya (angka yang tertulis) disebut sebagai...",
+        "opsi": {
+          "A": "Token money",
+          "B": "Full bodied money",
+          "C": "Fiat money",
+          "D": "Credit money"
+        },
+        "kunci": "B",
+        "pembahasan": "Contoh full bodied money adalah koin emas atau perak di masa lalu."
+      },
+      {
+        "id": 5,
+        "pertanyaan": "Berikut ini yang termasuk instrumen pembayaran non-tunai berbasis warkat (kertas) adalah...",
+        "opsi": {
+          "A": "Kartu Kredit",
+          "B": "Cek dan Bilyet Giro",
+          "C": "E-money",
+          "D": "QRIS"
+        },
+        "kunci": "B",
+        "pembahasan": "Cek dan bilyet giro adalah perintah bayar tertulis di atas kertas warkat."
+      },
+      {
+        "id": 6,
+        "pertanyaan": "Lembaga negara yang memiliki tugas tunggal mencapai dan memelihara kestabilan nilai rupiah adalah...",
+        "opsi": {
+          "A": "Kementerian Keuangan",
+          "B": "Otoritas Jasa Keuangan (OJK)",
+          "C": "Bank Indonesia",
+          "D": "Lembaga Penjamin Simpanan (LPS)"
+        },
+        "kunci": "C",
+        "pembahasan": "Bank Indonesia adalah bank sentral Republik Indonesia."
+      },
+      {
+        "id": 7,
+        "pertanyaan": "Kebijakan Bank Indonesia menaikkan suku bunga untuk meredam inflasi disebut kebijakan...",
+        "opsi": {
+          "A": "Operasi Pasar Terbuka",
+          "B": "Diskonto",
+          "C": "Cadangan Kas",
+          "D": "Kredit Selektif"
+        },
+        "kunci": "B",
+        "pembahasan": "Kebijakan diskonto adalah pengaturan jumlah uang beredar melalui tingkat suku bunga bank sentral."
+      },
+      {
+        "id": 8,
+        "pertanyaan": "Sistem pembayaran di Indonesia diatur dan diawasi sepenuhnya oleh...",
+        "opsi": {
+          "A": "Presiden",
+          "B": "OJK",
+          "C": "Bank Indonesia",
+          "D": "Bursa Efek Indonesia"
+        },
+        "kunci": "C",
+        "pembahasan": "Salah satu pilar tugas BI adalah mengatur dan menjaga kelancaran sistem pembayaran."
+      },
+      {
+        "id": 9,
+        "pertanyaan": "Prinsip sistem pembayaran 'Efisien' berarti...",
+        "opsi": {
+          "A": "Aman dari risiko penipuan",
+          "B": "Dapat digunakan secara luas (interoperabilitas)",
+          "C": "Biaya murah dan proses cepat",
+          "D": "Perlindungan konsumen terjamin"
+        },
+        "kunci": "C",
+        "pembahasan": "Efisiensi menekankan pada optimalisasi biaya dan waktu transaksi."
+      },
+      {
+        "id": 10,
+        "pertanyaan": "Alat pembayaran elektronik yang saldonya tersimpan pada chip atau server (bukan di rekening bank langsung) adalah...",
+        "opsi": {
+          "A": "Kartu Debit",
+          "B": "Kartu Kredit",
+          "C": "Uang Elektronik (E-Money/Dompet Digital)",
+          "D": "Bilyet Giro"
+        },
+        "kunci": "C",
+        "pembahasan": "E-money bersifat stored value, berbeda dengan kartu debit yang terhubung langsung ke tabungan."
+      },
+      {
+        "id": 11,
+        "pertanyaan": "Lembaga yang berfungsi mengatur dan mengawasi seluruh kegiatan di dalam sektor jasa keuangan adalah...",
+        "opsi": {
+          "A": "Bank Indonesia",
+          "B": "OJK",
+          "C": "LPS",
+          "D": "Bappebti"
+        },
+        "kunci": "B",
+        "pembahasan": "OJK mengambil alih fungsi pengawasan mikroprudensial dari BI sejak 2011."
+      },
+      {
+        "id": 12,
+        "pertanyaan": "Tugas OJK dalam memberikan izin pendirian bank merupakan fungsi...",
+        "opsi": {
+          "A": "Pengawasan",
+          "B": "Pengaturan",
+          "C": "Pemeriksaan",
+          "D": "Penyidikan"
+        },
+        "kunci": "B",
+        "pembahasan": "Regulasi dan perizinan masuk dalam wewenang pengaturan."
+      },
+      {
+        "id": 13,
+        "pertanyaan": "Bank yang melaksanakan kegiatan usaha secara konvensional atau syariah yang dalam kegiatannya tidak memberikan jasa dalam lalu lintas pembayaran disebut...",
+        "opsi": {
+          "A": "Bank Umum",
+          "B": "Bank Sentral",
+          "C": "Bank Perekonomian Rakyat (BPR)",
+          "D": "Bank Pembangunan Daerah"
+        },
+        "kunci": "C",
+        "pembahasan": "BPR memiliki keterbatasan operasional dibandingkan bank umum."
+      },
+      {
+        "id": 14,
+        "pertanyaan": "Kegiatan menghimpun dana dari masyarakat dalam bentuk simpanan disebut...",
+        "opsi": {
+          "A": "Funding",
+          "B": "Lending",
+          "C": "Service",
+          "D": "Transfer"
+        },
+        "kunci": "A",
+        "pembahasan": "Funding adalah penarikan dana (pasiva), sedangkan lending adalah penyaluran dana (aktiva)."
+      },
+      {
+        "id": 15,
+        "pertanyaan": "Simpanan yang penarikannya hanya dapat dilakukan pada waktu tertentu sesuai perjanjian disebut...",
+        "opsi": {
+          "A": "Giro",
+          "B": "Tabungan",
+          "C": "Deposito Berjangka",
+          "D": "Cek"
+        },
+        "kunci": "C",
+        "pembahasan": "Deposito memiliki tenor/jangka waktu tertentu (misal 1, 3, 6 bulan)."
+      },
+      {
+        "id": 16,
+        "pertanyaan": "Manfaat asuransi bagi nasabah adalah...",
+        "opsi": {
+          "A": "Mendapatkan bunga tinggi",
+          "B": "Pengalihan risiko (transfer of risk)",
+          "C": "Alat pembayaran utang",
+          "D": "Tempat meminjam modal"
+        },
+        "kunci": "B",
+        "pembahasan": "Nasabah membayar premi agar risiko kerugian ditanggung perusahaan asuransi."
+      },
+      {
+        "id": 17,
+        "pertanyaan": "Lembaga keuangan yang memberikan pinjaman dengan jaminan barang bergerak disebut...",
+        "opsi": {
+          "A": "Koperasi",
+          "B": "Pegadaian",
+          "C": "Leasing",
+          "D": "Pasar Modal"
+        },
+        "kunci": "B",
+        "pembahasan": "Semboyan Pegadaian: Mengatasi Masalah Tanpa Masalah."
+      },
+      {
+        "id": 18,
+        "pertanyaan": "Pihak yang mengelola dana pensiun bagi karyawan disebut...",
+        "opsi": {
+          "A": "Manajer Investasi",
+          "B": "Dana Pensiun",
+          "C": "Perbankan",
+          "D": "OJK"
+        },
+        "kunci": "B",
+        "pembahasan": "Dana pensiun menjamin kesejahteraan ekonomi nasabah di masa tua."
+      },
+      {
+        "id": 19,
+        "pertanyaan": "Pasar tempat bertemunya pihak yang kelebihan dana dan pihak yang membutuhkan dana jangka panjang melalui instrumen saham/obligasi disebut...",
+        "opsi": {
+          "A": "Pasar Uang",
+          "B": "Pasar Modal",
+          "C": "Pasar Valuta Asing",
+          "D": "Pasar Komoditas"
+        },
+        "kunci": "B",
+        "pembahasan": "Pasar modal dikelola oleh Bursa Efek Indonesia (BEI)."
+      },
+      {
+        "id": 20,
+        "pertanyaan": "Bukti kepemilikan seseorang atas sebuah perusahaan disebut...",
+        "opsi": {
+          "A": "Obligasi",
+          "B": "Saham",
+          "C": "Reksadana",
+          "D": "Warkat"
+        },
+        "kunci": "B",
+        "pembahasan": "Pemegang saham berhak atas dividen (pembagian laba)."
+      },
+      {
+        "id": 21,
+        "pertanyaan": "Pernyataan yang benar mengenai perbedaan bank dan lembaga keuangan bukan bank (LKBB) adalah...",
+        "opsi": {
+          "A": "Bank tidak boleh memberikan kredit, LKBB boleh",
+          "B": "Bank boleh menghimpun dana secara langsung (giro/tabungan), LKBB tidak boleh",
+          "C": "LKBB diawasi BI, Bank diawasi OJK",
+          "D": "Hanya bank yang boleh mencari keuntungan"
+        },
+        "kunci": "B",
+        "pembahasan": "LKBB biasanya menghimpun dana melalui penerbitan surat berharga atau premi asuransi."
+      },
+      {
+        "id": 22,
+        "pertanyaan": "Salah satu tujuan utama manajemen keuangan bagi perusahaan adalah...",
+        "opsi": {
+          "A": "Memperkecil jumlah karyawan",
+          "B": "Memaksimalkan nilai perusahaan/keuntungan",
+          "C": "Menghindari pembayaran pajak",
+          "D": "Membayar utang dengan utang baru"
+        },
+        "kunci": "B",
+        "pembahasan": "Manajemen keuangan bertujuan mengelola sumber daya dana secara efisien."
+      },
+      {
+        "id": 23,
+        "pertanyaan": "Prinsip ekonomi dalam kegiatan konsumsi adalah...",
+        "opsi": {
+          "A": "Menggunakan modal sedikit untuk untung banyak",
+          "B": "Mencapai kepuasan maksimal dengan pengorbanan tertentu",
+          "C": "Membeli barang mewah agar terlihat kaya",
+          "D": "Membeli semua barang yang sedang diskon"
+        },
+        "kunci": "B",
+        "pembahasan": "Konsumen bertujuan mengoptimalkan utilitas (kepuasan)."
+      },
+      {
+        "id": 24,
+        "pertanyaan": "Berikut yang bukan merupakan ciri-ciri sistem ekonomi pasar (liberal) adalah...",
+        "opsi": {
+          "A": "Hak milik pribadi diakui",
+          "B": "Adanya persaingan bebas",
+          "C": "Harga ditentukan oleh mekanisme pasar",
+          "D": "Pemerintah merencanakan semua kegiatan ekonomi"
+        },
+        "kunci": "D",
+        "pembahasan": "Pemerintah dominan adalah ciri sistem ekonomi komando/pusat."
+      },
+      {
+        "id": 25,
+        "pertanyaan": "Dalam sistem ekonomi Indonesia (Pancasila), cabang produksi yang penting bagi negara dan menguasai hajat hidup orang banyak dikuasai oleh...",
+        "opsi": {
+          "A": "Perusahaan asing",
+          "B": "Negara",
+          "C": "Individu kaya",
+          "D": "Organisasi internasional"
+        },
+        "kunci": "B",
+        "pembahasan": "Sesuai Pasal 33 UUD 1945."
+      },
+      {
+        "id": 26,
+        "pertanyaan": "Inflasi yang terjadi karena kenaikan permintaan masyarakat yang sangat tinggi disebut...",
+        "opsi": {
+          "A": "Cost push inflation",
+          "B": "Demand pull inflation",
+          "C": "Imported inflation",
+          "D": "Hyperinflation"
+        },
+        "kunci": "B",
+        "pembahasan": "Tarikan permintaan menyebabkan harga naik."
+      },
+      {
+        "id": 27,
+        "pertanyaan": "Salah satu dampak negatif inflasi bagi penabung adalah...",
+        "opsi": {
+          "A": "Nilai riil uang yang disimpan menurun",
+          "B": "Jumlah uang di bank bertambah banyak",
+          "C": "Bunga bank menjadi nol",
+          "D": "Bank akan bangkrut"
+        },
+        "kunci": "A",
+        "pembahasan": "Daya beli uang tabungan berkurang akibat kenaikan harga barang."
+      },
+      {
+        "id": 28,
+        "pertanyaan": "Koperasi yang anggotanya terdiri dari orang perorangan disebut...",
+        "opsi": {
+          "A": "Koperasi Primer",
+          "B": "Koperasi Sekunder",
+          "C": "Induk Koperasi",
+          "D": "Gabungan Koperasi"
+        },
+        "kunci": "A",
+        "pembahasan": "Koperasi primer dibentuk sekurang-kurangnya 20 orang."
+      },
+      {
+        "id": 29,
+        "pertanyaan": "Sisa Hasil Usaha (SHU) koperasi dibagikan kepada anggota berdasarkan...",
+        "opsi": {
+          "A": "Besarnya setoran modal saja",
+          "B": "Jabatan dalam pengurus",
+          "C": "Jasa modal dan jasa transaksi anggota",
+          "D": "Kebutuhan masing-masing anggota"
+        },
+        "kunci": "C",
+        "pembahasan": "Prinsip keadilan dalam koperasi."
+      },
+      {
+        "id": 30,
+        "pertanyaan": "Seseorang tidak bisa datang ke BPR dan meminta membuka sebuah rekening yang dananya dapat ditarik menggunakan cek untuk pembayaran dagang seketika. Karena sesuai Undang-Undang, BPR dilarang keras untuk menghimpun simpanan berbentuk...",
+        "opsi": {
+          "A": "Tabungan berjangka",
+          "B": "Deposito",
+          "C": "Valuta Konvensional",
+          "D": "Giro"
+        },
+        "kunci": "D",
+        "pembahasan": "Produk BPR sangat dibatasi. BPR hanya boleh menerima tabungan dan deposito. BPR dilarang menerima simpanan berupa Giro dan dilarang terlibat dalam lalu lintas pembayaran langsung menggunakan instrumen seperti cek."
+      }
+    ],
+    "soal_essay": [
+      {
+        "id": 31,
+        "pertanyaan": "Jelaskan perbedaan prinsip antara 'Fungsi Asli' uang dan 'Fungsi Turunan' uang, dan berikan masing-masing 1 contoh aktivitas nyata di masyarakat!",
+        "jawaban_ideal": "Perbedaan prinsip antara 'Fungsi Asli' uang dan 'Fungsi Turunan' uang, antara lain: a. Fungsi Asli adalah fungsi pokok sejak awal uang diciptakan untuk menyelesaikan kendala sistem barter. Fungsi asli ini mencakup alat tukar menukar (misal: Budi membeli sepatu dengan uang Rp150.000 di toko) dan sebagai satuan hitung (menentukan label harga sepatu tersebut). b. Fungsi Turunan adalah kegunaan tambahan dari uang seiring berkembangnya sistem perekonomian peradaban manusia modern. Contohnya adalah sebagai alat pembayaran utang/masa lalu (misal: Andi melunasi cicilan motor bulan lalu pakai uang) dan alat penimbun kekayaan (menyimpan uang sisa panen di tabungan)."
+      },
+      {
+        "id": 32,
+        "pertanyaan": "Mengapa Bank Indonesia (BI) disebut sebagai 'Lender of Last Resort'? Jelaskan konsekuensi bagi perbankan jika fungsi ini tidak dijalankan saat krisis ekonomi!",
+        "jawaban_ideal": "BI disebut Lender of Last Resort karena BI adalah otoritas terakhir yang dapat memberikan pinjaman likuiditas darurat kepada bank umum yang mengalami kesulitan pendanaan jangka pendek. Jika fungsi ini tidak dijalankan saat krisis, maka bank tersebut bisa mengalami 'bank run' (penarikan besar-besaran), sistem perbankan bisa kolaps/memicu efek domino sistemik, dan kepercayaan masyarakat terhadap ekonomi negara akan hancur."
+      },
+      {
+        "id": 33,
+        "pertanyaan": "Sebutkan dan jelaskan 3 pilar tugas utama Bank Indonesia dalam menjaga stabilitas nilai rupiah!",
+        "jawaban_ideal": "Tiga pilar tugas BI adalah: 1) Menetapkan dan melaksanakan kebijakan moneter (mengatur jumlah uang beredar & suku bunga). 2) Mengatur dan menjaga kelancaran sistem pembayaran (pengaturan alat tukar tunai & non-tunai). 3) Mengatur dan mengawasi bank (khususnya kebijakan makroprudensial untuk kesehatan sistem keuangan secara keseluruhan)."
+      },
+      {
+        "id": 34,
+        "pertanyaan": "OJK memiliki fungsi pengawasan sektor jasa keuangan. Jelaskan apa yang dimaksud dengan pengawasan 'Mikroprudensial' dan berikan contoh tindakan nyata OJK dalam melindungi konsumen perbankan!",
+        "jawaban_ideal": "Pengawasan Mikroprudensial adalah pengawasan yang berfokus pada kesehatan dan kinerja individu lembaga keuangan (bank per bank). Contoh tindakan nyata OJK: melakukan pemeriksaan rutin laporan keuangan bank, memberikan edukasi literasi keuangan kepada masyarakat, dan menyediakan layanan pengaduan konsumen (portal perlindungan konsumen) jika terjadi sengketa antara nasabah dan bank."
+      },
+      {
+        "id": 35,
+        "pertanyaan": "Kasus penipuan investasi (investasi bodong) sangat marak terjadi di masyarakat. Tindakan langkah evaluasi komprehensif apa yang berhak dilakukan OJK secara preventif dan kuratif dalam menghadapi fenomena ini?",
+        "jawaban_ideal": "OJK melakukan langkah perlindungan dari dua sisi: a. Langkah Preventif (Pencegahan): OJK sangat masif memberikan transparansi, informasi, dan edukasi literasi keuangan agar masyarakat paham ciri-ciri entitas ilegal. OJK juga memperketat izin industri keuangan (financial technology) yang sah. b. Langkah Kuratif/Hukum: OJK menyediakan saluran sistem pengaduan yang mudah bagi masyarakat yang dirugikan, memfasilitasi penyelesaian kerugian, dan secara aktif berkoordinasi dengan Satgas Waspada Investasi maupun pihak peradilan guna mengajukan gugatan pencabutan operasional hingga penuntutan balik pemulihan aset kekayaan pihak yang ditipu."
+      }
+    ]
+  }
+]

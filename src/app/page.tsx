@@ -1,65 +1,57 @@
-import Image from "next/image";
+"use client";
+
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <div className="bg-blue-600 text-white py-20 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-5xl font-extrabold mb-6 tracking-tight">Kamu Pasti Bisa!</h1>
+          <p className="text-xl text-blue-100 mb-10 leading-relaxed">
+            Platform persiapan ujian sekolah terbaik dengan metode Flipcard dan Simulasi Tes berbasis AI.
+            Kuasai materi Ekonomi dengan cara yang lebih efektif dan menyenangkan.
           </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Link 
+              href="/flipcard" 
+              className="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-blue-50 transition-all"
+            >
+              🚀 Mulai Belajar (Flipcard)
+            </Link>
+            <Link 
+              href="/tes" 
+              className="bg-blue-700 text-white border-2 border-blue-500 px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-blue-800 transition-all"
+            >
+              📝 Simulasi Tes
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </div>
+
+      {/* Features Section */}
+      <div className="max-w-6xl mx-auto py-24 px-6 grid md:grid-cols-3 gap-12">
+        <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100">
+          <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 text-2xl">🎴</div>
+          <h3 className="text-xl font-bold text-slate-900 mb-3">Metode Flipcard</h3>
+          <p className="text-slate-600">Kenali soal dan jawaban ideal sebelum diuji. Memperkuat daya ingat tanpa tekanan pilihan ganda.</p>
         </div>
-      </main>
-    </div>
+        <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100">
+          <div className="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mb-6 text-2xl">🤖</div>
+          <h3 className="text-xl font-bold text-slate-900 mb-3">Penilaian AI</h3>
+          <p className="text-slate-600">Jawaban essay Anda dinilai secara otomatis oleh AI Deepseek dengan standar guru Ekonomi profesional.</p>
+        </div>
+        <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100">
+          <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-6 text-2xl">📊</div>
+          <h3 className="text-xl font-bold text-slate-900 mb-3">Statistik Progres</h3>
+          <p className="text-slate-600">Pantau perkembangan skor Anda dari percobaan pertama hingga mahir melalui grafik riwayat.</p>
+        </div>
+      </div>
+
+      <footer className="py-12 border-t border-slate-100 text-center text-slate-400 text-sm">
+        <p>© 2026 Kamu Pasti Bisa - Persiapantubel Project</p>
+      </footer>
+    </main>
   );
 }
