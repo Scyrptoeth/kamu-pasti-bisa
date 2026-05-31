@@ -35,7 +35,7 @@ export default function FeedbackForm() {
     <div className="w-full space-y-6">
       <div className="space-y-1">
         <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-ink font-mono">Feedback Anonim</h4>
-        <p className="text-[11px] text-muted leading-relaxed">Bantu kami meningkatkan platform ini dengan memberikan masukan Anda secara anonim di sini.</p>
+        <p className="text-[11px] text-muted leading-relaxed">Kamu bisa menyampaikan pesan apapun kepada Developer website secara anonim dan rahasia melalui kolom ini.</p>
       </div>
 
       {isSuccess ? (
@@ -56,7 +56,7 @@ export default function FeedbackForm() {
             disabled={isSubmitting}
             className="w-full bg-ink text-white py-4 text-[10px] font-bold uppercase tracking-widest hover:opacity-90 transition-all disabled:bg-gray-300 shadow-lg"
           >
-            {isSubmitting ? "Mengirim..." : "Kirim Feedback &rarr;"}
+            {isSubmitting ? "MENGIRIM..." : "KIRIM FEEDBACK"}
           </button>
         </form>
       )}

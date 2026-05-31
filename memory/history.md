@@ -1,3 +1,16 @@
+### [2026-05-31] - Restrukturisasi Layout Beranda (Full-Width Feedback)
+- **Latest Update**: 
+  - Melakukan transformasi layout Beranda dari struktur 3-kolom menjadi 2-baris (Stacked Layout) guna meningkatkan stabilitas visual pada berbagai level zoom (khususnya 125%).
+  - Memindahkan komponen `FeedbackForm` ke baris baru di bawah kartu navigasi utama.
+  - Mengimplementasikan desain 'Full-Width Integrated' pada form feedback; memungkinkan area input memanjang secara horizontal sejajar dengan grid kartu di atasnya.
+  - Pembersihan layout untuk membasmi tabrakan konten antara tipografi raksasa "Simulasi Ujian" dan area feedback.
+  - Verifikasi build sukses dan Deployment Live ke Vercel.
+- **Lesson Learned**: 
+  - Layout vertikal (stacked) dengan pemisahan baris yang jelas jauh lebih tangguh terhadap pembesaran skala (*scaling*) dibandingkan layout horizontal yang padat.
+  - Memberikan ruang horizontal yang luas pada area input feedback meningkatkan kenyamanan pengguna saat mengetik pesan yang panjang.
+- **Current Status**: **Production Live (V 1.15.0 - Zoom Stability Edition)**.
+- **Next Actions**: Melanjutkan integrasi fitur analisis performa belajar siswa.
+
 ### [2026-06-02] - Restrukturisasi Layout Beranda (Full-Width Integrated)
 - **Latest Update**: 
   - Restrukturisasi layout `src/app/page.tsx`: Memindahkan `FeedbackForm` ke bawah navigasi grid agar tampilan lebih simetris dan mengisi lebar penuh.
@@ -146,7 +159,7 @@
 ### [2026-05-31] - Finalisasi Konten Ekonomi (Paket 1-5)
 - **Latest Update**: 
   - Menyelesaikan ekstraksi Paket 2, 3, 4, dan 5 dari PDF '5-paket-soal.pdf'.
-  - Melengkapi database soal di `src/data/soal-ekonomi.json` dengan total 175 soal (150 Pilihan Ganda & 25 Esai).
+  - Melengkapi database soal di `src/data/soal-ekonomi.json` with total 175 soal (150 Pilihan Ganda & 25 Esai).
   - Verifikasi integritas data melalui build produksi yang sukses.
   - Push database konten terbaru ke GitHub dan deploy live ke Vercel.
 - **Lesson Learned**: 
