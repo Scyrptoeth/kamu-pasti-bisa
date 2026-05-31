@@ -1,3 +1,16 @@
+### [2026-05-31] - Transformasi Navigasi Flipcard (Fokus Tunggal & Gaya CBT)
+- **Latest Update**: 
+  - Mengubah antarmuka 'Kartu Hafalan' (Flipcard) dari grid menjadi tampilan kartu tunggal per layar.
+  - Implementasi navigasi gaya CBT (Computer Based Test) dengan grid nomor 7 kolom.
+  - Penambahan indikator visual (subtle marker) untuk kartu yang sudah pernah dibuka/dibalik.
+  - Penambahan tombol navigasi 'Sebelumnya' dan 'Berikutnya' untuk alur belajar yang lebih terarah.
+  - Pembersihan total beban kognitif pada fitur hafalan sesuai prinsip Zen Mode.
+- **Lesson Learned**: 
+  - Tampilan kartu tunggal secara dramatis meningkatkan fokus belajar (Active Recall) dibandingkan tampilan grid yang memusingkan.
+  - Navigasi nomor memberikan rasa kendali (sense of control) dan progres belajar yang lebih nyata bagi siswa.
+- **Current Status**: **Production Live (V 1.3.0 - CBT Edition)**.
+- **Next Actions**: Melanjutkan integrasi penilaian esai otomatis menggunakan AI Deepseek.
+
 ### [2026-05-31] - Zen Mode & Lokalisasi Total (Pembersihan AI Slop)
 - **Latest Update**: 
   - Pembersihan total gaya bahasa 'AI Slop' (mengganti istilah robotik seperti 'Arsip', 'Instrumen', 'Volume' dengan 'Kartu Hafalan', 'Soal', 'Paket').

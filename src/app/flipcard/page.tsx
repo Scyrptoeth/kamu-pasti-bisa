@@ -78,7 +78,7 @@ export default function FlipcardPage() {
 
       {/* Single Flipcard View */}
       <div className="flex-1 flex flex-col items-center justify-center gap-12">
-        <div className="w-full max-w-lg">
+        <div className="w-full max-w-3xl">
           <Flipcard 
             key={`${selectedPaket}-${currentCardIndex}`}
             question={allQuestions[currentCardIndex].q} 
@@ -88,7 +88,7 @@ export default function FlipcardPage() {
         </div>
 
         {/* Navigasi Buttons */}
-        <div className="flex items-center gap-4 w-full max-w-lg justify-between">
+        <div className="flex items-center gap-4 w-full max-w-3xl justify-between">
           <button
             onClick={handlePrev}
             disabled={currentCardIndex === 0}
@@ -109,8 +109,8 @@ export default function FlipcardPage() {
         </div>
 
         {/* CBT Navigation Grid */}
-        <div className="w-full max-w-lg mt-8">
-          <div className="grid grid-cols-7 gap-2">
+        <div className="w-full max-w-3xl mt-8">
+          <div className="grid grid-cols-7 gap-2 md:gap-3">
             {allQuestions.map((_, idx) => (
               <button
                 key={idx}
