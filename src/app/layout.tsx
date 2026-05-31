@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
+import ContentGuard from "@/components/security/ContentGuard";
 
 const sans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="id" className={`${sans.variable} ${mono.variable} antialiased`}>
       <body className="font-sans min-h-screen">
+        <ContentGuard />
         {children}
       </body>
     </html>
