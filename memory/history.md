@@ -1,3 +1,15 @@
+### [2026-06-01] - Implementasi Learning Analytics & Offline Mode (PWA)
+- **Latest Update**: 
+  - Integrasi **Recharts** untuk visualisasi data: Menampilkan grafik garis (Line Chart) tren skor Pilihan Ganda dan Esai pada halaman hasil tes.
+  - Implementasi **PWA (Progressive Web App)**: Menambahkan dukungan Offline Mode, manifest aplikasi, dan service worker untuk aksesibilitas tanpa koneksi internet.
+  - Migrasi build ke **Webpack**: Mengaktifkan flag `--webpack` pada proses build untuk mendukung kompatibilitas plugin PWA pada Next.js 15+.
+  - Sinkronisasi GitHub dan Deployment Live ke Vercel (V 1.19.0).
+- **Lesson Learned**: 
+  - Visualisasi data secara grafis memberikan umpan balik yang jauh lebih intuitif bagi siswa dibandingkan tabel angka statis.
+  - Implementasi PWA pada Next.js versi terbaru memerlukan penyesuaian khusus pada konfigurasi build (Webpack vs Turbopack) agar service worker dapat terkompilasi dengan benar.
+- **Current Status**: **Production Live (Advanced & Offline Ready)**.
+- **Next Actions**: Persiapan integrasi bank soal kategori materi baru.
+
 ### [2026-06-01] - Audit Anonimitas Total & Finalisasi Keamanan
 - **Latest Update**: 
   - Melakukan audit elemen dan coding menyeluruh; memastikan tidak ada sisa identitas (Persiapantubel, GitHub, email, atau jalur lokal) di website publik maupun metadata server.

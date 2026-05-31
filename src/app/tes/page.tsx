@@ -1,13 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import soalData from "@/data/soal-ekonomi.json";
 import Link from "next/link";
 import Image from "next/image";
 import ScoreChart from "@/components/analytics/ScoreChart";
+import Timer from "@/components/layout/Timer";
+import { motion, AnimatePresence } from "framer-motion";
+
+type TestMode = "normal" | "focus";
 
 export default function TesPage() {
   const [selectedPaketIdx, setSelectedPaketIdx] = useState<number | null>(null);
+  const [isModeSelection, setIsModeSelection] = useState(false);
+  const [testMode, setTestMode] = useState<TestMode>("normal");
   const [isStarted, setIsStarted] = useState(false);
   const [currentStep, setCurrentStep] = useState(0); 
   const [userAnswers, setUserAnswers] = useState<Record<number, string>>({});
@@ -18,8 +24,14 @@ export default function TesPage() {
 
   const paket = selectedPaketIdx !== null ? soalData[selectedPaketIdx] : null;
 
-  const handleStart = (idx: number) => {
+  const handleStartSelection = (idx: number) => {
     setSelectedPaketIdx(idx);
+    setIsModeSelection(true);
+  };
+
+  const startTest = (mode: TestMode) => {
+    setTestMode(mode);
+    setIsModeSelection(false);
     setIsStarted(true);
     setIsFinished(false);
     setCurrentStep(0);
@@ -34,7 +46,7 @@ export default function TesPage() {
   };
 
   const finishTest = async () => {
-    if (!paket) return;
+    if (!paket || isFinished) return;
     setIsLoading(true);
 
     let pgScore = 0;
@@ -67,7 +79,8 @@ export default function TesPage() {
         paketId: paket.id,
         date: new Date().toISOString(),
         pgScore,
-        essayTotal: essayGrades.reduce((a: number, b: any) => a + (b.score || 0), 0)
+        essayTotal: essayGrades.reduce((a: number, b: any) => a + (b.score || 0), 0),
+        mode: testMode
       });
       localStorage.setItem("kpb_history", JSON.stringify(history));
 
@@ -80,18 +93,13 @@ export default function TesPage() {
     }
   };
 
-  if (!isStarted) {
+  // State: Pemilihan Paket
+  if (!isStarted && !isModeSelection) {
     return (
       <main className="min-h-dvh bg-white flex flex-col justify-between p-6 md:p-12">
         <div className="mb-12">
           <Link href="/">
-            <Image 
-              src="/logo.png" 
-              alt="Logo Kamu Pasti Bisa" 
-              width={320} 
-              height={80} 
-              className="h-20 w-auto object-contain"
-            />
+            <Image src="/logo.png" alt="Logo" width={320} height={80} className="h-20 w-auto object-contain" />
           </Link>
         </div>
 
@@ -105,14 +113,14 @@ export default function TesPage() {
         <div className="flex-1 flex flex-col lg:flex-row items-center justify-center gap-12 py-12">
           <div className="lg:w-1/3">
             <h2 className="text-4xl font-bold text-ink mb-4 text-center lg:text-left">Pilih Paket Ujian</h2>
-            <p className="text-muted text-lg max-w-sm text-center lg:text-left mx-auto lg:mx-0">Setiap paket terdiri dari 30 Soal Pilihan Ganda dan 5 Soal Esai dengan evaluasi oleh Sistem Pintar yang telah ditanamkan di website.</p>
+            <p className="text-muted text-lg max-w-sm text-center lg:text-left mx-auto lg:mx-0">Setiap paket terdiri dari 30 Soal Pilihan Ganda dan 5 Soal Esai dengan evaluasi oleh Sistem Pintar.</p>
           </div>
           
           <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6 w-full text-left">
             {soalData.map((p, idx) => (
               <button
                 key={p.id}
-                onClick={() => handleStart(idx)}
+                onClick={() => handleStartSelection(idx)}
                 className="w-full bg-white border-2 border-gray-100 p-10 rounded-sm hover:border-ink transition-all flex justify-between items-center group shadow-sm hover:shadow-xl hover:-translate-y-1"
               >
                 <div>
@@ -120,21 +128,69 @@ export default function TesPage() {
                   <p className="text-sm font-bold text-muted uppercase tracking-widest mt-2">{p.kategori}</p>
                 </div>
                 <span className="text-ink font-bold text-sm uppercase tracking-[0.2em] opacity-0 group-hover:opacity-100 transition-all transform translate-x-4 group-hover:translate-x-0">
-                  Mulai &rarr;
+                  Lanjut &rarr;
                 </span>
               </button>
             ))}
           </div>
         </div>
 
-        <footer className="pt-8 border-t border-gray-100 flex justify-between text-[12px] uppercase tracking-[0.3em] text-muted font-mono font-medium">
+        <footer className="pt-8 border-t border-gray-100 flex justify-between text-[12px] uppercase tracking-[0.3em] text-muted font-mono font-medium text-center md:text-left">
           <p>© 2026 Kamu Pasti Bisa</p>
-          <p></p>
         </footer>
       </main>
     );
   }
 
+  // State: Pemilihan Mode (Interstisial)
+  if (isModeSelection) {
+    return (
+      <main className="min-h-dvh bg-white flex flex-col md:flex-row">
+        <motion.div 
+          initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }}
+          className="flex-1 p-12 md:p-24 flex flex-col justify-center gap-8 border-r border-gray-100"
+        >
+          <div className="space-y-4">
+            <span className="text-xs font-bold uppercase tracking-[0.4em] text-muted font-mono">Pilihan 01</span>
+            <h2 className="text-5xl md:text-7xl font-black text-ink tracking-tighter uppercase">Mode Normal</h2>
+            <p className="text-xl text-muted leading-relaxed max-w-md">Belajar dengan tenang tanpa batasan waktu. Cocok untuk Anda yang sedang membangun pemahaman konsep.</p>
+          </div>
+          <button 
+            onClick={() => startTest("normal")}
+            className="w-fit px-12 py-5 border-2 border-ink text-ink font-bold uppercase tracking-widest hover:bg-ink hover:text-white transition-all rounded-sm shadow-lg"
+          >
+            Mulai Belajar &rarr;
+          </button>
+        </motion.div>
+
+        <motion.div 
+          initial={{ x: 100, opacity: 0 }} animate={{ x: 0, opacity: 1 }}
+          className="flex-1 p-12 md:p-24 flex flex-col justify-center gap-8 bg-ink text-white"
+        >
+          <div className="space-y-4">
+            <span className="text-xs font-bold uppercase tracking-[0.4em] text-gray-400 font-mono">Pilihan 02</span>
+            <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase">Mode Fokus</h2>
+            <p className="text-xl text-gray-300 leading-relaxed max-w-md">Tantang diri Anda dengan batasan waktu 25 menit. Sistem akan menutup otomatis saat waktu habis.</p>
+          </div>
+          <button 
+            onClick={() => startTest("focus")}
+            className="w-fit px-12 py-5 bg-white text-ink font-bold uppercase tracking-widest hover:bg-gray-100 transition-all rounded-sm shadow-2xl"
+          >
+            Mulai Tantangan &rarr;
+          </button>
+        </motion.div>
+
+        <button 
+          onClick={() => setIsModeSelection(false)}
+          className="fixed top-8 right-8 text-[10px] font-bold uppercase tracking-widest text-muted hover:text-ink transition-colors font-mono"
+        >
+          Batal &times;
+        </button>
+      </main>
+    );
+  }
+
+  // State: Hasil Ujian
   if (isFinished && results) {
     const history = JSON.parse(localStorage.getItem("kpb_history") || "[]");
     const paketHistory = history.filter((h: any) => h.paketId === paket?.id);
@@ -143,19 +199,13 @@ export default function TesPage() {
       <main className="min-h-dvh bg-white py-12 px-6 md:px-12 flex flex-col justify-between">
         <div className="mb-12">
           <Link href="/">
-            <Image 
-              src="/logo.png" 
-              alt="Logo Kamu Pasti Bisa" 
-              width={320} 
-              height={80} 
-              className="h-20 w-auto object-contain"
-            />
+            <Image src="/logo.png" alt="Logo" width={320} height={80} className="h-20 w-auto object-contain" />
           </Link>
         </div>
 
         <header className="flex justify-between items-baseline border-b-2 border-ink pb-8 mb-12">
           <h1 className="text-6xl md:text-[8rem] font-bold tracking-tighter text-ink uppercase leading-none">Hasil.</h1>
-          <p className="text-sm font-bold text-muted uppercase tracking-[0.4em] font-mono">Dokumen Resmi</p>
+          <p className="text-sm font-bold text-muted uppercase tracking-[0.4em] font-mono">Laporan Evaluasi</p>
         </header>
         
         <div className="flex-1 max-w-[98%] mx-auto w-full flex flex-col lg:flex-row gap-12 lg:gap-24 mb-12">
@@ -172,25 +222,13 @@ export default function TesPage() {
             </div>
             
             <div className="flex flex-col gap-4">
-              <button 
-                onClick={() => setIsStarted(false)}
-                className="w-full py-6 bg-ink text-white text-sm font-bold uppercase tracking-[0.3em] hover:opacity-90 transition-all shadow-xl rounded-sm"
-              >
-                Ujian Baru
-              </button>
-              <Link 
-                href="/" 
-                className="w-full py-6 bg-white border-2 border-ink text-ink text-sm font-bold uppercase tracking-[0.3em] hover:bg-gray-50 transition-all text-center rounded-sm"
-              >
-                Kembali ke Beranda
-              </Link>
+              <button onClick={() => setIsStarted(false)} className="w-full py-6 bg-ink text-white text-sm font-bold uppercase tracking-[0.3em] hover:opacity-90 transition-all shadow-xl rounded-sm">Ujian Baru</button>
+              <Link href="/" className="w-full text-center py-6 bg-white border-2 border-ink text-ink text-sm font-bold uppercase tracking-[0.3em] hover:bg-gray-50 transition-all rounded-sm">Kembali ke Beranda</Link>
             </div>
           </div>
 
           <div className="lg:w-2/3 space-y-12">
-            {/* Learning Analytics Chart */}
             <ScoreChart data={paketHistory} />
-
             <div className="space-y-8 overflow-y-auto pr-4 max-h-[60vh] scrollbar-hide">
               <h3 className="text-xs font-bold uppercase tracking-[0.5em] text-muted font-mono mb-8">Detail Evaluasi Sistem</h3>
               <div className="grid grid-cols-1 gap-6">
@@ -201,14 +239,10 @@ export default function TesPage() {
                       <span className="px-4 py-2 bg-ink text-white text-xs font-bold font-mono uppercase">Skor: {grade.score}/10</span>
                     </div>
                     <div className="space-y-4">
-                      <p className="text-xl text-ink font-medium leading-relaxed italic border-l-4 border-gray-100 pl-8 py-2">
-                        "{essayAnswers[grade.id] || "Kosong"}"
-                      </p>
+                      <p className="text-xl text-ink font-medium leading-relaxed italic border-l-4 border-gray-100 pl-8 py-2">"{essayAnswers[grade.id] || "Kosong"}"</p>
                       <div className="bg-gray-50 p-6 border border-gray-100">
                         <p className="text-xs font-bold uppercase tracking-widest text-ink mb-2 font-mono">Catatan Sistem:</p>
-                        <p className="text-sm text-muted leading-relaxed">
-                          {grade.explanation}
-                        </p>
+                        <p className="text-sm text-muted leading-relaxed">{grade.explanation}</p>
                       </div>
                     </div>
                   </div>
@@ -218,11 +252,10 @@ export default function TesPage() {
           </div>
         </div>
 
-        {/* Section: Tinjauan Ulang Hasil Ujian */}
+        {/* Tinjauan Ulang Section */}
         <div className="mt-24 border-t-4 border-ink pt-16 max-w-[98%] mx-auto w-full">
-          <h2 className="text-5xl font-black text-ink uppercase tracking-tighter mb-12 text-center lg:text-left">Tinjauan Ulang Hasil Ujian</h2>
+          <h2 className="text-5xl font-black text-ink uppercase tracking-tighter mb-12">Tinjauan Ulang Hasil Ujian</h2>
           <div className="space-y-16">
-            {/* PG Review */}
             <div className="space-y-8">
               <h3 className="text-xl font-bold uppercase tracking-widest text-muted border-b border-gray-100 pb-4 mb-8 font-mono">Bagian I: Pilihan Ganda</h3>
               <div className="grid grid-cols-1 gap-8">
@@ -230,127 +263,33 @@ export default function TesPage() {
                   const userAnswer = userAnswers[q.id];
                   const isCorrect = userAnswer === q.kunci;
                   return (
-                    <div key={q.id} className="p-8 border-2 border-gray-100 hover:border-ink transition-all bg-white shadow-sm">
+                    <div key={q.id} className="p-8 border-2 border-gray-100 bg-white shadow-sm">
                       <div className="flex justify-between items-start mb-6">
                         <span className="text-xs font-bold font-mono uppercase tracking-[0.3em] text-muted">Soal {idx + 1}</span>
                         <span className={`px-4 py-1 text-[10px] font-bold font-mono uppercase ${isCorrect ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
                           {isCorrect ? 'Benar' : 'Salah'}
                         </span>
                       </div>
-                      <h4 className="text-2xl font-bold text-ink mb-8 leading-relaxed">{q.pertanyaan}</h4>
+                      <h4 className="text-2xl font-bold text-ink mb-8">{q.pertanyaan}</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                        {Object.entries(q.opsi).map(([key, val]) => {
-                          const isUserChoice = userAnswer === key;
-                          const isKunci = q.kunci === key;
-                          let borderColor = "border-gray-100";
-                          let bgColor = "bg-white";
-
-                          if (isUserChoice) {
-                            borderColor = isCorrect ? "border-green-500" : "border-red-500";
-                            bgColor = isCorrect ? "bg-green-50" : "bg-red-50";
-                          } else if (isKunci) {
-                            borderColor = "border-green-500";
-                            bgColor = "bg-green-50";
-                          }
-
-                          return (
-                            <div key={key} className={`p-6 border-2 rounded-sm flex gap-4 ${borderColor} ${bgColor}`}>
-                              <span className={`font-mono font-black text-xl ${isUserChoice || isKunci ? 'opacity-100' : 'opacity-20'}`}>{key}</span>
-                              <span className="text-lg font-medium">{val as string}</span>
-                            </div>
-                          );
-                        })}
+                        {Object.entries(q.opsi).map(([key, val]) => (
+                          <div key={key} className={`p-6 border-2 rounded-sm flex gap-4 ${userAnswer === key ? (isCorrect ? 'border-green-500 bg-green-50' : 'border-red-500 bg-red-50') : (q.kunci === key ? 'border-green-500 bg-green-50' : 'border-gray-100 bg-white')}`}>
+                            <span className="font-mono font-black text-xl">{key}</span>
+                            <span className="text-lg font-medium">{val as string}</span>
+                          </div>
+                        ))}
                       </div>
                       <div className="bg-gray-50 p-8 border-l-4 border-ink">
-                        <p className="text-xs font-bold uppercase tracking-widest text-ink mb-4 font-mono">Pembahasan:</p>
-                        <p className="text-lg text-muted leading-relaxed">{q.pembahasan}</p>
+                        <p className="text-xs font-bold uppercase tracking-widest text-ink mb-2 font-mono">Pembahasan:</p>
+                        <p className="text-lg text-muted">{q.pembahasan}</p>
                       </div>
                     </div>
                   );
                 })}
-              </div>
-            </div>
-
-            {/* Essay Review */}
-            <div className="space-y-8">
-              <h3 className="text-xl font-bold uppercase tracking-widest text-muted border-b border-gray-100 pb-4 mb-8 font-mono">Bagian II: Esai</h3>
-              <div className="grid grid-cols-1 gap-8">
-                {paket?.soal_essay.map((q, idx) => {
-                  const grade = results.essayGrades.find((g: any) => g.id === q.id);
-                  return (
-                    <div key={q.id} className="p-8 border-2 border-gray-100 hover:border-ink transition-all bg-white shadow-sm">
-                      <div className="flex justify-between items-start mb-6">
-                        <span className="text-xs font-bold font-mono uppercase tracking-[0.3em] text-muted">Soal {idx + 31}</span>
-                        <span className="px-4 py-1 bg-ink text-white text-[10px] font-bold font-mono uppercase">Skor: {grade?.score || 0}/10</span>
-                      </div>
-                      <h4 className="text-2xl font-bold text-ink mb-8 leading-relaxed">{q.pertanyaan}</h4>
-                      
-                      <div className="space-y-8">
-                        <div className="space-y-4">
-                          <p className="text-xs font-bold uppercase tracking-widest text-muted font-mono">Jawaban Anda:</p>
-                          <p className="text-xl text-ink font-medium leading-relaxed italic bg-gray-50 p-8 border border-gray-100">
-                            "{essayAnswers[q.id] || "(Kosong)"}"
-                          </p>
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                          <div className="p-8 border-2 border-gray-100 bg-white">
-                            <p className="text-xs font-bold uppercase tracking-widest text-ink mb-4 font-mono">Evaluasi Sistem:</p>
-                            <p className="text-base text-muted leading-relaxed">{grade?.explanation || "Tidak ada evaluasi."}</p>
-                          </div>
-                          <div className="p-8 border-2 border-gray-100 bg-white">
-                            <p className="text-xs font-bold uppercase tracking-widest text-ink mb-4 font-mono">Jawaban Ideal:</p>
-                            <p className="text-base text-muted leading-relaxed">{q.jawaban_ideal}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Riwayat Pengerjaan Komprehensif */}
-            <div className="mt-24 pt-16 border-t border-gray-100">
-              <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-muted font-mono mb-8">Riwayat Pengerjaan Komprehensif</h3>
-              <div className="bg-white border border-gray-100 overflow-x-auto rounded-sm shadow-sm">
-                <table className="w-full text-left min-w-[600px]">
-                  <thead>
-                    <tr className="bg-gray-50 border-b border-gray-100 font-mono text-[10px] uppercase tracking-widest text-muted">
-                      <th className="px-8 py-4">Waktu Pengerjaan</th>
-                      <th className="px-8 py-4">Skor PG</th>
-                      <th className="px-8 py-4">Skor Esai</th>
-                      <th className="px-8 py-4">Status</th>
-                    </tr>
-                  </thead>
-                  <tbody className="text-sm font-medium text-ink tabular-nums">
-                    {paketHistory.length === 0 ? (
-                      <tr>
-                        <td colSpan={4} className="px-8 py-12 text-center text-muted italic">Belum ada riwayat tercatat.</td>
-                      </tr>
-                    ) : (
-                      paketHistory.sort((a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime()).map((h: any, i: number) => (
-                        <tr key={i} className="border-b border-gray-50 hover:bg-gray-50/50 transition-colors">
-                          <td className="px-8 py-4 font-mono text-[11px]">{new Date(h.date).toLocaleString("id-ID")}</td>
-                          <td className="px-8 py-4">{h.pgScore} / 30</td>
-                          <td className="px-8 py-4">{h.essayTotal} / 50</td>
-                          <td className="px-8 py-4">
-                            <span className="text-[10px] font-bold uppercase px-2 py-1 bg-gray-100 rounded-sm">Verified</span>
-                          </td>
-                        </tr>
-                      ))
-                    )}
-                  </tbody>
-                </table>
               </div>
             </div>
           </div>
         </div>
-
-        <footer className="pt-16 pb-8 border-t border-gray-100 flex justify-between text-[12px] uppercase tracking-[0.3em] text-muted font-mono font-medium">
-          <p>© 2026 Kamu Pasti Bisa</p>
-          <p></p>
-        </footer>
       </main>
     );
   }
@@ -361,21 +300,16 @@ export default function TesPage() {
 
   return (
     <main className="max-w-[98%] mx-auto px-6 py-12 min-h-dvh flex flex-col justify-between">
+      {testMode === "focus" && <Timer duration={1500} onTimeUp={finishTest} isActive={!isFinished && !isLoading} />}
       
       <div className="mb-12">
         <Link href="/">
-          <Image 
-            src="/logo.png" 
-            alt="Logo Kamu Pasti Bisa" 
-            width={320} 
-            height={80} 
-            className="h-20 w-auto object-contain"
-          />
+          <Image src="/logo.png" alt="Logo" width={320} height={80} className="h-20 w-auto object-contain" />
         </Link>
       </div>
 
       <header className="flex justify-between items-center border-b-2 border-gray-100 pb-8 mb-12">
-        <div className="flex items-center gap-8 lg:gap-12">
+        <div className="flex items-center gap-12">
           <div className="space-y-1">
             <span className="text-[10px] font-bold text-muted uppercase tracking-[0.4em] font-mono">{isPG ? "Bagian I: Pilihan Ganda" : "Bagian II: Esai"}</span>
             <h2 className="text-4xl font-black text-ink tabular-nums font-mono leading-none">
@@ -387,62 +321,37 @@ export default function TesPage() {
           </div>
         </div>
 
-        <div className="flex items-center gap-4 lg:gap-8">
-          <Link href="/" className="text-[10px] font-bold text-muted hover:text-ink uppercase tracking-widest font-mono border-b border-transparent hover:border-ink pb-1 transition-all">
-            Beranda
-          </Link>
-          <button 
-            onClick={() => {
-              if (window.confirm("Kembali ke pemilihan paket? Progres tes saat ini akan hilang.")) {
-                setIsStarted(false);
-              }
-            }}
-            className="text-[10px] font-bold text-muted hover:text-ink uppercase tracking-widest font-mono border-b border-transparent hover:border-ink pb-1 transition-all"
-          >
-            Daftar Paket Tes
-          </button>
-          <div className="hidden sm:flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-ink animate-pulse" />
-            <span className="text-[10px] font-bold text-muted uppercase tracking-widest font-mono text-center">Live</span>
+        <div className="flex items-center gap-8">
+          <Link href="/" className="text-[10px] font-bold text-muted hover:text-ink uppercase tracking-widest font-mono border-b border-transparent hover:border-ink pb-1 transition-all">Beranda</Link>
+          <button onClick={() => setIsStarted(false)} className="text-[10px] font-bold text-muted hover:text-ink uppercase tracking-widest font-mono border-b border-transparent hover:border-ink pb-1 transition-all">Daftar Paket Tes</button>
+          <div className="flex items-center gap-2">
+            <div className={`w-2 h-2 rounded-full animate-pulse ${testMode === "focus" ? 'bg-red-500' : 'bg-ink'}`} />
+            <span className="text-[10px] font-bold text-muted uppercase tracking-widest font-mono">{testMode === "focus" ? 'Tantangan' : 'Normal'}</span>
           </div>
         </div>
       </header>
 
-      <div className="flex-1 flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
-        
+      <div className="flex-1 flex flex-col lg:flex-row gap-24 items-center">
         <div className="lg:w-1/2 w-full space-y-12">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-ink leading-[1.1] tracking-tight text-center lg:text-left">
-            {currentSoal?.pertanyaan}
-          </h2>
-          {isPG && <p className="text-muted font-mono text-xs uppercase tracking-[0.3em] text-center lg:text-left">Pilih satu jawaban yang paling tepat.</p>}
+          <h2 className="text-4xl md:text-6xl font-bold text-ink leading-[1.1] tracking-tight">{currentSoal?.pertanyaan}</h2>
         </div>
-
         <div className="lg:w-1/2 w-full">
           {isPG ? (
             <div className="grid gap-4 w-full">
-              {Object.entries((currentSoal as any).opsi).map(([key, val]) => {
-                const isSelected = userAnswers[currentSoal!.id] === key;
-                return (
-                  <button
-                    key={key}
-                    onClick={() => setUserAnswers({ ...userAnswers, [currentSoal!.id]: key })}
-                    className={`w-full text-left p-8 border-2 transition-all flex gap-8 rounded-sm ${
-                      isSelected
-                        ? "border-ink bg-ink text-white shadow-2xl translate-x-4"
-                        : "border-gray-100 bg-white text-ink hover:border-ink"
-                    }`}
-                  >
-                    <span className={`font-mono text-2xl font-black ${isSelected ? 'text-white' : 'text-gray-200'}`}>
-                      {key}
-                    </span> 
-                    <span className="text-lg md:text-xl font-medium leading-relaxed">{val as string}</span>
-                  </button>
-                );
-              })}
+              {Object.entries((currentSoal as any).opsi).map(([key, val]) => (
+                <button
+                  key={key}
+                  onClick={() => setUserAnswers({ ...userAnswers, [currentSoal!.id]: key })}
+                  className={`w-full text-left p-8 border-2 transition-all flex gap-8 rounded-sm ${userAnswers[currentSoal!.id] === key ? "border-ink bg-ink text-white shadow-2xl" : "border-gray-100 bg-white text-ink hover:border-ink"}`}
+                >
+                  <span className={`font-mono text-2xl font-black ${userAnswers[currentSoal!.id] === key ? 'text-white' : 'text-gray-200'}`}>{key}</span> 
+                  <span className="text-lg md:text-xl font-medium leading-relaxed">{val as string}</span>
+                </button>
+              ))}
             </div>
           ) : (
             <textarea
-              className="w-full h-[50vh] p-12 border-2 border-gray-100 rounded-sm bg-white text-ink text-2xl font-medium focus:outline-none focus:border-ink resize-none transition-all shadow-inner placeholder:text-gray-100"
+              className="w-full h-[50vh] p-12 border-2 border-gray-100 rounded-sm bg-white text-ink text-2xl font-medium focus:outline-none focus:border-ink resize-none shadow-inner"
               placeholder="Ketik argumentasi teknis Anda di sini..."
               value={essayAnswers[currentSoal!.id] || ""}
               onChange={(e) => setEssayAnswers({ ...essayAnswers, [currentSoal!.id]: e.target.value })}
@@ -451,69 +360,24 @@ export default function TesPage() {
         </div>
       </div>
 
-      <div className="mt-16 mb-8 w-full border-t border-gray-50 pt-12">
-        <p className="text-[10px] font-bold text-muted uppercase tracking-[0.3em] font-mono mb-6">Navigasi Kontrol CBT</p>
-        <div className="flex flex-wrap gap-2 lg:gap-3">
-          {Array.from({ length: 35 }).map((_, idx) => {
-            const isCurrent = currentStep === idx;
-            const isPGSoal = idx < 30;
-            const soalId = isPGSoal ? paket?.soal_pg[idx]?.id : paket?.soal_essay[idx - 30]?.id;
-            const hasAnswer = isPGSoal ? !!userAnswers[soalId!] : (essayAnswers[soalId!] && essayAnswers[soalId!].trim().length > 0);
-            
-            let statusStyles = "bg-white border-gray-200 text-muted";
-            if (isCurrent) {
-              statusStyles = "bg-ink border-ink text-white shadow-xl scale-110 z-10";
-            } else if (hasAnswer) {
-              statusStyles = "bg-gray-100 border-gray-100 text-ink";
-            }
-
-            return (
-              <button
-                key={idx}
-                onClick={() => setCurrentStep(idx)}
-                className={`w-10 h-10 md:w-12 md:h-12 flex items-center justify-center text-xs font-bold font-mono border-2 transition-all rounded-sm hover:border-ink ${statusStyles}`}
-              >
-                {String(idx + 1).padStart(2, '0')}
-              </button>
-            );
-          })}
+      <div className="mt-16 mb-8 border-t border-gray-50 pt-12">
+        <div className="flex flex-wrap gap-3">
+          {Array.from({ length: 35 }).map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setCurrentStep(idx)}
+              className={`w-12 h-12 flex items-center justify-center text-xs font-bold font-mono border-2 transition-all rounded-sm ${currentStep === idx ? "bg-ink border-ink text-white scale-110 shadow-xl" : "bg-white border-gray-200 text-muted"}`}
+            >
+              {String(idx + 1).padStart(2, '0')}
+            </button>
+          ))}
         </div>
       </div>
 
-      <footer className="mt-12 grid grid-cols-3 gap-4 items-center border-t-2 border-gray-100 pt-12 pb-8">
-        <div className="flex justify-start">
-          <button 
-            disabled={currentStep === 0 || isLoading}
-            onClick={() => setCurrentStep(currentStep - 1)}
-            className="w-full md:w-auto px-4 md:px-10 py-4 border border-ink bg-white text-ink text-[10px] font-bold font-mono uppercase tracking-[0.3em] hover:bg-gray-50 disabled:opacity-20 transition-all rounded-sm whitespace-nowrap"
-          >
-            ← SEBELUMNYA
-          </button>
-        </div>
-
-        <div className="flex justify-center">
-          <button 
-            disabled={isLoading}
-            onClick={() => {
-              if (window.confirm("Apakah Anda yakin ingin mengakhiri tes ini? Hasil akan langsung dikalkulasi.")) {
-                finishTest();
-              }
-            }}
-            className="w-full md:w-64 py-5 bg-ink text-white text-[11px] font-bold font-mono uppercase tracking-[0.3em] hover:opacity-90 transition-all shadow-xl disabled:bg-muted rounded-sm"
-          >
-            {isLoading ? "MEMPROSES..." : "SELESAI"}
-          </button>
-        </div>
-
-        <div className="flex justify-end">
-          <button 
-            disabled={currentStep === 34 || isLoading}
-            onClick={handleNext}
-            className="w-full md:w-auto px-4 md:px-10 py-4 border border-ink bg-white text-ink text-[10px] font-bold font-mono uppercase tracking-[0.3em] hover:bg-gray-50 disabled:opacity-20 transition-all rounded-sm whitespace-nowrap"
-          >
-            BERIKUTNYA →
-          </button>
-        </div>
+      <footer className="mt-12 grid grid-cols-3 gap-4 border-t-2 border-gray-100 pt-12">
+        <div className="flex justify-start"><button disabled={currentStep === 0} onClick={() => setCurrentStep(currentStep - 1)} className="px-10 py-4 border border-ink text-[10px] font-bold font-mono uppercase tracking-[0.3em] hover:bg-gray-50 disabled:opacity-20 rounded-sm whitespace-nowrap">← SEBELUMNYA</button></div>
+        <div className="flex justify-center"><button onClick={() => window.confirm("Akhiri tes?") && finishTest()} className="w-64 py-5 bg-ink text-white text-[11px] font-bold font-mono uppercase tracking-[0.3em] hover:opacity-90 shadow-xl rounded-sm">SELESAI</button></div>
+        <div className="flex justify-end"><button disabled={currentStep === 34} onClick={handleNext} className="px-10 py-4 border border-ink text-[10px] font-bold font-mono uppercase tracking-[0.3em] hover:bg-gray-50 disabled:opacity-20 rounded-sm whitespace-nowrap">BERIKUTNYA →</button></div>
       </footer>
     </main>
   );
