@@ -82,95 +82,114 @@ export default function TesPage() {
 
   if (!isStarted) {
     return (
-      <main className="min-h-dvh bg-[#F9F9F9] flex flex-col items-center justify-center p-6">
-        <div className="w-full max-w-2xl text-center space-y-8">
-          <Link href="/" className="text-sm font-medium text-[#888888] hover:text-[#111111] transition-colors">
-            &larr; Kembali
+      <main className="min-h-dvh bg-white flex flex-col justify-between p-6 md:p-12">
+        <header className="flex justify-between items-baseline border-b-2 border-ink pb-8">
+          <h1 className="text-6xl md:text-[8rem] font-bold tracking-tighter text-ink uppercase leading-none">Simulasi.</h1>
+          <Link href="/" className="text-sm font-bold uppercase tracking-widest text-muted hover:text-ink transition-colors border-b-2 border-gray-100 hover:border-ink pb-1 font-mono">
+            &larr; Beranda
           </Link>
-          <h1 className="text-4xl font-extrabold text-[#111111] tracking-tight text-center w-full">Pilih Paket Ujian</h1>
-          <p className="text-[#555555]">Setiap paket terdiri dari 30 Soal Pilihan Ganda dan 5 Soal Esai.</p>
+        </header>
+
+        <div className="flex-1 flex flex-col lg:flex-row items-center justify-center gap-12 py-12">
+          <div className="lg:w-1/3">
+            <h2 className="text-4xl font-bold text-ink mb-4">Pilih Paket Ujian</h2>
+            <p className="text-muted text-lg max-w-sm">Setiap paket terdiri dari 30 Soal Pilihan Ganda dan 5 Soal Esai dengan evaluasi AI instan.</p>
+          </div>
           
-          <div className="grid gap-4 w-full text-left">
+          <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6 w-full text-left">
             {soalData.map((p, idx) => (
               <button
                 key={p.id}
                 onClick={() => handleStart(idx)}
-                className="w-full bg-white border border-[#E5E5E5] p-6 rounded-sm hover:border-[#111111] transition-all flex justify-between items-center group shadow-sm"
+                className="w-full bg-white border-2 border-gray-100 p-10 rounded-sm hover:border-ink transition-all flex justify-between items-center group shadow-sm hover:shadow-xl hover:-translate-y-1"
               >
                 <div>
-                  <h3 className="text-lg font-bold text-[#111111]">Paket {p.id}</h3>
-                  <p className="text-sm text-[#888888]">{p.kategori}</p>
+                  <h3 className="text-3xl font-bold text-ink">Paket {p.id}</h3>
+                  <p className="text-sm font-bold text-muted uppercase tracking-widest mt-2">{p.kategori}</p>
                 </div>
-                <span className="text-[#111111] font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                  Mulai Tes &rarr;
+                <span className="text-ink font-bold text-sm uppercase tracking-[0.2em] opacity-0 group-hover:opacity-100 transition-all transform translate-x-4 group-hover:translate-x-0">
+                  Mulai &rarr;
                 </span>
               </button>
             ))}
           </div>
         </div>
+
+        <footer className="pt-8 border-t border-gray-100 flex justify-between text-[12px] uppercase tracking-[0.3em] text-muted font-mono font-medium">
+          <p>© 2026 Kamu Pasti Bisa</p>
+          <p>Ujian Terstandar AI</p>
+        </footer>
       </main>
     );
   }
 
   if (isFinished && results) {
     return (
-      <main className="min-h-dvh bg-[#F9F9F9] py-20 px-6">
-        <div className="w-full max-w-3xl mx-auto space-y-12">
-          <div className="text-center space-y-4">
-            <h1 className="text-4xl font-extrabold text-[#111111] tracking-tight">Hasil Evaluasi Sistem</h1>
-            <p className="text-sm font-bold text-gray-400 uppercase tracking-[0.2em]">Dokumen Penilaian Resmi</p>
-          </div>
-          
-          <div className="bg-white border border-gray-100 rounded-sm p-12 space-y-12 shadow-sm">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              <div className="text-center md:text-left border-b md:border-b-0 md:border-r border-gray-100 pb-8 md:pb-0 md:pr-12">
-                <p className="text-[10px] font-bold text-[#888888] uppercase tracking-widest mb-4">Skor Pilihan Ganda</p>
-                <p className="text-7xl font-black text-[#111111] tabular-nums">{results.pgScore}<span className="text-2xl text-[#888888] font-medium">/30</span></p>
-              </div>
-              <div className="text-center md:text-left">
-                <p className="text-[10px] font-bold text-[#888888] uppercase tracking-widest mb-4">Total Nilai Esai</p>
-                <p className="text-7xl font-black text-[#111111] tabular-nums">
-                  {results.essayGrades.reduce((a, b) => a + b.score, 0)}<span className="text-2xl text-[#888888] font-medium">/50</span>
-                </p>
-              </div>
+      <main className="min-h-dvh bg-white py-12 px-6 md:px-12 flex flex-col justify-between">
+        <header className="flex justify-between items-baseline border-b-2 border-ink pb-8 mb-12">
+          <h1 className="text-6xl md:text-[8rem] font-bold tracking-tighter text-ink uppercase leading-none">Hasil.</h1>
+          <p className="text-sm font-bold text-muted uppercase tracking-[0.4em] font-mono">Dokumen Resmi</p>
+        </header>
+        
+        <div className="flex-1 max-w-[98%] mx-auto w-full flex flex-col lg:flex-row gap-12 lg:gap-24 mb-12">
+          <div className="lg:w-1/3 space-y-12">
+            <div className="p-12 border-4 border-ink bg-white shadow-2xl">
+              <p className="text-[12px] font-bold text-muted uppercase tracking-[0.3em] mb-8 font-mono">Skor Akhir Pilihan Ganda</p>
+              <p className="text-[10rem] font-black text-ink leading-none tabular-nums">{results.pgScore}<span className="text-3xl text-muted font-bold">/30</span></p>
             </div>
+            <div className="p-12 border-2 border-gray-100 bg-gray-50">
+              <p className="text-[12px] font-bold text-muted uppercase tracking-[0.3em] mb-8 font-mono">Akumulasi Nilai Esai</p>
+              <p className="text-8xl font-black text-ink leading-none tabular-nums">
+                {results.essayGrades.reduce((a, b) => a + b.score, 0)}<span className="text-2xl text-muted font-bold">/50</span>
+              </p>
+            </div>
+            
+            <div className="flex flex-col gap-4">
+              <button 
+                onClick={() => setIsStarted(false)}
+                className="w-full py-6 bg-ink text-white text-sm font-bold uppercase tracking-[0.3em] hover:opacity-90 transition-all shadow-xl rounded-sm"
+              >
+                Ujian Baru
+              </button>
+              <Link 
+                href="/" 
+                className="w-full py-6 bg-white border-2 border-ink text-ink text-sm font-bold uppercase tracking-[0.3em] hover:bg-gray-50 transition-all text-center rounded-sm"
+              >
+                Kembali ke Beranda
+              </Link>
+            </div>
+          </div>
 
-            <div className="space-y-8 pt-8 border-t border-gray-100">
-              <h3 className="text-xs font-bold uppercase tracking-widest text-[#111111]">Detail Evaluasi Esai</h3>
-              <div className="space-y-6">
-                {results.essayGrades.map((grade, idx) => (
-                  <div key={grade.id} className="p-6 bg-[#F9F9F9] rounded-sm border border-gray-200/50 space-y-3">
-                    <div className="flex justify-between items-center">
-                      <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Soal {idx + 31}</span>
-                      <span className="px-3 py-1 bg-[#111111] text-white text-[10px] font-bold rounded-full">Skor: {grade.score}/10</span>
-                    </div>
-                    <p className="text-sm text-[#111111] font-medium leading-relaxed italic border-l-2 border-gray-300 pl-4">
+          <div className="lg:w-2/3 space-y-8 overflow-y-auto pr-4 max-h-[80vh] scrollbar-hide">
+            <h3 className="text-xs font-bold uppercase tracking-[0.5em] text-muted font-mono mb-8">Detail Evaluasi AI</h3>
+            <div className="grid grid-cols-1 gap-6">
+              {results.essayGrades.map((grade, idx) => (
+                <div key={grade.id} className="p-10 border-2 border-gray-100 bg-white hover:border-ink transition-all space-y-6">
+                  <div className="flex justify-between items-center border-b border-gray-50 pb-4">
+                    <span className="text-xs font-bold text-muted uppercase tracking-[0.3em] font-mono">Soal {idx + 31}</span>
+                    <span className="px-4 py-2 bg-ink text-white text-xs font-bold font-mono uppercase">Skor: {grade.score}/10</span>
+                  </div>
+                  <div className="space-y-4">
+                    <p className="text-xl text-ink font-medium leading-relaxed italic border-l-4 border-gray-100 pl-8 py-2">
                       "{essayAnswers[grade.id] || "Kosong"}"
                     </p>
-                    <p className="text-[11px] text-[#555555] leading-relaxed">
-                      <span className="font-bold text-[#111111]">Catatan Sistem:</span> {grade.explanation}
-                    </p>
+                    <div className="bg-gray-50 p-6 border border-gray-100">
+                      <p className="text-xs font-bold uppercase tracking-widest text-ink mb-2 font-mono">Review Pengajar AI:</p>
+                      <p className="text-sm text-muted leading-relaxed">
+                        {grade.explanation}
+                      </p>
+                    </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button 
-              onClick={() => setIsStarted(false)}
-              className="px-10 py-4 bg-[#111111] text-white text-xs font-bold uppercase tracking-widest hover:bg-gray-800 transition-all shadow-md"
-            >
-              Ujian Baru
-            </button>
-            <Link 
-              href="/" 
-              className="px-10 py-4 bg-white border border-gray-200 text-[#111111] text-xs font-bold uppercase tracking-widest hover:border-[#111111] transition-all text-center"
-            >
-              Beranda
-            </Link>
-          </div>
         </div>
+
+        <footer className="pt-8 border-t border-gray-100 flex justify-between text-[12px] uppercase tracking-[0.3em] text-muted font-mono font-medium">
+          <p>© 2026 Kamu Pasti Bisa</p>
+          <p>Generated by DeepSeek AI</p>
+        </footer>
       </main>
     );
   }
@@ -180,78 +199,83 @@ export default function TesPage() {
   const progressPercent = ((currentStep + 1) / 35) * 100;
 
   return (
-    <main className="min-h-dvh bg-[#F9F9F9] flex flex-col p-6">
+    <main className="max-w-[98%] mx-auto px-6 py-12 min-h-dvh flex flex-col justify-between">
       
-      <div className="w-full max-w-3xl mx-auto flex-1 flex flex-col">
-        
-        <header className="flex justify-between items-end mb-12 border-b border-gray-100 pb-8">
+      <header className="flex justify-between items-center border-b-2 border-gray-100 pb-8 mb-12">
+        <div className="flex items-center gap-12">
           <div className="space-y-1">
-            <span className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em]">{isPG ? "Bagian I: Pilihan Ganda" : "Bagian II: Esai"}</span>
-            <h2 className="text-xs font-bold text-[#111111] font-mono">SOAL {currentStep + 1} / 35</h2>
+            <span className="text-[10px] font-bold text-muted uppercase tracking-[0.4em] font-mono">{isPG ? "Bagian I: Pilihan Ganda" : "Bagian II: Esai"}</span>
+            <h2 className="text-4xl font-black text-ink tabular-nums font-mono leading-none">{currentStep + 1} <span className="text-sm text-muted font-bold">/ 35</span></h2>
           </div>
-          <div className="w-32 h-1 bg-gray-100 rounded-full overflow-hidden mb-1">
-            <div className="h-full bg-[#111111] transition-all duration-500" style={{ width: `${progressPercent}%` }} />
-          </div>
-        </header>
-
-        <div className="flex-1 space-y-12">
-          
-          <h2 className="text-2xl md:text-3xl font-medium text-[#111111] leading-relaxed text-center w-full px-4">
-            {currentSoal?.pertanyaan}
-          </h2>
-
-          <div className="w-full max-w-2xl mx-auto">
-            {isPG ? (
-              <div className="grid gap-3 w-full">
-                {Object.entries((currentSoal as any).opsi).map(([key, val]) => {
-                  const isSelected = userAnswers[currentSoal!.id] === key;
-                  return (
-                    <button
-                      key={key}
-                      onClick={() => setUserAnswers({ ...userAnswers, [currentSoal!.id]: key })}
-                      className={`w-full text-left p-6 border transition-all flex gap-6 rounded-sm ${
-                        isSelected
-                          ? "border-[#111111] bg-white text-[#111111] ring-1 ring-[#111111] shadow-sm"
-                          : "border-gray-100 bg-white text-[#555555] hover:border-gray-300"
-                      }`}
-                    >
-                      <span className={`font-mono text-sm font-bold ${isSelected ? 'text-[#111111]' : 'text-gray-300'}`}>
-                        {key}
-                      </span> 
-                      <span className="text-base leading-relaxed">{val as string}</span>
-                    </button>
-                  );
-                })}
-              </div>
-            ) : (
-              <textarea
-                className="w-full h-64 p-8 border border-gray-100 rounded-sm bg-white text-[#111111] text-lg focus:outline-none focus:border-[#111111] resize-none transition-all shadow-sm placeholder:text-gray-200"
-                placeholder="Ketik argumentasi teknis Anda di sini..."
-                value={essayAnswers[currentSoal!.id] || ""}
-                onChange={(e) => setEssayAnswers({ ...essayAnswers, [currentSoal!.id]: e.target.value })}
-              ></textarea>
-            )}
+          <div className="hidden md:block w-64 h-2 bg-gray-50 rounded-full overflow-hidden border border-gray-100">
+            <div className="h-full bg-ink transition-all duration-700 ease-out" style={{ width: `${progressPercent}%` }} />
           </div>
         </div>
+        <div className="flex items-center gap-4">
+          <span className="text-[10px] font-bold text-muted uppercase tracking-widest font-mono">Zen Mode</span>
+          <div className="w-2 h-2 rounded-full bg-mint animate-pulse" />
+        </div>
+      </header>
 
-        <footer className="mt-20 flex justify-between items-center border-t border-gray-100 pt-8 pb-4">
-          <button 
-            disabled={currentStep === 0 || isLoading}
-            onClick={() => setCurrentStep(currentStep - 1)}
-            className="text-[10px] font-bold uppercase tracking-widest text-gray-400 hover:text-[#111111] disabled:opacity-0 transition-colors py-4 px-2"
-          >
-            &larr; Sebelumnya
-          </button>
-          <button 
-            disabled={isLoading}
-            onClick={handleNext}
-            className="bg-[#111111] text-white px-12 py-4 text-[10px] font-bold uppercase tracking-widest hover:bg-gray-800 transition-all shadow-md disabled:bg-gray-400"
-          >
-            {currentStep === 34 ? (isLoading ? "Sedang Mengevaluasi..." : "Selesai & Kumpulkan") : "Selanjutnya &rarr;"}
-          </button>
-        </footer>
+      <div className="flex-1 flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
+        
+        <div className="lg:w-1/2 w-full space-y-12">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-ink leading-[1.1] tracking-tight">
+            {currentSoal?.pertanyaan}
+          </h2>
+          {isPG && <p className="text-muted font-mono text-xs uppercase tracking-[0.3em]">Pilih satu jawaban yang paling tepat.</p>}
+        </div>
 
+        <div className="lg:w-1/2 w-full">
+          {isPG ? (
+            <div className="grid gap-4 w-full">
+              {Object.entries((currentSoal as any).opsi).map(([key, val]) => {
+                const isSelected = userAnswers[currentSoal!.id] === key;
+                return (
+                  <button
+                    key={key}
+                    onClick={() => setUserAnswers({ ...userAnswers, [currentSoal!.id]: key })}
+                    className={`w-full text-left p-8 border-2 transition-all flex gap-8 rounded-sm ${
+                      isSelected
+                        ? "border-ink bg-ink text-white shadow-2xl translate-x-4"
+                        : "border-gray-100 bg-white text-ink hover:border-ink"
+                    }`}
+                  >
+                    <span className={`font-mono text-2xl font-black ${isSelected ? 'text-white' : 'text-gray-200'}`}>
+                      {key}
+                    </span> 
+                    <span className="text-lg md:text-xl font-medium leading-relaxed">{val as string}</span>
+                  </button>
+                );
+              })}
+            </div>
+          ) : (
+            <textarea
+              className="w-full h-[50vh] p-12 border-2 border-gray-100 rounded-sm bg-white text-ink text-2xl font-medium focus:outline-none focus:border-ink resize-none transition-all shadow-inner placeholder:text-gray-100"
+              placeholder="Ketik argumentasi teknis Anda di sini..."
+              value={essayAnswers[currentSoal!.id] || ""}
+              onChange={(e) => setEssayAnswers({ ...essayAnswers, [currentSoal!.id]: e.target.value })}
+            ></textarea>
+          )}
+        </div>
       </div>
+
+      <footer className="mt-20 flex justify-between items-center border-t-2 border-gray-100 pt-12 pb-4">
+        <button 
+          disabled={currentStep === 0 || isLoading}
+          onClick={() => setCurrentStep(currentStep - 1)}
+          className="text-xs font-bold uppercase tracking-[0.3em] text-muted hover:text-ink disabled:opacity-0 transition-all py-6 px-12 border-2 border-transparent hover:border-gray-100 font-mono"
+        >
+          &larr; Sebelumnya
+        </button>
+        <button 
+          disabled={isLoading}
+          onClick={handleNext}
+          className="bg-ink text-white px-20 py-6 text-sm font-bold uppercase tracking-[0.3em] hover:opacity-90 transition-all shadow-2xl disabled:bg-gray-400 rounded-sm"
+        >
+          {currentStep === 34 ? (isLoading ? "Sedang Mengevaluasi..." : "Kumpulkan & Selesai") : "Berikutnya &rarr;"}
+        </button>
+      </footer>
     </main>
   );
 }

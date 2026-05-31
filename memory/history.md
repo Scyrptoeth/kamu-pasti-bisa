@@ -1,3 +1,17 @@
+### [2026-05-31] - Implementasi Penilaian Sistem (Esai AI Deepseek)
+- **Latest Update**: 
+  - Mengaktifkan fitur penilaian esai otomatis secara real-time menggunakan API Deepseek.
+  - Implementasi 'Branding Sistem': Mengganti seluruh terminologi 'AI' menjadi 'Sistem' di seluruh antarmuka untuk meningkatkan kepercayaan pengguna.
+  - Pembuatan API Route `/api/grade-essays` untuk pemrosesan penilaian esai secara paralel (server-side) demi keamanan API Key.
+  - Penambahan 'Catatan Evaluasi' teknis dari Sistem untuk setiap jawaban esai siswa (Skala 0-10).
+  - Update UI hasil ujian dengan breakdown skor Kuantitatif (PG) dan Kualitatif (Esai) yang komprehensif.
+  - Verifikasi build sukses dan deployment live ke Vercel.
+- **Lesson Learned**: 
+  - Terminologi 'Sistem' memberikan aura otoritatif dan reliabilitas yang lebih kuat bagi platform pendidikan dibandingkan istilah 'AI'.
+  - Pemrosesan paralel pada API Route secara drastis mengurangi waktu tunggu hasil evaluasi esai bagi siswa.
+- **Current Status**: **Production Live (V 1.6.0 - Intelligence Edition)**.
+- **Next Actions**: Optimalisasi Dashboard Statistik untuk menyertakan riwayat nilai esai secara mendalam.
+
 ### [2026-05-31] - Finalisasi Konten Ekonomi (Paket 1-5)
 - **Latest Update**: 
   - Menyelesaikan ekstraksi Paket 2, 3, 4, dan 5 dari PDF '5-paket-soal.pdf'.
