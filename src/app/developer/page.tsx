@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Eye, EyeOff } from "lucide-react";
 
 type FeedbackEntry = {
   id: string;
@@ -12,6 +13,7 @@ type FeedbackEntry = {
 
 export default function DeveloperDashboard() {
   const [token, setToken] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [isAuthorized, setIsAuthorized] = useState(false);
   const [feedbacks, setFeedbacks] = useState<FeedbackEntry[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -63,14 +65,23 @@ export default function DeveloperDashboard() {
           <form onSubmit={handleLogin} className="space-y-6">
             <div className="space-y-2">
               <label className="text-[10px] font-bold uppercase tracking-widest text-muted font-mono">Admin Token</label>
-              <input 
-                type="password" 
-                value={token}
-                onChange={(e) => setToken(e.target.value)}
-                className="w-full p-4 border border-gray-100 rounded-sm focus:border-ink outline-none font-mono text-sm"
-                placeholder="Masukkan token akses..."
-                required
-              />
+              <div className="relative">
+                <input 
+                  type={showPassword ? "text" : "password"} 
+                  value={token}
+                  onChange={(e) => setToken(e.target.value)}
+                  className="w-full p-4 pr-12 border border-gray-100 rounded-sm focus:border-ink outline-none font-mono text-sm"
+                  placeholder="Masukkan token akses..."
+                  required
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-300 hover:text-ink transition-colors"
+                >
+                  {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+                </button>
+              </div>
             </div>
             <button 
               type="submit" 
@@ -91,7 +102,7 @@ export default function DeveloperDashboard() {
       <header className="flex justify-between items-center border-b border-gray-100 pb-8">
         <div className="flex items-center gap-6">
           <Link href="/">
-            <Image src="/logo.png" alt="Logo" width={160} height={40} className="h-10 w-auto" />
+            <Image src="/logo.png" alt="Logo" width={320} height={80} className="h-16 md:h-20 w-auto object-contain" />
           </Link>
           <div className="h-8 w-px bg-gray-100" />
           <h1 className="text-xl font-black text-ink uppercase tracking-tight">Feedback Central</h1>
