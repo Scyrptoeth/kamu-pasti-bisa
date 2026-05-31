@@ -69,7 +69,6 @@ export default function Home() {
       <footer className="mt-24 pt-12 border-t border-gray-100 flex flex-col md:flex-row justify-between gap-6 text-[10px] uppercase tracking-[0.3em] text-muted font-mono font-medium">
         <div className="flex gap-8">
           <p>© 2026 Kamu Pasti Bisa</p>
-          <p>Persiapantubel Project</p>
         </div>
         <div className="flex gap-8">
           <p>Sistem Pintar v1.2</p>

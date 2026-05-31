@@ -156,8 +156,8 @@ export default function FlipcardPage() {
       </div>
 
       <footer className="mt-12 py-12 border-t border-gray-100 text-center">
-        <p className="text-[12px] uppercase tracking-[1em] text-muted font-bold font-mono opacity-50">
-          Zen Study Mode
+        <p className="text-[12px] uppercase tracking-[0.5em] text-muted font-bold font-mono opacity-50">
+          © 2026 Kamu Pasti Bisa
         </p>
       </footer>
     </main>

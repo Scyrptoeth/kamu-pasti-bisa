@@ -1,7 +1,7 @@
 # Grand Design: "Kamu Pasti Bisa"
 **Status**: Draft - Ready to Develop
 **Version**: 1.0.0
-**Lead Architect**: Gemini CLI (Expert AI Assistant)
+**Lead Architect**: -
 
 ## 1. Visi Produk
 "Kamu Pasti Bisa" adalah platform pembelajaran modern yang dirancang khusus untuk membantu siswa menguasai materi ujian sekolah melalui metode pengenalan bertahap (Flipcard) dan simulasi ujian nyata (Tes). Proyek ini memprioritaskan akurasi konten dengan hanya menggunakan sumber referensi tunggal yang telah diverifikasi.
@@ -76,4 +76,4 @@ Data akan diekstrak dari PDF `5-paket-soal.pdf` menjadi format berikut:
 6. **Fase 5**: Final Polish & Deployment ke Vercel.
 
 ---
-**Dokumentasi Folder**: `/Users/persiapantubel/Desktop/codex/website-belajar/kamu-pasti-bisa`
+**Dokumentasi Folder**: `./`
