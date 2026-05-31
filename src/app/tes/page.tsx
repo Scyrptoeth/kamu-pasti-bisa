@@ -29,10 +29,6 @@ export default function TesPage() {
   const handleNext = () => {
     if (currentStep < 34) {
       setCurrentStep(currentStep + 1);
-    } else {
-      if (window.confirm("Apakah Anda yakin ingin mengakhiri tes ini? Hasil akan langsung dikalkulasi.")) {
-        finishTest();
-      }
     }
   };
 
@@ -359,21 +355,40 @@ export default function TesPage() {
         </div>
       </div>
 
-      <footer className="mt-12 flex justify-between items-center border-t-2 border-gray-100 pt-12 pb-4">
-        <button 
-          disabled={currentStep === 0 || isLoading}
-          onClick={() => setCurrentStep(currentStep - 1)}
-          className="text-xs font-bold uppercase tracking-[0.3em] text-muted hover:text-ink disabled:opacity-0 transition-all py-6 px-12 border-2 border-transparent hover:border-gray-100 font-mono"
-        >
-          &larr; Sebelumnya
-        </button>
-        <button 
-          disabled={isLoading}
-          onClick={handleNext}
-          className="bg-ink text-white px-20 py-6 text-sm font-bold uppercase tracking-[0.3em] hover:opacity-90 transition-all shadow-2xl disabled:bg-gray-400 rounded-sm"
-        >
-          {currentStep === 34 ? (isLoading ? "Sedang Mengevaluasi..." : "Kumpulkan & Selesai") : "Berikutnya &rarr;"}
-        </button>
+      <footer className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 items-center border-t-2 border-gray-100 pt-12 pb-8">
+        <div className="flex justify-start order-2 md:order-1">
+          <button 
+            disabled={currentStep === 0 || isLoading}
+            onClick={() => setCurrentStep(currentStep - 1)}
+            className="w-full md:w-auto px-8 py-4 border border-ink bg-white text-ink text-[10px] font-bold font-mono uppercase tracking-[0.3em] hover:bg-gray-50 disabled:opacity-20 transition-all rounded-sm"
+          >
+            ← SEBELUMNYA
+          </button>
+        </div>
+
+        <div className="flex justify-center order-1 md:order-2">
+          <button 
+            disabled={isLoading}
+            onClick={() => {
+              if (window.confirm("Apakah Anda yakin ingin mengakhiri tes ini? Hasil akan langsung dikalkulasi.")) {
+                finishTest();
+              }
+            }}
+            className="w-full md:w-64 py-5 bg-ink text-white text-[11px] font-bold font-mono uppercase tracking-[0.3em] hover:opacity-90 transition-all shadow-xl disabled:bg-muted rounded-sm"
+          >
+            {isLoading ? "MEMPROSES..." : "SELESAI"}
+          </button>
+        </div>
+
+        <div className="flex justify-end order-3 md:order-3">
+          <button 
+            disabled={currentStep === 34 || isLoading}
+            onClick={handleNext}
+            className="w-full md:w-auto px-8 py-4 border border-ink bg-white text-ink text-[10px] font-bold font-mono uppercase tracking-[0.3em] hover:bg-gray-50 disabled:opacity-20 transition-all rounded-sm"
+          >
+            BERIKUTNYA →
+          </button>
+        </div>
       </footer>
     </main>
   );
