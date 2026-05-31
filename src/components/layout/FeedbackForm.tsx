@@ -32,7 +32,7 @@ export default function FeedbackForm() {
   };
 
   return (
-    <div className="w-full max-w-lg space-y-6">
+    <div className="w-full space-y-6">
       <div className="space-y-1">
         <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-ink font-mono">Feedback Anonim</h4>
         <p className="text-[11px] text-muted leading-relaxed">Bantu kami meningkatkan platform ini dengan memberikan masukan Anda secara anonim di sini.</p>

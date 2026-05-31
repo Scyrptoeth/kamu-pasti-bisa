@@ -30,8 +30,8 @@ export default function Home() {
         </h1>
       </header>
 
-      <div className="flex-1 flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
-        <nav className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1 w-full">
+      <div className="flex-1 flex flex-col gap-16 lg:gap-24">
+        <nav className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
           <Link 
             href="/flipcard" 
             className="group p-10 bg-white border border-transparent hover:border-ink transition-all rounded-sm shadow-sm flex flex-col justify-between min-h-[420px]"
@@ -61,7 +61,7 @@ export default function Home() {
           </Link>
         </nav>
 
-        <div className="w-full lg:w-1/3 pt-12 lg:pt-0">
+        <div className="w-full mt-24">
           <FeedbackForm />
         </div>
       </div>
