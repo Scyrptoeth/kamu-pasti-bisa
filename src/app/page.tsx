@@ -54,7 +54,7 @@ export default function Home() {
               <span className="block text-[12px] uppercase tracking-[0.3em] text-gray-400 font-mono mb-8 opacity-50">Metode 02</span>
               <h2 className="text-6xl md:text-8xl font-black mb-6 group-hover:text-ink transition-colors leading-[0.9]">Simulasi Ujian</h2>
               <p className="text-gray-400 group-hover:text-muted text-lg leading-relaxed max-w-sm">
-                Uji pemahaman Anda melalui 35 instrumen soal dengan evaluasi sistem otomatis.
+                Uji pemahaman kamu melalui 35 instrumen soal dengan evaluasi sistem otomatis.
               </p>
             </div>
             <span className="text-sm font-bold border-b-2 border-white group-hover:border-ink pb-1 w-fit group-hover:pr-4 transition-all uppercase tracking-[0.2em]">Mulai Simulasi &rarr;</span>

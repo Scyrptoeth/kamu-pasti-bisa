@@ -1,3 +1,16 @@
+### [2026-06-01] - Implementasi Mode Fokus & Integrasi Pomodoro (Scaffolding Level)
+- **Latest Update**: 
+  - Penambahan **Mode Fokus (Pomodoro Terintegrasi)** sebagai fitur tantangan baru bagi siswa mahir.
+  - Implementasi **Halaman Interstisial** (Pemilihan Mode) yang memberikan pemisahan visual jelas antara Mode Normal (Light) dan Mode Fokus (Dark).
+  - Integrasi **Logic Timer** hitung mundur 25 menit dengan fitur auto-submit saat waktu habis guna melatih ketahanan ujian siswa.
+  - Sinkronisasi status pengerjaan dan mode ke dalam riwayat `localStorage`.
+  - Verifikasi build sukses dan Deployment Live ke Vercel (V 1.20.0).
+- **Lesson Learned**: 
+  - Memberikan momen jeda (Interstisial) sebelum ujian membantu siswa mempersiapkan mental dan fokus secara lebih baik dibandingkan transisi instan.
+  - Diferensiasi visual yang kontras (Light vs Dark mode) sangat efektif dalam membangun suasana 'tantangan' yang berbeda dari mode belajar biasa.
+- **Current Status**: **Production Live (Challenge Mode Enabled)**.
+- **Next Actions**: Optimalisasi performa sinkronisasi data pada Mode PWA.
+
 ### [2026-06-01] - Implementasi Learning Analytics & Offline Mode (PWA)
 - **Latest Update**: 
   - Integrasi **Recharts** untuk visualisasi data: Menampilkan grafik garis (Line Chart) tren skor Pilihan Ganda dan Esai pada halaman hasil tes.

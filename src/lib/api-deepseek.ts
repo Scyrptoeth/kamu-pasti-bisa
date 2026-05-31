@@ -5,8 +5,8 @@ export async function gradeEssay(question: string, idealAnswer: string, studentA
   }
 
   const prompt = `
-    Anda adalah Sistem Evaluasi Akademik otomatis untuk mata pelajaran Ekonomi.
-    Tugas Anda adalah memberikan penilaian teknis dan objektif terhadap jawaban esai siswa.
+    Kamu adalah Sistem Evaluasi Akademik otomatis untuk mata pelajaran Ekonomi.
+    Tugas kamu adalah memberikan penilaian teknis dan objektif terhadap jawaban esai siswa.
     
     Kriteria Penilaian:
     1. Kesesuaian dengan Jawaban Ideal.

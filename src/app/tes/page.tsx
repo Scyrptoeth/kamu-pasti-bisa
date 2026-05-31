@@ -153,7 +153,7 @@ export default function TesPage() {
           <div className="space-y-4">
             <span className="text-xs font-bold uppercase tracking-[0.4em] text-muted font-mono">Pilihan 01</span>
             <h2 className="text-5xl md:text-7xl font-black text-ink tracking-tighter uppercase">Mode Normal</h2>
-            <p className="text-xl text-muted leading-relaxed max-w-md">Belajar dengan tenang tanpa batasan waktu. Cocok untuk Anda yang sedang membangun pemahaman konsep.</p>
+            <p className="text-xl text-muted leading-relaxed max-w-md">Belajar dengan tenang tanpa batasan waktu. Cocok untuk kamu yang sedang membangun pemahaman konsep.</p>
           </div>
           <button 
             onClick={() => startTest("normal")}
@@ -170,7 +170,7 @@ export default function TesPage() {
           <div className="space-y-4">
             <span className="text-xs font-bold uppercase tracking-[0.4em] text-gray-400 font-mono">Pilihan 02</span>
             <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase">Mode Fokus</h2>
-            <p className="text-xl text-gray-300 leading-relaxed max-w-md">Tantang diri Anda dengan batasan waktu 25 menit. Sistem akan menutup otomatis saat waktu habis.</p>
+            <p className="text-xl text-gray-300 leading-relaxed max-w-md">Tantang diri kamu dengan batasan waktu 25 menit. Sistem akan menutup otomatis saat waktu habis.</p>
           </div>
           <button 
             onClick={() => startTest("focus")}
@@ -352,7 +352,7 @@ export default function TesPage() {
           ) : (
             <textarea
               className="w-full h-[50vh] p-12 border-2 border-gray-100 rounded-sm bg-white text-ink text-2xl font-medium focus:outline-none focus:border-ink resize-none shadow-inner"
-              placeholder="Ketik argumentasi teknis Anda di sini..."
+              placeholder="Ketik argumentasi teknis kamu di sini..."
               value={essayAnswers[currentSoal!.id] || ""}
               onChange={(e) => setEssayAnswers({ ...essayAnswers, [currentSoal!.id]: e.target.value })}
             ></textarea>

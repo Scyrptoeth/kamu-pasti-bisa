@@ -40,7 +40,7 @@ export default function FeedbackForm() {
 
       {isSuccess ? (
         <div className="p-6 bg-gray-50 border border-gray-100 rounded-sm">
-          <p className="text-xs font-bold text-ink uppercase tracking-widest text-center">Terima kasih atas masukan Anda.</p>
+          <p className="text-xs font-bold text-ink uppercase tracking-widest text-center">Terima kasih atas masukan kamu.</p>
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4">
