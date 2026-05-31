@@ -1,3 +1,14 @@
+### [2026-06-01] - Personalisasi Sapaan (Kamu Identity)
+- **Latest Update**: 
+  - Melakukan migrasi kata sapaan di seluruh antarmuka website (Beranda, Tes, Flipcard, dan Feedback) dari 'Anda' menjadi 'Kamu'.
+  - Penyesuaian nada suara (*tone of voice*) agar lebih personal, akrab, dan sesuai dengan demografi pelajar Indonesia.
+  - Pembaruan placeholder, instruksi pengerjaan, dan pesan konfirmasi di seluruh aplikasi.
+  - Integrasi perubahan ke repositori dan deployment live ke Vercel (V 1.21.0).
+- **Lesson Learned**: 
+  - Pilihan kata ganti orang kedua (Sapaan) secara drastis mengubah 'kehangatan' sebuah aplikasi pendidikan dan dapat menurunkan hambatan psikologis siswa dalam berinteraksi dengan sistem.
+- **Current Status**: **Production Live (Personalized Engagement Enabled)**.
+- **Next Actions**: Melanjutkan pemantauan pengalaman pengguna melalui Dashboard Developer.
+
 ### [2026-06-01] - Implementasi Mode Fokus & Integrasi Pomodoro (Scaffolding Level)
 - **Latest Update**: 
   - Penambahan **Mode Fokus (Pomodoro Terintegrasi)** sebagai fitur tantangan baru bagi siswa mahir.

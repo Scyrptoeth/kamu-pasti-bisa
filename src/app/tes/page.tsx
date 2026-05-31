@@ -14,6 +14,7 @@ export default function TesPage() {
   const [selectedPaketIdx, setSelectedPaketIdx] = useState<number | null>(null);
   const [isModeSelection, setIsModeSelection] = useState(false);
   const [testMode, setTestMode] = useState<TestMode>("normal");
+  const [focusDuration, setFocusDuration] = useState(25); // Default 25 menit
   const [isStarted, setIsStarted] = useState(false);
   const [currentStep, setCurrentStep] = useState(0); 
   const [userAnswers, setUserAnswers] = useState<Record<number, string>>({});
@@ -170,8 +171,37 @@ export default function TesPage() {
           <div className="space-y-4">
             <span className="text-xs font-bold uppercase tracking-[0.4em] text-gray-400 font-mono">Pilihan 02</span>
             <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase">Mode Fokus</h2>
-            <p className="text-xl text-gray-300 leading-relaxed max-w-md">Tantang diri kamu dengan batasan waktu 25 menit. Sistem akan menutup otomatis saat waktu habis.</p>
+            <p className="text-xl text-gray-300 leading-relaxed max-w-md">Tantang diri kamu dengan batasan waktu {focusDuration} menit. Sistem akan menutup otomatis saat waktu habis.</p>
           </div>
+
+          <div className="space-y-6">
+            <div className="space-y-3">
+              <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400 font-mono">Pilih Durasi Waktu</p>
+              <div className="flex flex-wrap items-center gap-2">
+                {[15, 30, 45].map((time) => (
+                  <button
+                    key={time}
+                    onClick={() => setFocusDuration(time)}
+                    className={`px-6 py-2 text-xs font-bold font-mono transition-all border ${focusDuration === time ? 'bg-white text-ink border-white' : 'bg-transparent text-white border-gray-700 hover:border-white'}`}
+                  >
+                    {time}M
+                  </button>
+                ))}
+                <div className="flex items-center gap-3 ml-2 border-l border-gray-800 pl-4">
+                  <span className="text-[10px] font-bold text-gray-500 uppercase font-mono">Kustom:</span>
+                  <input 
+                    type="number" 
+                    min={1} 
+                    max={180} 
+                    value={focusDuration}
+                    onChange={(e) => setFocusDuration(Math.max(1, Math.min(180, Number(e.target.value))))}
+                    className="w-16 bg-transparent border-b-2 border-gray-700 text-white text-sm font-bold font-mono py-1 focus:outline-none focus:border-white transition-all text-center"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
           <button 
             onClick={() => startTest("focus")}
             className="w-fit px-12 py-5 bg-white text-ink font-bold uppercase tracking-widest hover:bg-gray-100 transition-all rounded-sm shadow-2xl"
@@ -300,7 +330,7 @@ export default function TesPage() {
 
   return (
     <main className="max-w-[98%] mx-auto px-6 py-12 min-h-dvh flex flex-col justify-between">
-      {testMode === "focus" && <Timer duration={1500} onTimeUp={finishTest} isActive={!isFinished && !isLoading} />}
+      {testMode === "focus" && <Timer duration={focusDuration * 60} onTimeUp={finishTest} isActive={!isFinished && !isLoading} />}
       
       <div className="mb-12">
         <Link href="/">
