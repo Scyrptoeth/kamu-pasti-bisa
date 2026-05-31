@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import ContentGuard from "@/components/security/ContentGuard";
@@ -17,6 +17,11 @@ const mono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Kamu Pasti Bisa",
   description: "Platform belajar minimalis untuk persiapan ujian.",
+  manifest: "/manifest.json",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#151619",
 };
 
 export default function RootLayout({

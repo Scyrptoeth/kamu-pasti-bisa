@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import soalData from "@/data/soal-ekonomi.json";
 import Link from "next/link";
 import Image from "next/image";
+import ScoreChart from "@/components/analytics/ScoreChart";
 
 export default function TesPage() {
   const [selectedPaketIdx, setSelectedPaketIdx] = useState<number | null>(null);
@@ -14,14 +15,6 @@ export default function TesPage() {
   const [isFinished, setIsFinished] = useState(false);
   const [results, setResults] = useState<{ pgScore: number; essayGrades: any[] } | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [history, setHistory] = useState<any[]>([]);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const savedHistory = JSON.parse(localStorage.getItem("kpb_history") || "[]");
-      setHistory(savedHistory);
-    }
-  }, [isFinished]);
 
   const paket = selectedPaketIdx !== null ? soalData[selectedPaketIdx] : null;
 
@@ -44,13 +37,11 @@ export default function TesPage() {
     if (!paket) return;
     setIsLoading(true);
 
-    // Hitung skor PG
     let pgScore = 0;
     paket.soal_pg.forEach((q) => {
       if (userAnswers[q.id] === q.kunci) pgScore += 1;
     });
 
-    // Panggil Penilaian Sistem untuk Esai
     try {
       const essaysToGrade = paket.soal_essay.map((q) => ({
         id: q.id,
@@ -71,13 +62,12 @@ export default function TesPage() {
       const finalResults = { pgScore, essayGrades };
       setResults(finalResults);
       
-      // Simpan ke Local Storage
       const history = JSON.parse(localStorage.getItem("kpb_history") || "[]");
       history.push({
         paketId: paket.id,
         date: new Date().toISOString(),
         pgScore,
-        essayTotal: essayGrades.reduce((a: number, b: any) => a + b.score, 0)
+        essayTotal: essayGrades.reduce((a: number, b: any) => a + (b.score || 0), 0)
       });
       localStorage.setItem("kpb_history", JSON.stringify(history));
 
@@ -98,9 +88,9 @@ export default function TesPage() {
             <Image 
               src="/logo.png" 
               alt="Logo Kamu Pasti Bisa" 
-              width={280} 
-              height={64} 
-              className="h-16 w-auto object-contain"
+              width={320} 
+              height={80} 
+              className="h-20 w-auto object-contain"
             />
           </Link>
         </div>
@@ -114,8 +104,8 @@ export default function TesPage() {
 
         <div className="flex-1 flex flex-col lg:flex-row items-center justify-center gap-12 py-12">
           <div className="lg:w-1/3">
-            <h2 className="text-4xl font-bold text-ink mb-4">Pilih Paket Ujian</h2>
-            <p className="text-muted text-lg max-w-sm">Setiap paket terdiri dari 30 Soal Pilihan Ganda dan 5 Soal Esai dengan evaluasi oleh Sistem Pintar yang telah ditanamkan di website.</p>
+            <h2 className="text-4xl font-bold text-ink mb-4 text-center lg:text-left">Pilih Paket Ujian</h2>
+            <p className="text-muted text-lg max-w-sm text-center lg:text-left mx-auto lg:mx-0">Setiap paket terdiri dari 30 Soal Pilihan Ganda dan 5 Soal Esai dengan evaluasi oleh Sistem Pintar yang telah ditanamkan di website.</p>
           </div>
           
           <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6 w-full text-left">
@@ -146,6 +136,9 @@ export default function TesPage() {
   }
 
   if (isFinished && results) {
+    const history = JSON.parse(localStorage.getItem("kpb_history") || "[]");
+    const paketHistory = history.filter((h: any) => h.paketId === paket?.id);
+
     return (
       <main className="min-h-dvh bg-white py-12 px-6 md:px-12 flex flex-col justify-between">
         <div className="mb-12">
@@ -153,9 +146,9 @@ export default function TesPage() {
             <Image 
               src="/logo.png" 
               alt="Logo Kamu Pasti Bisa" 
-              width={280} 
-              height={64} 
-              className="h-16 w-auto object-contain"
+              width={320} 
+              height={80} 
+              className="h-20 w-auto object-contain"
             />
           </Link>
         </div>
@@ -174,33 +167,8 @@ export default function TesPage() {
             <div className="p-12 border-2 border-gray-100 bg-gray-50">
               <p className="text-[12px] font-bold text-muted uppercase tracking-[0.3em] mb-8 font-mono">Akumulasi Nilai Esai</p>
               <p className="text-8xl font-black text-ink leading-none tabular-nums">
-                {results.essayGrades.reduce((a, b) => a + b.score, 0)}<span className="text-2xl text-muted font-bold">/50</span>
+                {results.essayGrades.reduce((a, b) => a + (b.score || 0), 0)}<span className="text-2xl text-muted font-bold">/50</span>
               </p>
-            </div>
-
-            {/* Histori Pengerjaan Sebelumnya */}
-            <div className="pt-8 border-t border-gray-100">
-              <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-muted font-mono mb-6">Histori Pengerjaan Sebelumnya</h3>
-              <div className="space-y-4 max-h-64 overflow-y-auto pr-2 scrollbar-hide">
-                {history
-                  .filter((h) => h.paketId === paket?.id)
-                  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-                  .map((h, i) => (
-                    <div key={i} className="flex justify-between items-center p-4 border border-gray-100 rounded-sm text-xs font-mono">
-                      <span className="text-muted">{new Date(h.date).toLocaleDateString('id-ID', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })}</span>
-                      <div className="flex gap-4 font-bold text-ink">
-                        <span>PG: {h.pgScore}</span>
-                        <span>Esai: {h.essayTotal}</span>
-                      </div>
-                    </div>
-                  ))}
-                {history.filter((h) => h.paketId === paket?.id).length <= 1 && history.filter((h) => h.paketId === paket?.id).length > 0 && (
-                   <p className="text-[10px] text-muted italic font-mono">Ini adalah pengerjaan pertama Anda untuk paket ini.</p>
-                )}
-                {history.filter((h) => h.paketId === paket?.id).length === 0 && (
-                  <p className="text-[10px] text-muted italic font-mono">Belum ada histori pengerjaan.</p>
-                )}
-              </div>
             </div>
             
             <div className="flex flex-col gap-4">
@@ -219,35 +187,40 @@ export default function TesPage() {
             </div>
           </div>
 
-          <div className="lg:w-2/3 space-y-8 overflow-y-auto pr-4 max-h-[80vh] scrollbar-hide">
-            <h3 className="text-xs font-bold uppercase tracking-[0.5em] text-muted font-mono mb-8">Detail Evaluasi AI</h3>
-            <div className="grid grid-cols-1 gap-6">
-              {results.essayGrades.map((grade, idx) => (
-                <div key={grade.id} className="p-10 border-2 border-gray-100 bg-white hover:border-ink transition-all space-y-6">
-                  <div className="flex justify-between items-center border-b border-gray-50 pb-4">
-                    <span className="text-xs font-bold text-muted uppercase tracking-[0.3em] font-mono">Soal {idx + 31}</span>
-                    <span className="px-4 py-2 bg-ink text-white text-xs font-bold font-mono uppercase">Skor: {grade.score}/10</span>
-                  </div>
-                  <div className="space-y-4">
-                    <p className="text-xl text-ink font-medium leading-relaxed italic border-l-4 border-gray-100 pl-8 py-2">
-                      "{essayAnswers[grade.id] || "Kosong"}"
-                    </p>
-                    <div className="bg-gray-50 p-6 border border-gray-100">
-                      <p className="text-xs font-bold uppercase tracking-widest text-ink mb-2 font-mono">Review Pengajar AI:</p>
-                      <p className="text-sm text-muted leading-relaxed">
-                        {grade.explanation}
+          <div className="lg:w-2/3 space-y-12">
+            {/* Learning Analytics Chart */}
+            <ScoreChart data={paketHistory} />
+
+            <div className="space-y-8 overflow-y-auto pr-4 max-h-[60vh] scrollbar-hide">
+              <h3 className="text-xs font-bold uppercase tracking-[0.5em] text-muted font-mono mb-8">Detail Evaluasi Sistem</h3>
+              <div className="grid grid-cols-1 gap-6">
+                {results.essayGrades.map((grade, idx) => (
+                  <div key={grade.id} className="p-10 border-2 border-gray-100 bg-white hover:border-ink transition-all space-y-6">
+                    <div className="flex justify-between items-center border-b border-gray-50 pb-4">
+                      <span className="text-xs font-bold text-muted uppercase tracking-[0.3em] font-mono">Soal {idx + 31}</span>
+                      <span className="px-4 py-2 bg-ink text-white text-xs font-bold font-mono uppercase">Skor: {grade.score}/10</span>
+                    </div>
+                    <div className="space-y-4">
+                      <p className="text-xl text-ink font-medium leading-relaxed italic border-l-4 border-gray-100 pl-8 py-2">
+                        "{essayAnswers[grade.id] || "Kosong"}"
                       </p>
+                      <div className="bg-gray-50 p-6 border border-gray-100">
+                        <p className="text-xs font-bold uppercase tracking-widest text-ink mb-2 font-mono">Catatan Sistem:</p>
+                        <p className="text-sm text-muted leading-relaxed">
+                          {grade.explanation}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
 
         {/* Section: Tinjauan Ulang Hasil Ujian */}
         <div className="mt-24 border-t-4 border-ink pt-16 max-w-[98%] mx-auto w-full">
-          <h2 className="text-5xl font-black text-ink uppercase tracking-tighter mb-12">Tinjauan Ulang Hasil Ujian</h2>
+          <h2 className="text-5xl font-black text-ink uppercase tracking-tighter mb-12 text-center lg:text-left">Tinjauan Ulang Hasil Ujian</h2>
           <div className="space-y-16">
             {/* PG Review */}
             <div className="space-y-8">
@@ -336,6 +309,41 @@ export default function TesPage() {
                 })}
               </div>
             </div>
+
+            {/* Riwayat Pengerjaan Komprehensif */}
+            <div className="mt-24 pt-16 border-t border-gray-100">
+              <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-muted font-mono mb-8">Riwayat Pengerjaan Komprehensif</h3>
+              <div className="bg-white border border-gray-100 overflow-x-auto rounded-sm shadow-sm">
+                <table className="w-full text-left min-w-[600px]">
+                  <thead>
+                    <tr className="bg-gray-50 border-b border-gray-100 font-mono text-[10px] uppercase tracking-widest text-muted">
+                      <th className="px-8 py-4">Waktu Pengerjaan</th>
+                      <th className="px-8 py-4">Skor PG</th>
+                      <th className="px-8 py-4">Skor Esai</th>
+                      <th className="px-8 py-4">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-sm font-medium text-ink tabular-nums">
+                    {paketHistory.length === 0 ? (
+                      <tr>
+                        <td colSpan={4} className="px-8 py-12 text-center text-muted italic">Belum ada riwayat tercatat.</td>
+                      </tr>
+                    ) : (
+                      paketHistory.sort((a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime()).map((h: any, i: number) => (
+                        <tr key={i} className="border-b border-gray-50 hover:bg-gray-50/50 transition-colors">
+                          <td className="px-8 py-4 font-mono text-[11px]">{new Date(h.date).toLocaleString("id-ID")}</td>
+                          <td className="px-8 py-4">{h.pgScore} / 30</td>
+                          <td className="px-8 py-4">{h.essayTotal} / 50</td>
+                          <td className="px-8 py-4">
+                            <span className="text-[10px] font-bold uppercase px-2 py-1 bg-gray-100 rounded-sm">Verified</span>
+                          </td>
+                        </tr>
+                      ))
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -359,9 +367,9 @@ export default function TesPage() {
           <Image 
             src="/logo.png" 
             alt="Logo Kamu Pasti Bisa" 
-            width={240} 
-            height={56} 
-            className="h-14 w-auto object-contain"
+            width={320} 
+            height={80} 
+            className="h-20 w-auto object-contain"
           />
         </Link>
       </div>
@@ -394,8 +402,8 @@ export default function TesPage() {
             Daftar Paket Tes
           </button>
           <div className="hidden sm:flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-mint animate-pulse" />
-            <span className="text-[10px] font-bold text-muted uppercase tracking-widest font-mono">Live</span>
+            <div className="w-2 h-2 rounded-full bg-ink animate-pulse" />
+            <span className="text-[10px] font-bold text-muted uppercase tracking-widest font-mono text-center">Live</span>
           </div>
         </div>
       </header>
@@ -403,10 +411,10 @@ export default function TesPage() {
       <div className="flex-1 flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
         
         <div className="lg:w-1/2 w-full space-y-12">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-ink leading-[1.1] tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-ink leading-[1.1] tracking-tight text-center lg:text-left">
             {currentSoal?.pertanyaan}
           </h2>
-          {isPG && <p className="text-muted font-mono text-xs uppercase tracking-[0.3em]">Pilih satu jawaban yang paling tepat.</p>}
+          {isPG && <p className="text-muted font-mono text-xs uppercase tracking-[0.3em] text-center lg:text-left">Pilih satu jawaban yang paling tepat.</p>}
         </div>
 
         <div className="lg:w-1/2 w-full">
