@@ -7,17 +7,25 @@ import FeedbackForm from "@/components/layout/FeedbackForm";
 export default function Home() {
   return (
     <main className="max-w-[90%] mx-auto px-6 min-h-dvh flex flex-col justify-between py-12 md:py-24">
-      <div className="flex justify-between items-start">
-        <Link href="/">
-          <Image 
-            src="/logo.png" 
-            alt="Logo Kamu Pasti Bisa" 
-            width={320} 
-            height={80} 
-            className="h-16 md:h-20 w-auto object-contain"
-            priority
-          />
-        </Link>
+      <div className="flex justify-between items-center">
+        <div className="flex items-center gap-8">
+          <Link href="/">
+            <Image 
+              src="/logo.png" 
+              alt="Logo Kamu Pasti Bisa" 
+              width={320} 
+              height={80} 
+              className="h-16 md:h-20 w-auto object-contain"
+              priority
+            />
+          </Link>
+          <Link 
+            href="/tutorial" 
+            className="hidden sm:block text-[10px] font-bold uppercase tracking-[0.2em] px-4 py-2 border border-ink/20 hover:border-ink transition-all rounded-sm font-mono"
+          >
+            Tutorial Penggunaan
+          </Link>
+        </div>
         <div className="text-right hidden md:block">
           <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-muted font-mono">Volume 1.0</span>
           <p className="text-[9px] font-bold text-gray-300 uppercase tracking-widest mt-1">Platform Belajar Mandiri</p>
