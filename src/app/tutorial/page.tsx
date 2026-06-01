@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const sections = [
@@ -142,15 +141,6 @@ export default function TutorialPage() {
                     </ul>
                   </div>
                 </div>
-                <div className="w-full bg-gray-50 p-4 md:p-12 border border-gray-100 rounded-none overflow-hidden group-hover:shadow-[20px_20px_0px_0px_rgba(0,0,0,0.05)] transition-all duration-700">
-                  <Image 
-                    src="/tutorial/06-penambahan-beranda-dan-revisi-tombol.png" 
-                    alt="Navigasi Beranda" 
-                    width={1600} 
-                    height={1000} 
-                    className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-1000 scale-100 group-hover:scale-[1.02]"
-                  />
-                </div>
               </div>
             </section>
 
@@ -179,15 +169,6 @@ export default function TutorialPage() {
                       </li>
                     </ul>
                   </div>
-                </div>
-                <div className="w-full bg-gray-50 p-4 md:p-12 border border-gray-100 rounded-none overflow-hidden group-hover:shadow-[20px_20px_0px_0px_rgba(0,0,0,0.05)] transition-all duration-700">
-                  <Image 
-                    src="/tutorial/02-stretch-tampilan.png" 
-                    alt="Kartu Hafalan" 
-                    width={1600} 
-                    height={1000} 
-                    className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-1000 scale-100 group-hover:scale-[1.02]"
-                  />
                 </div>
               </div>
             </section>
@@ -218,15 +199,6 @@ export default function TutorialPage() {
                     </ul>
                   </div>
                 </div>
-                <div className="w-full bg-gray-50 p-4 md:p-12 border border-gray-100 rounded-none overflow-hidden group-hover:shadow-[20px_20px_0px_0px_rgba(0,0,0,0.05)] transition-all duration-700">
-                  <Image 
-                    src="/tutorial/12-pilih-paket-ujian.png" 
-                    alt="Simulasi Ujian" 
-                    width={1600} 
-                    height={1000} 
-                    className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-1000 scale-100 group-hover:scale-[1.02]"
-                  />
-                </div>
               </div>
             </section>
 
@@ -255,15 +227,6 @@ export default function TutorialPage() {
                       </li>
                     </ul>
                   </div>
-                </div>
-                <div className="w-full bg-gray-50 p-4 md:p-12 border border-gray-100 rounded-none overflow-hidden group-hover:shadow-[20px_20px_0px_0px_rgba(0,0,0,0.05)] transition-all duration-700">
-                  <Image 
-                    src="/tutorial/08-revisi-tombol-selanjutnya.png" 
-                    alt="Mengerjakan Soal" 
-                    width={1600} 
-                    height={1000} 
-                    className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-1000 scale-100 group-hover:scale-[1.02]"
-                  />
                 </div>
               </div>
             </section>
@@ -294,26 +257,6 @@ export default function TutorialPage() {
                     </ul>
                   </div>
                 </div>
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div className="bg-gray-50 p-4 md:p-8 border border-gray-100 rounded-none overflow-hidden group-hover:shadow-[20px_20px_0px_0px_rgba(0,0,0,0.05)] transition-all duration-700">
-                    <Image 
-                      src="/tutorial/09-tombol-selesai.png" 
-                      alt="Konfirmasi Selesai" 
-                      width={800} 
-                      height={400} 
-                      className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-1000"
-                    />
-                  </div>
-                  <div className="bg-gray-50 p-4 md:p-8 border border-gray-100 rounded-none overflow-hidden group-hover:shadow-[20px_20px_0px_0px_rgba(0,0,0,0.05)] transition-all duration-700">
-                    <Image 
-                      src="/tutorial/11-selesai.png" 
-                      alt="Hasil Skor" 
-                      width={800} 
-                      height={400} 
-                      className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-1000"
-                    />
-                  </div>
-                </div>
               </div>
             </section>
 
@@ -342,15 +285,6 @@ export default function TutorialPage() {
                       </li>
                     </ul>
                   </div>
-                </div>
-                <div className="w-full bg-gray-50 p-4 md:p-12 border border-gray-100 rounded-none overflow-hidden group-hover:shadow-[20px_20px_0px_0px_rgba(0,0,0,0.05)] transition-all duration-700">
-                  <Image 
-                    src="/tutorial/14-feedback-anonim.png" 
-                    alt="Feedback Anonim" 
-                    width={1600} 
-                    height={1000} 
-                    className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-1000 scale-100 group-hover:scale-[1.02]"
-                  />
                 </div>
               </div>
             </section>
