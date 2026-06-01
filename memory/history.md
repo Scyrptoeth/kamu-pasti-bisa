@@ -40,3 +40,13 @@
 ### [2026-06-01] - Durasi Kustom Mode Tantangan (User Autonomy v1.0)
 - **Latest Update**: Implementasi fitur pemilihan durasi waktu kustom pada halaman pemilihan Mode Fokus.
 - **Current Status**: **Production Live (V 1.22.0)**.
+
+### [2026-06-01] - Pengecualian Anti-Copy untuk Developer (V 1.24.2)
+- **Latest Update**: 
+  - Menonaktifkan fitur anti-copy (klik kanan, seleksi teks, dan shortcut DevTools) secara khusus pada halaman `/developer` dan rute turunannya.
+  - Memindahkan instruksi CSS `user-select: none` dari global ke *class* `.lock-selection`.
+  - Mengupdate `ContentGuard.tsx` menggunakan `usePathname` untuk menghapus _class_ dan mengecualikan pendaftaran _event listener_ keamanan pada _developer routes_.
+- **Lesson Learned**: 
+  - Fitur keamanan *anti-copy* tidak boleh mengurangi produktivitas administratif (*friction*). Penerapan berbasis rute (_route-based security_) adalah solusi terbaik untuk menjaga integritas *end-user* tanpa menyulitkan *developer*.
+- **Current Status**: **Production Live**.
+- **Next Actions**: -
